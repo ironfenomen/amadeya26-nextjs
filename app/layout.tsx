@@ -10,7 +10,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ru-RU">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://mc.yandex.ru" />
+        <link rel="preconnect" href="https://maps.yastatic.net" crossOrigin="" />
+        <link rel="preconnect" href="https://booking.medflex.ru" />
+        <link rel="dns-prefetch" href="https://yandex.ru" />
         <style dangerouslySetInnerHTML={{ __html: `img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }` }} />
         <style dangerouslySetInnerHTML={{ __html: `
 
@@ -147,7 +151,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel='stylesheet' id='twentytwentyfour-style-css' href='/wp-content/themes/twentytwentyfour/style.css?ver=1.3' media='all' />
         <link rel='stylesheet' id='amadeya-redesign-style-css' href='/wp-content/themes/amadeya-redesign/style.css?ver=1.0.0' media='all' />
         <link rel='stylesheet' id='amadeya-redesign-main-css' href='/wp-content/themes/amadeya-redesign/assets/css/styles.css?ver=1.0.0' media='all' />
-        <link rel='stylesheet' id='swiper-css-css' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?ver=11.0.0' media='all' />
+        <link rel='stylesheet' id='swiper-css-css' href='/vendor/swiper/swiper-bundle.min.css?ver=11.2.10' media='all' />
         <style dangerouslySetInnerHTML={{ __html: `
 
 			.a-stats {
@@ -231,7 +235,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script src="/wp-includes/js/jquery/jquery.min.js"></script>
         <script src="/wp-includes/js/jquery/jquery-migrate.min.js"></script>
         <script src="/wp-content/plugins/cookie-notice/js/front.min.js?ver=2.5.7"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="/vendor/swiper/swiper-bundle.min.js?ver=11.2.10"></script>
         <script src="/wp-content/themes/amadeya-redesign/assets/js/config.js?ver=1.0.0" defer></script>
         <script src="/wp-content/themes/amadeya-redesign/assets/js/header.js?ver=1.0.0" defer></script>
         <script src="/wp-content/themes/amadeya-redesign/assets/js/carousel.js?ver=1.0.0" defer></script>

@@ -167,7 +167,7 @@ const pageContent = `
 					<a href="https://vk.com/litehstavlab" target="_blank" rel="noopener"><br />
 						Vk<br />
 											</a><br />
-			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A04d5da944667e458e6c1e125894c012662d627fa15e09ad9f11f2f612627fd23&amp;source=constructor" width="500" height="720" frameborder="0"></iframe>		</p>
+			<iframe loading="lazy" title="Карта проезда — Медицинский центр Амадея" src="https://yandex.ru/map-widget/v1/?um=constructor%3A04d5da944667e458e6c1e125894c012662d627fa15e09ad9f11f2f612627fd23&amp;source=constructor" width="500" height="720" frameborder="0"></iframe>		</p>
 <h4>Телефон:</h4>
 <ul>
 <li>
