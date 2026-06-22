@@ -533,7 +533,7 @@ const pageContent = `
                     </div>
                 </div>
                 <div class="map__container">
-                    <iframe
+                    <iframe loading="lazy" title="Карта проезда — Медицинский центр Амадея"
                         src="https://yandex.ru/map-widget/v1/?um=constructor%3A83bc031fae9b9b52a046f0b9659520fe4a9940e7803a9ad20b0bac4a52889c5a&amp;source=constructor"
                         width="1200" height="400" frameborder="0"></iframe>
                 </div>
