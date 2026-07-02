@@ -399,7 +399,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Онлайн-запись - Медицинский центр Амадея в Ставрополе",
-  description: "Icon-social-vkontakte Whatsapp Telegram 8 (988) 864-10-10 Онлайн-запись Блог контакты О нас Врачи Контакты КЛИНИКА АМАДЕЯ ВЫЗВАТЬ ВРАЧА ул. 45 параллель 2пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00 8 (988) 864-10-10 Главная Специалисты Лечение зависимостей Наши услуги Консультация…",
+  description: "Онлайн-запись к специалистам клиники «Амадея» в Ставрополе: удобная запись к врачу через сайт или по телефону ☎ 8 (988) 864-10-10.",
   alternates: { canonical: "https://amadeya26.ru/online-zapis-k-specialistam/" },
   openGraph: { locale: "ru_RU", type: "website", title: "Онлайн-запись - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/online-zapis-k-specialistam/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };
