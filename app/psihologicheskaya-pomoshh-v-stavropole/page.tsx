@@ -331,7 +331,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Психологическая помощь в Ставрополе - Медицинский центр Амадея в Ставрополе",
-  description: "Icon-social-vkontakte Whatsapp Telegram 8 (988) 864-10-10 Онлайн-запись Блог контакты О нас Врачи Контакты КЛИНИКА АМАДЕЯ ВЫЗВАТЬ ВРАЧА ул. 45 параллель 2пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00 8 (988) 864-10-10 Главная Специалисты Лечение зависимостей Наши услуги Консультация…",
+  description: "Психологическая помощь в Ставрополе в клинике «Амадея»: консультации психолога при стрессе, тревоге, зависимостях и семейных трудностях. Запись ☎ 8 (988) 864-10-10.",
   alternates: { canonical: "https://amadeya26.ru/psihologicheskaya-pomoshh-v-stavropole/" },
   openGraph: { locale: "ru_RU", type: "website", title: "Психологическая помощь в Ставрополе - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/psihologicheskaya-pomoshh-v-stavropole/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };
