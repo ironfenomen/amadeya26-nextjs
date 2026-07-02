@@ -226,7 +226,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Прием психолога-аддиктолога в Ставрополе - Медицинский центр Амадея в Ставрополе",
-  description: "Icon-social-vkontakte Whatsapp Telegram 8 (988) 864-10-10 Онлайн-запись Блог контакты О нас Блог Врачи Контакты КЛИНИКА АМАДЕЯ ВЫЗВАТЬ ВРАЧА ул. 45 параллель 2пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00 8 (988) 864-10-10 Главная Специалисты Лечение зависимостей Наши услуги…",
+  description: "Приём психолога-аддиктолога в Ставрополе в клинике «Амадея»: помощь при зависимостях, консультация и терапия. Запись к специалисту ☎ 8 (988) 864-10-10.",
   alternates: { canonical: "https://amadeya26.ru/priem-psihologa-addiktologa-v-stavro/" },
   openGraph: { locale: "ru_RU", type: "website", title: "Прием психолога-аддиктолога в Ставрополе - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/priem-psihologa-addiktologa-v-stavro/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };
