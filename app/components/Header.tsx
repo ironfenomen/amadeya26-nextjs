@@ -3,7 +3,7 @@ export default function Header() {
     <div dangerouslySetInnerHTML={{ __html: `<header class="site-header">
     <div class="container site-header__top">
         <a href="/" class="site-header__logo" aria-label="Медицинский центр Амадея в Ставрополе">
-            <img src="/wp-content/themes/amadeya-redesign/assets/img/logo.png" alt="Медицинский центр Амадея в Ставрополе" class="site-header__logo-image">
+            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/logo.png" alt="Медицинский центр Амадея в Ставрополе" class="site-header__logo-image">
         </a>
         <div class="site-header__info">
             <div class="site-header__info-top">

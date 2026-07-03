@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="760" height="1024" src="/wp-content/uploads/2024/08/dsc_3094-760x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/dsc_3094-760x1024.jpg.webp 760w, /wp-content/uploads/2024/08/dsc_3094-223x300.jpg.webp 223w, /wp-content/uploads/2024/08/dsc_3094-768x1034.jpg.webp 768w, /wp-content/uploads/2024/08/dsc_3094-1141x1536.jpg.webp 1141w, /wp-content/uploads/2024/08/dsc_3094-1521x2048.jpg.webp 1521w, /wp-content/uploads/2024/08/dsc_3094-167x225.jpg.webp 167w, /wp-content/uploads/2024/08/dsc_3094.jpg.webp 1754w" sizes="(max-width: 760px) 100vw, 760px" />													</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="760" height="1024" src="/wp-content/uploads/2024/08/dsc_3094-760x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/dsc_3094-760x1024.jpg.webp 760w, /wp-content/uploads/2024/08/dsc_3094-223x300.jpg.webp 223w, /wp-content/uploads/2024/08/dsc_3094-768x1034.jpg.webp 768w, /wp-content/uploads/2024/08/dsc_3094-1141x1536.jpg.webp 1141w, /wp-content/uploads/2024/08/dsc_3094-1521x2048.jpg.webp 1521w, /wp-content/uploads/2024/08/dsc_3094-167x225.jpg.webp 167w, /wp-content/uploads/2024/08/dsc_3094.jpg.webp 1754w" sizes="(max-width: 760px) 100vw, 760px" />													</p>
 <h3>
 							Опыт работы:<br />
 					</h3>

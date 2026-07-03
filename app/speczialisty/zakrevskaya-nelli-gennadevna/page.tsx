@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="946" height="1024" src="/wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-946x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-946x1024.jpg.webp 946w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-277x300.jpg.webp 277w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-768x832.jpg.webp 768w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-208x225.jpg.webp 208w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e.jpg.webp 1182w" sizes="(max-width: 946px) 100vw, 946px" />													</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="946" height="1024" src="/wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-946x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-946x1024.jpg.webp 946w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-277x300.jpg.webp 277w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-768x832.jpg.webp 768w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e-208x225.jpg.webp 208w, /wp-content/uploads/2024/08/izobrazhenie-whatsapp-2024-04-23-v-09.40.26_4c4dd20e.jpg.webp 1182w" sizes="(max-width: 946px) 100vw, 946px" />													</p>
 <h3>
 							Опыт работы:<br />
 					</h3>

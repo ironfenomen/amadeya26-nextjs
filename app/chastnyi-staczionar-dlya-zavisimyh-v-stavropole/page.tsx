@@ -49,7 +49,7 @@ const pageContent = `
 											</a>
 									</li>
 </ul>
-<p>													<img fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/06/photo_323-1024x1024.webp" alt="" srcset="/wp-content/uploads/2024/06/photo_323-1024x1024.webp 1024w, /wp-content/uploads/2024/06/photo_323-300x300.webp 300w, /wp-content/uploads/2024/06/photo_323-150x150.webp 150w, /wp-content/uploads/2024/06/photo_323-768x768.webp 768w, /wp-content/uploads/2024/06/photo_323-225x225.webp 225w, /wp-content/uploads/2024/06/photo_323.webp 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
+<p>													<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/06/photo_323-1024x1024.webp" alt="" srcset="/wp-content/uploads/2024/06/photo_323-1024x1024.webp 1024w, /wp-content/uploads/2024/06/photo_323-300x300.webp 300w, /wp-content/uploads/2024/06/photo_323-150x150.webp 150w, /wp-content/uploads/2024/06/photo_323-768x768.webp 768w, /wp-content/uploads/2024/06/photo_323-225x225.webp 225w, /wp-content/uploads/2024/06/photo_323.webp 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
 <h2>КЛИНИКА АМАДЕЯ</h2>
 <p>			<a href="tel:+79888641010"><br />
 									ВЫЗВАТЬ ВРАЧА<br />
@@ -91,7 +91,7 @@ const pageContent = `
 </ul>
 </nav>
 <p>														<a href="/"><br />
-							<img decoding="async" width="310" height="171" src="/wp-content/uploads/2024/06/bezymyannyj.webp" alt="" srcset="/wp-content/uploads/2024/06/bezymyannyj.webp 310w, /wp-content/uploads/2024/06/bezymyannyj-300x165.webp 300w" sizes="(max-width: 310px) 100vw, 310px" />								</a><br />
+							<img loading="lazy" decoding="async" decoding="async" width="310" height="171" src="/wp-content/uploads/2024/06/bezymyannyj.webp" alt="" srcset="/wp-content/uploads/2024/06/bezymyannyj.webp 310w, /wp-content/uploads/2024/06/bezymyannyj-300x165.webp 300w" sizes="(max-width: 310px) 100vw, 310px" />								</a><br />
 					<a href="https://vk.com/amadeya26" target="_blank"><br />
 						Icon-social-vkontakte<br />
 											</a><br />
@@ -162,7 +162,7 @@ const pageContent = `
 														Next</p>
 <p>Клиника “Амадея” — это, прежде всего, медицинское заведение, мы не<br />используем околорелигиозные практики. Да, в реабилитационном центре царит дисциплина,<br />но это —<b> не трудовой лагерь. Медики меняют образ жизни и<br />мировосприятие больного исключительно при помощи медикаментов и<br />методов психотерапии</b></p>
 <h2>Мы используем методику Когнитивно-поведенческой терапии в лечении зависимостей</h2>
-<p>													<img decoding="async" width="1024" height="872" src="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp" alt="" srcset="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp 1024w, /wp-content/uploads/2023/05/back-view-senior-pat-300x255.jpg.webp 300w, /wp-content/uploads/2023/05/back-view-senior-pat-768x654.jpg.webp 768w, /wp-content/uploads/2023/05/back-view-senior-pat-264x225.jpg.webp 264w, /wp-content/uploads/2023/05/back-view-senior-pat.jpg.webp 1500w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
+<p>													<img loading="lazy" decoding="async" decoding="async" width="1024" height="872" src="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp" alt="" srcset="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp 1024w, /wp-content/uploads/2023/05/back-view-senior-pat-300x255.jpg.webp 300w, /wp-content/uploads/2023/05/back-view-senior-pat-768x654.jpg.webp 768w, /wp-content/uploads/2023/05/back-view-senior-pat-264x225.jpg.webp 264w, /wp-content/uploads/2023/05/back-view-senior-pat.jpg.webp 1500w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
 <p>Человек систематически делает что-то, что нарушает качество его жизни. Решение употребить принимается человеком осознанно: он понимает, что у этого поступка будут тяжелые последствия. Но продолжает совершать разрушительные действия. Он идет употреблять.</p>
 <p>КПТ помогает вывести пациента из замкнутого круга «ненормальное мышление – ненормальное поведение». Его мысли и поступки направляются в нужное русло. Со временем меняются паттерны поведения.</p>
 <p>Есть возможность оплатить лечение в рассрочку</p>
@@ -232,7 +232,7 @@ const pageContent = `
 									        </li>
 </ul>
 <p>			<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>		</p>
+<img loading="lazy" decoding="async" decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>		</p>
 <p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>ИНН/ОГРН: 2635248939/1212600004165</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>

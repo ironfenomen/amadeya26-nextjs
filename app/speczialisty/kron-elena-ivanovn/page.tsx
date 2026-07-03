@@ -14,7 +14,7 @@ const pageContent = `
 
                 <div class="entry-content">
                     
-<figure class="wp-block-image size-large"><img decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kron.jpg" alt=""/></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kron.jpg" alt=""/></figure>
 
 
 

@@ -83,7 +83,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Специалист (существующий) -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg" alt="Мутаева Ольга Юрьевна" class="specialist-photo">
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg" alt="Мутаева Ольга Юрьевна" class="specialist-photo">
                         </div>
                     <div class="specialist-info">
                         <h3 class="specialist-name">Мутаева Ольга Юрьевна</h3>
@@ -95,7 +95,7 @@ const pageContent = `<main class="page-content service-page">
                 <!-- Плейсхолдер для добавления врача -->
                 <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/puchkova.jpg" alt="Пучкова Анастасия Андреевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/puchkova.jpg" alt="Пучкова Анастасия Андреевна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Пучкова Анастасия Андреевна</h3>
@@ -106,7 +106,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/lavrentev.jpg" alt="Лаврентьев Илья Дмитриевич" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/lavrentev.jpg" alt="Лаврентьев Илья Дмитриевич" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Лаврентьев Илья Дмитриевич</h3>
@@ -120,7 +120,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/korotina-olga.jpg" alt="Коротина Ольга Викторовна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/korotina-olga.jpg" alt="Коротина Ольга Викторовна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Коротина Ольга Викторовна</h3>

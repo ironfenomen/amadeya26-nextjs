@@ -83,7 +83,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Специалист (существующий) -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/rahmatulina.jpg" alt="Рахматулина Елена Николаевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/rahmatulina.jpg" alt="Рахматулина Елена Николаевна" class="specialist-photo">
                         </div>
                     <div class="specialist-info">
                         <h3 class="specialist-name">Рахматулина Елена Николаевна</h3>
@@ -94,7 +94,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/stepanyan.jpg" alt="Степанян Виктория Владимировна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stepanyan.jpg" alt="Степанян Виктория Владимировна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Степанян Виктория Владимировна</h3>
@@ -104,7 +104,7 @@ const pageContent = `<main class="page-content service-page">
                     </div>
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/zaltan.jpg" alt="Залтан Марина Алексеевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/zaltan.jpg" alt="Залтан Марина Алексеевна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Залтан Марина Алексеевна</h3>

@@ -69,7 +69,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Специалист (существующий) -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/kumratova.jpg" alt="Кумратова Наталья Александровна" class="specialist-photo">
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kumratova.jpg" alt="Кумратова Наталья Александровна" class="specialist-photo">
                     </div>
                     <div class="specialist-info">
                         <h3 class="specialist-name">Кумратова Наталья Александровна</h3>
@@ -80,7 +80,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/bobrova.jpg" alt="Боброва Александра Николаевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/bobrova.jpg" alt="Боброва Александра Николаевна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Боброва Александра Николаевна </h3>
@@ -92,7 +92,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg" alt="Мутаева Ольга Юрьевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg" alt="Мутаева Ольга Юрьевна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Мутаева Ольга Юрьевна</h3>
@@ -104,7 +104,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <!--<div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/vodolazhski.jpg" alt="Водолажский Андрей Федорович" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/vodolazhski.jpg" alt="Водолажский Андрей Федорович" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Водолажский Андрей Федорович</h3>

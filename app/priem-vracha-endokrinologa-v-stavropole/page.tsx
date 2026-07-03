@@ -69,7 +69,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Специалист (существующий) -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/lukashevich.jpg" alt="Лукашевич Лада Сергеевна" class="specialist-photo">
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/lukashevich.jpg" alt="Лукашевич Лада Сергеевна" class="specialist-photo">
                     </div>
                     <div class="specialist-info">
                         <h3 class="specialist-name">Лукашевич Лада Сергеевна</h3>
@@ -80,7 +80,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/zaltan.jpg" alt="Залтан Марина Алексеевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/zaltan.jpg" alt="Залтан Марина Алексеевна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Залтан Марина Алексеевна</h3>
@@ -92,7 +92,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/erkenova.jpg" alt="Эркенова Жанна Алиевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/erkenova.jpg" alt="Эркенова Жанна Алиевна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Эркенова Жанна Алиевна</h3>
@@ -104,7 +104,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/grigoriadis.jpg" alt="Григориадис Лариса Феодосиевна" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/grigoriadis.jpg" alt="Григориадис Лариса Феодосиевна" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Григориадис Лариса Феодосиевна</h3>

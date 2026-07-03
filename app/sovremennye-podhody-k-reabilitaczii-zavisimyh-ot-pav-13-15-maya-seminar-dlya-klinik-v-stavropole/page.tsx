@@ -20,11 +20,11 @@ const pageContent = `
 <p>					<a href="#"><br />
 									Нажмите здесь<br />
 					</a><br />
-															<img fetchpriority="high" decoding="async" width="410" height="474" src="/wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679.jpg.webp" alt="" srcset="/wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679.jpg.webp 410w, /wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679-259x300.jpg.webp 259w, /wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679-195x225.jpg.webp 195w" sizes="(max-width: 410px) 100vw, 410px" />															</p>
+															<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="410" height="474" src="/wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679.jpg.webp" alt="" srcset="/wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679.jpg.webp 410w, /wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679-259x300.jpg.webp 259w, /wp-content/uploads/2025/04/xlb13xs7od0dgo_zejjvdcvus5hzrvyzhtx4xjp_vnafzp7xizozvchbyjowhwa8qrpfmmunxb7tqdr62tib-ile-e1743618193679-195x225.jpg.webp 195w" sizes="(max-width: 410px) 100vw, 410px" />															</p>
 <h5>Ольга Коротина-Гессе​</h5>
 <p>Медицинский психолог высшей квалификационной категории</p>
 <p>37 лет опыта</p>
-<p>															<img decoding="async" width="431" height="431" src="/wp-content/uploads/2025/04/86_digital_course-discover.jpeg.webp" alt="" srcset="/wp-content/uploads/2025/04/86_digital_course-discover.jpeg.webp 431w, /wp-content/uploads/2025/04/86_digital_course-discover-300x300.jpeg.webp 300w, /wp-content/uploads/2025/04/86_digital_course-discover-150x150.jpeg.webp 150w, /wp-content/uploads/2025/04/86_digital_course-discover-225x225.jpeg.webp 225w" sizes="(max-width: 431px) 100vw, 431px" />															</p>
+<p>															<img loading="lazy" decoding="async" decoding="async" width="431" height="431" src="/wp-content/uploads/2025/04/86_digital_course-discover.jpeg.webp" alt="" srcset="/wp-content/uploads/2025/04/86_digital_course-discover.jpeg.webp 431w, /wp-content/uploads/2025/04/86_digital_course-discover-300x300.jpeg.webp 300w, /wp-content/uploads/2025/04/86_digital_course-discover-150x150.jpeg.webp 150w, /wp-content/uploads/2025/04/86_digital_course-discover-225x225.jpeg.webp 225w" sizes="(max-width: 431px) 100vw, 431px" />															</p>
 <h2>Для кого этот семинар?</h2>
 <ul>
 <li>
@@ -65,7 +65,7 @@ const pageContent = `
 <h2>Практика групповой работы в условиях реабилитационного центра</h2>
 <h2>Программа модуля</h2>
 <h3>Навыки групповой работы</h3>
-<figure><img decoding="async" width="1152" height="896" src="/wp-content/uploads/2025/04/d13c099d162e11f0806d66ccc1baceee_1.jpg.webp" alt="" /></figure>
+<figure><img loading="lazy" decoding="async" decoding="async" width="1152" height="896" src="/wp-content/uploads/2025/04/d13c099d162e11f0806d66ccc1baceee_1.jpg.webp" alt="" /></figure>
 <p>Вы освоите ключевые принципы ведения реабилитационных групп — от создания безопасного пространства до управления динамикой.</p>
 <h3>Агрессивное поведение зависимых и созависимых</h3>
 <figure><img loading="lazy" decoding="async" width="1152" height="896" src="/wp-content/uploads/2025/04/1ca8d60e163111f0806d66ccc1baceee_1.jpg.webp" alt="" /></figure>
@@ -158,7 +158,7 @@ const pageContent = `
 									        </li>
 </ul>
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p>
+<img loading="lazy" decoding="async" decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p>
 <p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>ИНН/ОГРН: 2635248939/1212600004165</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>

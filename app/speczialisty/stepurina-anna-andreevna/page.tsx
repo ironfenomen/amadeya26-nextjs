@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg.webp 300w, /wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg-150x150.webp 150w, /wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg-225x225.webp 225w, /wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg-100x100.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg.webp 300w, /wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg-150x150.webp 150w, /wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg-225x225.webp 225w, /wp-content/uploads/2024/08/1186047-622100-stepurina_square.jpg-100x100.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
 <p><strong><em>«От врачей и учителей требуют чуда, а если чудо свершится никто не удивляется» Мария фон Эбнер – Эшенбах</em></strong></p>
 <h3>
 							Опыт работы:<br />

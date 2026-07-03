@@ -109,7 +109,7 @@ const pageContent = `
                 <!-- Карточка 1 -->
                 <a href="/psychiatry/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock1.jpg"
+                        <img fetchPriority="high" src="/wp-content/themes/amadeya-redesign/assets/img/stock1.jpg"
                             alt="Консультация психиатра">
                     </div>
                     <div class="key-services__content">
@@ -125,7 +125,7 @@ const pageContent = `
                 <!-- Карточка 2 -->
                 <a href="/psychotherapy/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock2.jpg"
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock2.jpg"
                             alt="Консультация психотерапевта">
                     </div>
                     <div class="key-services__content">
@@ -141,7 +141,7 @@ const pageContent = `
                 <!-- Карточка 3 -->
                 <a href="/stavropol-treatment/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock14.jpg"
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock14.jpg"
                             alt="Лечение зависимостей в Ставрополе">
                     </div>
                     <div class="key-services__content">
@@ -157,7 +157,7 @@ const pageContent = `
                 <!-- Карточка 4 -->
                 <a href="/dermatology/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock7.jpg"
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock7.jpg"
                             alt="Дерматология">
                     </div>
                     <div class="key-services__content">
@@ -172,7 +172,7 @@ const pageContent = `
                 <!-- Карточка 5 -->
                 <a href="/detoxification/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock13.jpg"
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock13.jpg"
                             alt="Дезинтоксикация">
                     </div>
                     <div class="key-services__content">
@@ -188,7 +188,7 @@ const pageContent = `
                 <!-- Карточка 6 -->
                 <a href="/gymnotherapy/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock6.jpeg"
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock6.jpeg"
                             alt="Гирудотерапия">
                     </div>
                     <div class="key-services__content">
@@ -203,7 +203,7 @@ const pageContent = `
                 <!-- Карточка 7 -->
                 <a href="/gynecology/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock8.jpg"
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock8.jpg"
                             alt="Гинекология">
                     </div>
                     <div class="key-services__content">
@@ -219,7 +219,7 @@ const pageContent = `
                 <!-- Карточка 8 -->
                 <a href="/narcologist-consultation/" class="key-services__card">
                     <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock10.jpg"
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock10.jpg"
                             alt="Консультация нарколога">
                     </div>
                     <div class="key-services__content">
@@ -253,7 +253,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg"
                                         alt="Мутаева Ольга Юрьевна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -268,7 +268,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/kron.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kron.jpg"
                                         alt="Крон Елена Ивановна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -282,7 +282,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/kamolikova.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kamolikova.jpg"
                                         alt="Камоликова Жанна Анатольевна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -295,7 +295,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/bobrova.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/bobrova.jpg"
                                         alt="Боброва Александра Николаевна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -308,7 +308,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/kumratova.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kumratova.jpg"
                                         alt="Кумратова Наталья Александровна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -321,7 +321,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/mozharuk.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mozharuk.jpg"
                                         alt="Можарук Дарья Сергеевна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -334,7 +334,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/boyunsuzova.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/boyunsuzova.jpg"
                                         alt="Боюнсузова Зухра Руслановна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -347,7 +347,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/borisova.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/borisova.jpg"
                                         alt="Борисова Елена Алексеевна" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">
@@ -360,7 +360,7 @@ const pageContent = `
                         <div class="swiper-slide">
                             <div class="expert-card">
                                 <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/lavrentev.jpg"
+                                    <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/lavrentev.jpg"
                                         alt="Лаврентьев Илья Дмитриевич" class="expert-card__image">
                                 </div>
                                 <div class="expert-card__info">

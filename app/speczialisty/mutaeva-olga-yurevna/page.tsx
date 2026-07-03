@@ -8,7 +8,7 @@ const pageContent = `
 <div class="wp-site-blocks"><header class="wp-block-template-part">
 <div class="wp-block-group alignwide has-base-background-color has-background has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:20px;padding-bottom:20px">
 <div class="wp-block-group alignwide is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-b585a4aa wp-block-group-is-layout-flex">
-<div class="wp-block-group is-layout-flex wp-container-core-group-is-layout-fbcf6490 wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="/" class="custom-logo-link" rel="home"><img width="60" height="60" src="/wp-content/uploads/2022/10/LOGO12.png" class="custom-logo" alt="Медицинский центр Амадея в Ставрополе" decoding="async" /></a></div>
+<div class="wp-block-group is-layout-flex wp-container-core-group-is-layout-fbcf6490 wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="/" class="custom-logo-link" rel="home"><img loading="lazy" decoding="async" width="60" height="60" src="/wp-content/uploads/2022/10/LOGO12.png" class="custom-logo" alt="Медицинский центр Амадея в Ставрополе" decoding="async" /></a></div>
 
 
 <div class="wp-block-group is-layout-flow wp-container-core-group-is-layout-47e5a185 wp-block-group-is-layout-flow"><p class="wp-block-site-title"><a href="" target="_self" rel="home">Медицинский центр Амадея в Ставрополе</a></p></div>
@@ -53,7 +53,7 @@ const pageContent = `
 
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<figure class="wp-block-image aligncenter size-large is-resized"><img width="768" height="1024" src="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg" alt="" class="wp-image-5045" style="width:453px;height:auto" srcset="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg 768w, /wp-content/uploads/2024/07/IMG_8627-225x300.jpeg 225w, /wp-content/uploads/2024/07/IMG_8627-1152x1536.jpeg 1152w, /wp-content/uploads/2024/07/IMG_8627-1536x2048.jpeg 1536w, /wp-content/uploads/2024/07/IMG_8627-169x225.jpeg 169w, /wp-content/uploads/2024/07/IMG_8627-scaled.jpeg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img loading="lazy" decoding="async" width="768" height="1024" src="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg" alt="" class="wp-image-5045" style="width:453px;height:auto" srcset="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg 768w, /wp-content/uploads/2024/07/IMG_8627-225x300.jpeg 225w, /wp-content/uploads/2024/07/IMG_8627-1152x1536.jpeg 1152w, /wp-content/uploads/2024/07/IMG_8627-1536x2048.jpeg 1536w, /wp-content/uploads/2024/07/IMG_8627-169x225.jpeg 169w, /wp-content/uploads/2024/07/IMG_8627-scaled.jpeg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
 </div>
 
 
@@ -126,7 +126,7 @@ const pageContent = `
 <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 <div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:30%">
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-fe9cc265 wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="/" class="custom-logo-link" rel="home"><img width="20" height="20" src="/wp-content/uploads/2022/10/LOGO12.png" class="custom-logo" alt="Медицинский центр Амадея в Ставрополе" decoding="async" /></a></div>
+<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-is-layout-fe9cc265 wp-block-group-is-layout-flex"><div class="wp-block-site-logo"><a href="/" class="custom-logo-link" rel="home"><img loading="lazy" decoding="async" width="20" height="20" src="/wp-content/uploads/2022/10/LOGO12.png" class="custom-logo" alt="Медицинский центр Амадея в Ставрополе" decoding="async" /></a></div>
 
 <p class="wp-block-site-title has-medium-font-size"><a href="" target="_self" rel="home">Медицинский центр Амадея в Ставрополе</a></p>
 

@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="768" height="1024" src="/wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-768x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-768x1024.jpg.webp 768w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-225x300.jpg.webp 225w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-1152x1536.jpg.webp 1152w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-1536x2048.jpg.webp 1536w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-169x225.jpg.webp 169w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-scaled.jpg.webp 1920w" sizes="(max-width: 768px) 100vw, 768px" />															</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="768" height="1024" src="/wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-768x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-768x1024.jpg.webp 768w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-225x300.jpg.webp 225w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-1152x1536.jpg.webp 1152w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-1536x2048.jpg.webp 1536w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-169x225.jpg.webp 169w, /wp-content/uploads/2023/03/0beb40d65a8621c5e6d93064d924ebd1-scaled.jpg.webp 1920w" sizes="(max-width: 768px) 100vw, 768px" />															</p>
 <h3>
 							Опыт работы:<br />
 					</h3>

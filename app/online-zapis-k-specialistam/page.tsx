@@ -77,7 +77,7 @@ const pageContent = `
 											</a>
 									</li>
 </ul>
-<p>															<img fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/06/photo_323-1024x1024.webp" alt="" srcset="/wp-content/uploads/2024/06/photo_323-1024x1024.webp 1024w, /wp-content/uploads/2024/06/photo_323-300x300.webp 300w, /wp-content/uploads/2024/06/photo_323-150x150.webp 150w, /wp-content/uploads/2024/06/photo_323-768x768.webp 768w, /wp-content/uploads/2024/06/photo_323-225x225.webp 225w, /wp-content/uploads/2024/06/photo_323.webp 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />															</p>
+<p>															<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/06/photo_323-1024x1024.webp" alt="" srcset="/wp-content/uploads/2024/06/photo_323-1024x1024.webp 1024w, /wp-content/uploads/2024/06/photo_323-300x300.webp 300w, /wp-content/uploads/2024/06/photo_323-150x150.webp 150w, /wp-content/uploads/2024/06/photo_323-768x768.webp 768w, /wp-content/uploads/2024/06/photo_323-225x225.webp 225w, /wp-content/uploads/2024/06/photo_323.webp 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />															</p>
 <h2>КЛИНИКА АМАДЕЯ</h2>
 <p>					<a href="tel:+79888641010"><br />
 									ВЫЗВАТЬ ВРАЧА<br />
@@ -124,7 +124,7 @@ const pageContent = `
 </ul>
 </nav>
 <h2>Онлайн-запись к специалистам клиники &#171;Амадея&#187;</h2>
-<figure><img decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/d69c3f3090ae5bf72cd78c3a1c96150312f7d8b861c8b9e120a25188e4b137c8e35a66f89a5fc7914e2101de15ee1c64cd63dd20007b52d5e27fbcf5e7f46db1_150x150.jpg.webp" alt="" /></figure>
+<figure><img loading="lazy" decoding="async" decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/d69c3f3090ae5bf72cd78c3a1c96150312f7d8b861c8b9e120a25188e4b137c8e35a66f89a5fc7914e2101de15ee1c64cd63dd20007b52d5e27fbcf5e7f46db1_150x150.jpg.webp" alt="" /></figure>
 <h3>Мутаева Ольга Юрьевна</h3>
 <p>Нарколог • психиатр • психотерапевт • рефлексотерапевт<br />
 <P>стаж 20 лет<br />
@@ -132,7 +132,7 @@ const pageContent = `
 <p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=579654" target="_blank" rel="nofollow"><br />
 									Записаться<br />
 					</a></p>
-<figure><img decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/de9002ffef829917189d032bc040cd6128a151f8d4c029f3c3550660c5a44ea970b91c3c898918d57f5d2e69abd395ce34a8197cefc5dc9aafc34a4f23c789b9_150x150.jpg.webp" alt="" /></figure>
+<figure><img loading="lazy" decoding="async" decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/de9002ffef829917189d032bc040cd6128a151f8d4c029f3c3550660c5a44ea970b91c3c898918d57f5d2e69abd395ce34a8197cefc5dc9aafc34a4f23c789b9_150x150.jpg.webp" alt="" /></figure>
 <h3>Денисенко Игорь Александрович</h3>
 <p>Нарколог • психиатр • психотерапевт<br />
 <P>стаж 14 лет</p>
@@ -369,7 +369,7 @@ const pageContent = `
 									</li>
 </ul>
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>				</p>
+<img loading="lazy" decoding="async" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>				</p>
 <p>8 (988) 864-10-10</p>
 <p>ул. 45 параллель 2 </br></p>
 <p> пн-сб: с 7:30 &#8212; 20:00</p>
@@ -383,7 +383,7 @@ const pageContent = `
 			<a href="https://t.me/amadeyastav" target="_blank">						</a>        </li>
 </ul>
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p>
+<img loading="lazy" decoding="async" decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p>
 <p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>ИНН/ОГРН: 2635248939/1212600004165</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>

@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="576" height="1024" src="/wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-576x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-576x1024.jpg.webp 576w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-169x300.jpg.webp 169w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-127x225.jpg.webp 127w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-600x1067.jpg.webp 600w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56.jpg.webp 720w" sizes="(max-width: 576px) 100vw, 576px" />													</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="576" height="1024" src="/wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-576x1024.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-576x1024.jpg.webp 576w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-169x300.jpg.webp 169w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-127x225.jpg.webp 127w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56-600x1067.jpg.webp 600w, /wp-content/uploads/2024/08/photo_2024-07-17_20-50-56.jpg.webp 720w" sizes="(max-width: 576px) 100vw, 576px" />													</p>
 <h3>
 							Опыт работы:<br />
 					</h3>

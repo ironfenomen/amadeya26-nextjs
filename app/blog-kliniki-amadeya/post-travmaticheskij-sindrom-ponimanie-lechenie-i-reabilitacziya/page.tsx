@@ -14,7 +14,7 @@ const pageContent = `
 
                 <div class="entry-content">
                     <h1>Пост-травматический синдром: понимание, лечение и реабилитация</h1>
-<p>													<img fetchpriority="high" decoding="async" width="1024" height="585" src="/wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-1024x585.jpg.webp" alt="Пост-травматический синдром" srcset="/wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-1024x585.jpg.webp 1024w, /wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-300x171.jpg.webp 300w, /wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-768x439.jpg.webp 768w, /wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1.jpg.webp 1344w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
+<p>													<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="1024" height="585" src="/wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-1024x585.jpg.webp" alt="Пост-травматический синдром" srcset="/wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-1024x585.jpg.webp 1024w, /wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-300x171.jpg.webp 300w, /wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1-768x439.jpg.webp 768w, /wp-content/uploads/2025/02/c76aea26efa411ef8051664ee553938b_1.jpg.webp 1344w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
 <h2>Что такое пост-травматический синдром?</h2>
 <p>Пост-травматический синдром (ПТСР) — это психическое расстройство, которое развивается после переживания травматического события. Это состояние может возникнуть у любого человека, независимо от возраста и пола, и проявляется в виде навязчивых воспоминаний, кошмаров, повышенной тревожности и избегания ситуаций, напоминающих о травме.</p>
 <h3>Симптомы пост-травматического синдрома</h3>
@@ -37,14 +37,14 @@ const pageContent = `
 <p>&#8212;</p>
 <p>Эта статья предназначена для образовательных целей и не заменяет консультацию с врачом. Перед началом любого лечения рекомендуется проконсультироваться с квалифицированным специалистом.</p>
 <h2>Статья проверена и подтверждена психиатром и клиническим психологом клиники &#171;Амадея&#187; </h2>
-<p>													<img decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/de9002ffef829917189d032bc040cd6128a151f8d4c029f3c3550660c5a44ea970b91c3c898918d57f5d2e69abd395ce34a8197cefc5dc9aafc34a4f23c789b9_150x150.jpg.webp" alt="" />													</p>
+<p>													<img loading="lazy" decoding="async" decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/de9002ffef829917189d032bc040cd6128a151f8d4c029f3c3550660c5a44ea970b91c3c898918d57f5d2e69abd395ce34a8197cefc5dc9aafc34a4f23c789b9_150x150.jpg.webp" alt="" />													</p>
 <h6>Денисенко Игорь Александрович</p>
 <p>Стаж 14 лет</p>
 <p> Нарколог • психиатр • психотерапевт </h6>
 <p>			<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=575464&#038;type=doctors"><br />
 									Записаться<br />
 					</a><br />
-													<img decoding="async" width="150" height="150" src="/wp-content/uploads/2024/02/d99c69937fdfb056cf59215024ecac4ebe8b6e5067023f4743331dbd2de3ba9737b456012101fb38a5df5d606394d1c0eacf57635ba5fc7aa34b3a0411752067_150x150.jpg" alt="" />													</p>
+													<img loading="lazy" decoding="async" decoding="async" width="150" height="150" src="/wp-content/uploads/2024/02/d99c69937fdfb056cf59215024ecac4ebe8b6e5067023f4743331dbd2de3ba9737b456012101fb38a5df5d606394d1c0eacf57635ba5fc7aa34b3a0411752067_150x150.jpg" alt="" />													</p>
 <h6>Пучкова Анастасия Андреевна</p>
 <p>Стаж 5 лет</p>
 <p> Клинический психолог • психолог</h6>

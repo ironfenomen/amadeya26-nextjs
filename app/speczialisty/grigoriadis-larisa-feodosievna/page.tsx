@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/05/2391974-812066-grigoriadis_square.jpg" alt="" srcset="/wp-content/uploads/2024/05/2391974-812066-grigoriadis_square.jpg 300w, /wp-content/uploads/2024/05/2391974-812066-grigoriadis_square-150x150.jpg 150w, /wp-content/uploads/2024/05/2391974-812066-grigoriadis_square-225x225.jpg 225w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/05/2391974-812066-grigoriadis_square.jpg" alt="" srcset="/wp-content/uploads/2024/05/2391974-812066-grigoriadis_square.jpg 300w, /wp-content/uploads/2024/05/2391974-812066-grigoriadis_square-150x150.jpg 150w, /wp-content/uploads/2024/05/2391974-812066-grigoriadis_square-225x225.jpg 225w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
 <h3>
 							Опыт работы:<br />
 					</h3>

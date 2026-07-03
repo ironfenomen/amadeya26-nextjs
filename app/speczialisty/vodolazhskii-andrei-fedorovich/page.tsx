@@ -14,7 +14,7 @@ const pageContent = `
 
                 <div class="entry-content">
                     <figure>
-										<img fetchpriority="high" decoding="async" width="768" height="1024" src="/wp-content/uploads/2024/07/Водолажский-768x1024.webp" alt="" srcset="/wp-content/uploads/2024/07/Водолажский-768x1024.webp 768w, /wp-content/uploads/2024/07/Водолажский-225x300.webp 225w, /wp-content/uploads/2024/07/Водолажский-1152x1536.webp 1152w, /wp-content/uploads/2024/07/Водолажский-1536x2048.webp 1536w, /wp-content/uploads/2024/07/Водолажский-169x225.webp 169w, /wp-content/uploads/2024/07/Водолажский-scaled.webp 1920w" sizes="(max-width: 768px) 100vw, 768px" /><figcaption></figcaption></figure>
+										<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="768" height="1024" src="/wp-content/uploads/2024/07/Водолажский-768x1024.webp" alt="" srcset="/wp-content/uploads/2024/07/Водолажский-768x1024.webp 768w, /wp-content/uploads/2024/07/Водолажский-225x300.webp 225w, /wp-content/uploads/2024/07/Водолажский-1152x1536.webp 1152w, /wp-content/uploads/2024/07/Водолажский-1536x2048.webp 1536w, /wp-content/uploads/2024/07/Водолажский-169x225.webp 169w, /wp-content/uploads/2024/07/Водолажский-scaled.webp 1920w" sizes="(max-width: 768px) 100vw, 768px" /><figcaption></figcaption></figure>
 <p><strong style="color: var( --e-global-color-primary ); font-family: var( --e-global-typography-text-font-family ), Sans-serif; text-align: var(--text-align); font-size: 1rem;"><em>“Вера во врача приходит вместе с болезнью» Бауржан Тойшибеков</em></strong></p>
 <h3>
 							Опыт работы:<br />

@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp 300w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp 300w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
 <p><strong><em>«Если больному после разговора с врачом не стало легче, то это не врач» В.М. Бехтерев</em></strong></p>
 <h3>
 							Опыт работы:<br />

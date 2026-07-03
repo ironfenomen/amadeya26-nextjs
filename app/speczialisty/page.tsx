@@ -13,19 +13,19 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/1531642-580327-chimshit_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/1531642-580327-chimshit_square.jpg.webp 300w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/1531642-580327-chimshit_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/1531642-580327-chimshit_square.jpg.webp 300w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
 <h2>Чимшит Анна Фаритовна</h2>
 <p>Функциональный диагност</p>
 <p>					<a href="/speczialisty/chimshit-anna-faritovna/"><br />
 	    Подробнее<br />
 	</a><br />
-															<img decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp 300w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
+															<img loading="lazy" decoding="async" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp 300w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
 <h2>Фоменко Оксана Анатольевна</h2>
 <p>Дерматолог</p>
 <p>					<a href="/speczialisty/fomenko-oksana-anatolevna/"><br />
 	    Подробнее<br />
 	</a><br />
-															<img decoding="async" width="800" height="800" src="/wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1.jpg.webp 800w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-300x300.jpg.webp 300w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-150x150.jpg.webp 150w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-768x768.jpg.webp 768w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-225x225.jpg.webp 225w" sizes="(max-width: 800px) 100vw, 800px" />															</p>
+															<img loading="lazy" decoding="async" decoding="async" width="800" height="800" src="/wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1.jpg.webp 800w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-300x300.jpg.webp 300w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-150x150.jpg.webp 150w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-768x768.jpg.webp 768w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-225x225.jpg.webp 225w" sizes="(max-width: 800px) 100vw, 800px" />															</p>
 <h2>Карамышева Ирина Николаевна</h2>
 <p>Гинеколог</p>
 <p>					<a href="/speczialisty/karamysheva-irina-nikolaevna/"><br />

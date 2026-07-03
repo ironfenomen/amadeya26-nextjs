@@ -81,7 +81,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Специалист (существующий) -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/mozharuk.jpg" alt="Можарук Дарья Сергеевна" class="specialist-photo">
+                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mozharuk.jpg" alt="Можарук Дарья Сергеевна" class="specialist-photo">
                     </div>
                     <div class="specialist-info">
                         <h3 class="specialist-name">Можарук Дарья Сергеевна</h3>
@@ -92,7 +92,7 @@ const pageContent = `<main class="page-content service-page">
                 <!-- Плейсхолдер для добавления врача -->
                 <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/minin.jpg" alt="Минин Юрий Владимирович" class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/minin.jpg" alt="Минин Юрий Владимирович" class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Минин Юрий Владимирович</h3>
@@ -104,7 +104,7 @@ const pageContent = `<main class="page-content service-page">
                     <!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
-                            <img src="/wp-content/themes/amadeya-redesign/assets/img/kronartem.jpg" alt="Крон Артём Владимирович " class="specialist-photo">
+                            <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kronartem.jpg" alt="Крон Артём Владимирович " class="specialist-photo">
                         </div>
                         <div class="specialist-info">
                             <h3 class="specialist-name">Крон Артём Владимирович </h3>

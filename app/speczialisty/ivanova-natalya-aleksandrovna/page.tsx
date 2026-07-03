@@ -14,7 +14,7 @@ const pageContent = `
 
                 <div class="entry-content">
                     <figure>
-										<img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2023/03/1170713-381906-ivanova_square.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/1170713-381906-ivanova_square.jpg.webp 300w, /wp-content/uploads/2023/03/1170713-381906-ivanova_square-150x150.jpg.webp 150w, /wp-content/uploads/2023/03/1170713-381906-ivanova_square-225x225.jpg.webp 225w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption></figcaption></figure>
+										<img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2023/03/1170713-381906-ivanova_square.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/1170713-381906-ivanova_square.jpg.webp 300w, /wp-content/uploads/2023/03/1170713-381906-ivanova_square-150x150.jpg.webp 150w, /wp-content/uploads/2023/03/1170713-381906-ivanova_square-225x225.jpg.webp 225w" sizes="(max-width: 300px) 100vw, 300px" /><figcaption></figcaption></figure>
 <p>Врач –педиатр, специалист по грудному вскармливанию</p>
 <p><strong><em>«Не должно лечить болезни по одному её имени, а должно лечить самого больного, его состав, его организм, его силы».       М.Я.Мудров</em></strong></p>
 <h3>

@@ -13,7 +13,7 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp 300w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-225x225.jpg.webp 225w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
+                    <p><img loading="lazy" decoding="async" fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp 300w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-225x225.jpg.webp 225w" sizes="(max-width: 300px) 100vw, 300px" />													</p>
 <h3>
 							Опыт работы:<br />
 					</h3>
