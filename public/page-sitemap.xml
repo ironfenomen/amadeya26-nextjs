@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//amadeya26.ru/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
+				<url>
 		<loc>https://amadeya26.ru/</loc>
 		<lastmod>2025-10-24T19:22:26+00:00</lastmod>
 		<image:image>
@@ -12,21 +12,6 @@
 	</url><url>
 		<loc>https://amadeya26.ru/soczialnaya-reabilitacziya-zavisimyh-lyudej/</loc>
 		<lastmod>2024-07-20T10:24:33+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/stranicza-ne-naidena-ili-nahoditsya-v-razrabotke/</loc>
-		<lastmod>2024-07-22T14:42:48+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/elementor-2743/</loc>
-		<lastmod>2024-08-22T14:39:40+00:00</lastmod>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/06/bezymyannyj-300x165.webp</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/06/photo_323-1024x1024.webp</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2023/07/customer-reviews-2-300x199.jpg</image:loc>
-		</image:image>
 	</url><url>
 		<loc>https://amadeya26.ru/kontakty/</loc>
 		<lastmod>2024-08-22T14:57:32+00:00</lastmod>
@@ -253,12 +238,6 @@
 			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/07/%D0%BA%D1%80%D0%BE%D0%BD-%D0%95-%D0%98-%D0%BF%D1%81%D0%B8%D1%85%D0%B8%D0%B0%D1%82%D1%80-768x1024.jpg</image:loc>
 		</image:image>
 	</url><url>
-		<loc>https://amadeya26.ru/psihoterapevticheskaya-pomoshh-v-stavropole/</loc>
-		<lastmod>2025-02-06T14:10:45+00:00</lastmod>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/06/photo_323-1024x1024.webp</image:loc>
-		</image:image>
-	</url><url>
 		<loc>https://amadeya26.ru/uslugi-kliniki-amadeya-v-stavropole/</loc>
 		<lastmod>2025-02-12T08:13:23+00:00</lastmod>
 		<image:image>
@@ -326,12 +305,6 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/07/%D0%BA%D1%80%D0%BE%D0%BD-%D0%95-%D0%98-%D0%BF%D1%81%D0%B8%D1%85%D0%B8%D0%B0%D1%82%D1%80.jpg</image:loc>
-		</image:image>
-	</url><url>
-		<loc>https://amadeya26.ru/lechenie-zavisimostei-v-stavropole-2/</loc>
-		<lastmod>2025-02-20T18:43:12+00:00</lastmod>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/06/photo_323-1024x1024.webp</image:loc>
 		</image:image>
 	</url><url>
 		<loc>https://amadeya26.ru/konsultacziya-vracha-narkologa-v-stavr/</loc>
@@ -655,110 +628,11 @@
 			<image:loc>https://amadeya26.ru/wp-content/uploads/2022/12/f37598f1e6f4d106ba41d8434cf13814017c13419e53d86b74947b9156fba6f2969f374143bb2d34a64d8b35e13182be4b479c992aebd2b190558fab05aef9fb_150x150.jpg</image:loc>
 		</image:image>
 	</url><url>
-		<loc>https://amadeya26.ru/contacts/</loc>
-		<lastmod>2025-10-24T19:06:25+00:00</lastmod>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/medical-center-amadeya-contacts-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/medical-center-amadeya-address-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/medical-center-amadeya-location-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/medical-center-amadeya-building-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/medical-center-amadeya-reception-stavropol.jpg</image:loc>
-		</image:image>
-	</url><url>
-		<loc>https://amadeya26.ru/booking/</loc>
-		<lastmod>2025-10-24T19:06:25+00:00</lastmod>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/online-booking-doctor-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/medical-appointment-booking-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/doctor-consultation-online-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/medical-center-booking-system-stavropol.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://amadeya26.ru/wp-content/uploads/2024/01/patient-booking-appointment-stavropol.jpg</image:loc>
-		</image:image>
-	</url><url>
-		<loc>https://amadeya26.ru/treatment/</loc>
-		<lastmod>2025-10-24T19:06:25+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/services/</loc>
-		<lastmod>2025-10-24T19:06:25+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/psychotherapy/</loc>
-		<lastmod>2025-10-24T19:06:25+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/psychiatry/</loc>
-		<lastmod>2025-10-24T19:06:25+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/psychologist/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/addictologist/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/stavropol-treatment/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/detoxification/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/narcologist-home-visit/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/online-narcologist/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/narcologist-consultation/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/dermatology/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/gymnotherapy/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/therapy/</loc>
-		<lastmod>2025-10-24T19:06:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/addiction-psychotherapy/</loc>
-		<lastmod>2025-10-24T19:06:38+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/stavropol-supervision/</loc>
-		<lastmod>2025-10-24T19:06:39+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/privacy-policy/</loc>
-		<lastmod>2025-10-24T19:06:39+00:00</lastmod>
-	</url><url>
 		<loc>https://amadeya26.ru/personal-data-consent/</loc>
 		<lastmod>2025-10-24T19:06:39+00:00</lastmod>
 	</url><url>
 		<loc>https://amadeya26.ru/cookie-policy/</loc>
 		<lastmod>2025-10-24T19:06:39+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/ultrasound/</loc>
-		<lastmod>2025-12-18T15:45:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/gynecology/</loc>
-		<lastmod>2025-12-18T15:45:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/endocrinology/</loc>
-		<lastmod>2025-12-18T15:45:26+00:00</lastmod>
-	</url><url>
-		<loc>https://amadeya26.ru/experts/</loc>
-		<lastmod>2026-02-02T20:36:43+00:00</lastmod>
 	</url><url>
 		<loc>https://amadeya26.ru/speczialisty/mutaeva-olga-yurevna/</loc>
 		<lastmod>2026-03-01T14:28:30+00:00</lastmod>
@@ -775,5 +649,7 @@
 			<image:loc>https://amadeya26.ru/wp-content/themes/amadeya-redesign/assets/img/kron.jpg</image:loc>
 		</image:image>
 	</url>
+
+
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->

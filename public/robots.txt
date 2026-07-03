@@ -1,21 +1,34 @@
-User-agent: *                   # Создаем секцию правил для роботов. * значит для всех
-								# роботов. Чтобы указать секцию правил для отдельного
-								# робота, вместо * укажите его имя: GoogleBot, Yandex.
-Disallow: /cgi-bin              # Стандартная папка на хостинге.
-Disallow: /wp-admin/            # Закрываем админку.
-Allow: /wp-admin/admin-ajax.php # Откроем аякс.
-Disallow: /?                    # Все параметры запроса на главной.
-Disallow: *?s=                  # Поиск.
-Disallow: *&s=                  # Поиск.
-Disallow: /search               # Поиск.
-Disallow: /author/              # Архив автора.
-Disallow: */embed$              # Все встраивания.
-Disallow: */xmlrpc.php          # Файл WordPress API
-Disallow: *utm*=                # Ссылки с utm-метками
-Disallow: *openstat=            # Ссылки с метками openstat
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /?
+Disallow: *?s=
+Disallow: *&s=
+Disallow: /search
+Disallow: /author/
+Disallow: */embed$
+Disallow: */xmlrpc.php
+Disallow: *utm*=
+Disallow: *openstat=
 
-# Карта сайта — индекс Yoast SEO (ведёт на page/category/author-sitemap).
+# --- SEO-дедуп: остатки WooCommerce (в поиске быть не должны) ---
+Disallow: /my-account/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /category/
+Disallow: *?add-to-cart=
+Disallow: *?elementor-preview=
+Disallow: *?etext=
+Disallow: *?ybaip=
+
+# --- Clean-param: параметрические дубли (директива Яндекса) ---
+# робот склеит URL с этими GET-параметрами в чистый адрес и не будет плодить дубли.
+Clean-param: elementor-preview&ver
+Clean-param: add-to-cart
+Clean-param: etext
+Clean-param: ybaip
+Clean-param: s
+
+# Карта сайта — только канонические URL (page-sitemap).
 Sitemap: https://amadeya26.ru/sitemap_index.xml
-
-# Версия кода: 2.0
-# Не забудьте поменять `example.com` на ваш сайт.

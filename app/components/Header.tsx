@@ -60,44 +60,44 @@ export default function Header() {
             <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--dropdown">
             <div class="main-nav__link">
-                <a href="/services/" class="main-nav__link-text">Медицинские услуги</a>
+                <a href="/uslugi-kliniki-amadeya-v-stavropole/" class="main-nav__link-text">Медицинские услуги</a>
                 <svg class="main-nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
             <ul class="main-nav__dropdown">
-                <li><a href="/psychiatry/">Психиатрия</a></li>
-                <li><a href="/psychotherapy/">Психотерапия</a></li>
-                <li><a href="/psychologist/">Психолог</a></li>
-                <li><a href="/therapy/">Терапия</a></li>
-                <li><a href="/endocrinology/">Эндокринология</a></li>
-                <li><a href="/gymnotherapy/">Гирудотерапия</a></li>
-                <li><a href="/dermatology/">Дерматология</a></li>
-                <li><a href="/gynecology/">Гинекология</a></li>
-                <li><a href="/ultrasound/">Узи</a></li>
+                <li><a href="/psihiatricheskaya-pomoshh-v-stavropole/">Психиатрия</a></li>
+                <li><a href="/psihoterapiya/">Психотерапия</a></li>
+                <li><a href="/psihologicheskaya-pomoshh-v-stavropole/">Психолог</a></li>
+                <li><a href="/priem-vracha-terapevta-v-stavropole/">Терапия</a></li>
+                <li><a href="/priem-vracha-endokrinologa-v-stavropole/">Эндокринология</a></li>
+                <li><a href="/girudoterapiya/">Гирудотерапия</a></li>
+                <li><a href="/priem-dermatologa-v-stavropole-klini/">Дерматология</a></li>
+                <li><a href="/priem-ginekologa-v-stavropole/">Гинекология</a></li>
+                <li><a href="/ultrazvuovaya-diagnostika-v-stavrop/">Узи</a></li>
             </ul>
         </li>
         <li class="main-nav__item main-nav__item--dropdown">
             <div class="main-nav__link">
-                <a href="/treatment/" class="main-nav__link-text">Лечение зависимостей</a>
+                <a href="/lechenie-zavisimostei-v-stavropole/" class="main-nav__link-text">Лечение зависимостей</a>
                 <svg class="main-nav__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
             <ul class="main-nav__dropdown">
-                <li><a href="/narcologist-consultation/">Консультация нарколога</a></li>
-                <li><a href="/online-narcologist/">Онлайн-консультация нарколога</a></li>
-                <!--<li><a href="/narcologist-home-visit/">Выезд врача-нарколога на дом</a></li> -->
-                <li><a href="/detoxification/">Дезинтоксикация</a></li>
-                <li><a href="/stavropol-treatment/">Лечение зависимостей в Ставрополе</a></li>
-                <li><a href="/addictologist/">Приём психолога-аддиктолога в Ставрополе</a></li>
-                <li><a href="/addiction-psychotherapy/">Психотерапия при зависимости</a></li>
-                <li><a href="/stavropol-supervision/">Супервизия при зависимости в Ставрополе</a></li>
+                <li><a href="/konsultacziya-vracha-narkologa-v-stavr/">Консультация нарколога</a></li>
+                <li><a href="/onlain-konsultacziya-narkologa/">Онлайн-консультация нарколога</a></li>
+                <!--<li><a href="/vyezd-vracha-narkologa-na-dom/">Выезд врача-нарколога на дом</a></li> -->
+                <li><a href="/detoksikacziya/">Дезинтоксикация</a></li>
+                <li><a href="/lechenie-zavisimostei-v-stavropole/">Лечение зависимостей в Ставрополе</a></li>
+                <li><a href="/priem-psihologa-addiktologa-v-stavro/">Приём психолога-аддиктолога в Ставрополе</a></li>
+                <li><a href="/psihoterapiya-pri-zavisimosti/">Психотерапия при зависимости</a></li>
+                <li><a href="/superviziya-pri-zavisimosti-v-stavrop/">Супервизия при зависимости в Ставрополе</a></li>
             </ul>
         </li>
-        <li class="main-nav__item"><a class="main-nav__link" href="/experts/">Специалисты</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="/booking/">Онлайн-запись</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="/contacts/">Контакты</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="/speczialisty/">Специалисты</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="/online-zapis-k-specialistam/">Онлайн-запись</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="/kontakty/">Контакты</a></li>
     </ul>
         </div>
 </nav>

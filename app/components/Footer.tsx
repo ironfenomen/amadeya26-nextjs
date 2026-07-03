@@ -47,7 +47,7 @@ export default function Footer() {
                 <div class="footer__copyright">
                     <p>© 2026, «Амадея»</p>
                 </div>
-								<a href="/privacy-policy/" class="footer__policy-link">Политики обработки персональных данных</a>
+								<a href="/privacy/" class="footer__policy-link">Политики обработки персональных данных</a>
 				<a href="/personal-data-consent/" class="footer__policy-link">Согласие на обработку персональных данных</a>
 				<a href="/cookie-policy/" class="footer__policy-link">Политика использования cookie</a>
             </div>
