@@ -2,8 +2,10 @@ import type { NextConfig } from "next";
 
 // Дедупликация: англо-слаги (без истории/ключа) → 301 на русские keyword-URL
 // с накопленным SEO-капиталом. Контент перенесён на русские страницы.
+// statusCode:301 (а не permanent:true=308) — Яндекс документирует именно 301.
+// Назначение со слешом (trailingSlash:true) — без лишнего хопа.
 const dedupeRedirects = [
-  { from: "/gynecology", to: "/priem-ginekologa-v-stavropole" },
+  { from: "/gynecology", to: "/priem-ginekologa-v-stavropole/" },
 ];
 
 const nextConfig: NextConfig = {
@@ -12,7 +14,7 @@ const nextConfig: NextConfig = {
     return dedupeRedirects.map((r) => ({
       source: r.from,
       destination: r.to,
-      permanent: true,
+      statusCode: 301,
     }));
   },
 };
