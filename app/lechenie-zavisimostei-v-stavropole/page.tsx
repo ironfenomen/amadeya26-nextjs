@@ -132,10 +132,10 @@ const pageContent = `<main class="page-content service-page">
 </main>`;
 
 export const metadata: Metadata = {
-  title: "Лечение зависимостей в Ставрополе - Медицинский центр Амадея в Ставрополе",
-  description: "Лечение зависимостей в Ставрополе в клинике «Амадея»: алкогольная, наркотическая зависимость. Запись ☎ 8 (988) 864-10-10.",
+  title: "Лечение наркомании и алкоголизма в Ставрополе — анонимно | Амадея",
+  description: "Клиника «Амадея»: лечение алкогольной и наркотической зависимости — анонимно, стационарно и амбулаторно. Детокс, реабилитация, поддержка ремиссии. ☎ 8 (988) 864-10-10",
   alternates: { canonical: "https://amadeya26.ru/lechenie-zavisimostei-v-stavropole/" },
-  openGraph: { locale: "ru_RU", type: "website", title: "Лечение зависимостей в Ставрополе - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/lechenie-zavisimostei-v-stavropole/", siteName: "Медицинский центр Амадея в Ставрополе" },
+  openGraph: { locale: "ru_RU", type: "website", title: "Лечение наркомании и алкоголизма в Ставрополе — анонимно | Амадея", url: "https://amadeya26.ru/lechenie-zavisimostei-v-stavropole/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };
 
 export default function ServicePage() {
