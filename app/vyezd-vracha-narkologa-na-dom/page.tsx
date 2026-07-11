@@ -132,10 +132,10 @@ const pageContent = `<main class="page-content service-page">
 </main>`;
 
 export const metadata: Metadata = {
-  title: "Выезд врача-нарколога на дом - Медицинский центр Амадея в Ставрополе",
-  description: "Вызов нарколога на дом в Ставрополе круглосуточно. Выезд врача-нарколога. ☎ 8 (988) 864-10-10.",
+  title: "Вызов нарколога на дом в Ставрополе — круглосуточно | Амадея",
+  description: "Врач-нарколог приедет на дом круглосуточно: осмотр, детоксикация и снятие интоксикации на месте, помощь при запое и тяжёлой абстиненции. ☎ 8 (988) 864-10-10",
   alternates: { canonical: "https://amadeya26.ru/vyezd-vracha-narkologa-na-dom/" },
-  openGraph: { locale: "ru_RU", type: "website", title: "Выезд врача-нарколога на дом - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/vyezd-vracha-narkologa-na-dom/", siteName: "Медицинский центр Амадея в Ставрополе" },
+  openGraph: { locale: "ru_RU", type: "website", title: "Вызов нарколога на дом в Ставрополе — круглосуточно | Амадея", url: "https://amadeya26.ru/vyezd-vracha-narkologa-na-dom/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };
 
 export default function ServicePage() {
