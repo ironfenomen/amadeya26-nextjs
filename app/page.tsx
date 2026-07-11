@@ -11,7 +11,7 @@ const pageContent = `
             <div class="hero-banner__content">
                 <div class="hero-banner__content-left">
                     <div class="hero-banner__text-content">
-                        <p class="hero-banner__title">Медицинский центр «АМАДЕЯ»</p>
+                        <h1 class="hero-banner__title">Медицинский центр «АМАДЕЯ» в Ставрополе</h1>
                         <p class="hero-banner__subtitle">Комплексный подход к лечению — ключ к достижению устойчивых
                             результатов!</p>
                     </div>
