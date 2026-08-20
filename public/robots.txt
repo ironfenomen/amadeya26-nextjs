@@ -1,34 +1,15 @@
 User-agent: *
 Disallow: /cgi-bin
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
-Disallow: /?
-Disallow: *?s=
-Disallow: *&s=
+Disallow: /api/
 Disallow: /search
-Disallow: /author/
 Disallow: */embed$
-Disallow: */xmlrpc.php
-Disallow: *utm*=
-Disallow: *openstat=
 
-# --- SEO-дедуп: остатки WooCommerce (в поиске быть не должны) ---
-Disallow: /my-account/
-Disallow: /checkout/
-Disallow: /cart/
-Disallow: /category/
-Disallow: *?add-to-cart=
-Disallow: *?elementor-preview=
-Disallow: *?etext=
-Disallow: *?ybaip=
+# Параметрические дубли — Clean-param (Яндекс склеит URL, обход НЕ блокируется).
+# UTM и метки Директа НЕ запрещаем: посадочные URL с метками должны обходиться.
+Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
+Clean-param: yclid&gclid&ymclid&openstat&from
+Clean-param: ver
 
-# --- Clean-param: параметрические дубли (директива Яндекса) ---
-# робот склеит URL с этими GET-параметрами в чистый адрес и не будет плодить дубли.
-Clean-param: elementor-preview&ver
-Clean-param: add-to-cart
-Clean-param: etext
-Clean-param: ybaip
-Clean-param: s
-
-# Карта сайта — только канонические URL (page-sitemap).
+# Карты сайта
+Sitemap: https://amadeya26.ru/sitemap.xml
 Sitemap: https://amadeya26.ru/sitemap_index.xml

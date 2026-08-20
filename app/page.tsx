@@ -17,7 +17,7 @@ const pageContent = `
                     </div>
                     <div class="hero-banner__buttons-container">
                         <div class="hero-banner__actions">
-                            <a href="/booking/"
+                            <a href="/online-zapis-k-specialistam/"
                                 class="hero-banner__button hero-banner__button--primary">Получить консультацию</a>
                             <a href="https://wa.me/+79888641010"
                                 class="hero-banner__button hero-banner__button--secondary" target="_blank"
@@ -50,7 +50,7 @@ const pageContent = `
                         <h3 class="quick-service-card__title">Консультация врачей</h3>
                         <p class="quick-service-card__description">Профессиональные консультации врачей различных
                             специальностей. Получите квалифицированную помощь и рекомендации по лечению.</p>
-                        <a href="/booking/"
+                        <a href="/online-zapis-k-specialistam/"
                             class="quick-service-card__button">Записаться</a>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const pageContent = `
                         <h3 class="quick-service-card__title">Диагностика</h3>
                         <p class="quick-service-card__description">Современное диагностическое оборудование для точной
                             постановки диагноза. УЗИ, лабораторные анализы и другие виды обследований.</p>
-                        <a href="/services/"
+                        <a href="/uslugi-kliniki-amadeya-v-stavropole/"
                             class="quick-service-card__button">Узнать больше</a>
                     </div>
                 </div>
