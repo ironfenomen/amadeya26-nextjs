@@ -9,7 +9,7 @@ const pageContent = `<main class="page-content service-page">
                 <nav class="breadcrumbs">
                     <a href="/">Главная</a>
                     <span class="breadcrumb-separator">/</span>
-                    <a href="/services/">Медицинские услуги</a>
+                    <a href="/uslugi-kliniki-amadeya-v-stavropole/">Медицинские услуги</a>
                     <span class="breadcrumb-separator">/</span>
                     <span class="breadcrumb-current">Приём гинеколога в Ставрополе</span>
                 </nav>
