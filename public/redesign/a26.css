@@ -1140,9 +1140,19 @@ footer { padding: 15px 0; margin-top: 30px; }
   transition: box-shadow .25s ease, transform .25s ease;
 }
 .a26-wpblocks .wp-block-query ul > li:hover { box-shadow: inset 0 0 0 1px rgba(242,223,160,0.4); transform: translateY(-3px); }
+/* Листинг (рубрика/автор): шире, чем статья — сетка карточек */
+.entry-content.a26-wpblocks:has(.wp-block-query) { max-width: 1100px; }
+/* Внутри query-листинга отменяем «статейные» ромбы-буллеты */
+.a26-wpblocks .wp-block-query ul > li { padding-left: 0; margin: 0; }
+.a26-wpblocks .wp-block-query ul > li::before { display: none; }
+/* Картинка карточки — во всю ширину, инлайновые WP-стили figure/img перекрываем */
+.a26-wpblocks .wp-block-post-featured-image {
+  aspect-ratio: auto !important; padding: 0 !important; margin: 0 !important;
+  height: 200px; overflow: hidden;
+}
 .a26-wpblocks .wp-block-post-featured-image img,
 .a26-wpblocks li figure img {
-  width: 100%; height: 220px; object-fit: cover; display: block; border-radius: 0;
+  width: 100% !important; height: 100% !important; object-fit: cover; display: block; border-radius: 0;
   max-width: none;
 }
 .a26-wpblocks li .wp-block-group { padding: 18px 20px 22px; }
@@ -1158,8 +1168,20 @@ footer { padding: 15px 0; margin-top: 30px; }
 .a26-wpblocks li .wp-block-post-author-name, .a26-wpblocks li .wp-block-post-terms {
   font-size: 12px; color: var(--g2); letter-spacing: 0.06em;
 }
+/* В мета-строке карточки оставляем только дату */
+.a26-wpblocks .wp-block-query .wp-block-post-author-name,
+.a26-wpblocks .wp-block-query .wp-block-post-terms,
+.a26-wpblocks .wp-block-query li .wp-block-group-is-layout-flex > p { display: none; }
+.a26-wpblocks .wp-block-post-date a { color: inherit; text-decoration: none; }
+.a26-wpblocks .wp-block-post-date a:hover { color: var(--gold); }
 .a26-wpblocks .wp-block-post-excerpt, .a26-wpblocks li p {
   font-size: 14px; line-height: 1.65; color: var(--mutedd2, rgba(233,238,246,0.65));
+}
+/* WP-эмодзи (s.w.org svg): без родной WP-CSS они гигантские — делаем инлайн-размером */
+img[src*="s.w.org/images/core/emoji"] {
+  width: 1.15em !important; height: 1.15em !important;
+  display: inline-block; vertical-align: -0.18em;
+  border-radius: 0 !important; box-shadow: none !important; margin: 0 0.1em;
 }
 /* Колонки (страница врача из дампа) */
 .a26-wpblocks .wp-block-columns { display: flex; gap: 44px; align-items: flex-start; flex-wrap: wrap; }
@@ -1172,6 +1194,9 @@ footer { padding: 15px 0; margin-top: 30px; }
 }
 .a26-wpblocks li > .wp-block-group:has(> .wp-block-post-featured-image),
 .a26-wpblocks li > .wp-block-group:has(> figure) { padding: 0; }
+/* мета-строка карточки: без двойных паддингов вложенных групп */
+.a26-wpblocks li .wp-block-group .wp-block-group { padding: 0; }
+.a26-wpblocks li .wp-block-group-is-layout-flex { gap: 8px; }
 
 /* contacts: компактная сетка карточек */
 .contacts-content { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
