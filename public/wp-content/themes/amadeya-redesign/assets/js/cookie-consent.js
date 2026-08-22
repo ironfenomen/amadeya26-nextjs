@@ -19,13 +19,12 @@
 		var banner = document.querySelector('.cookie-consent');
 		if (banner) {
 			banner.classList.add('cookie-consent--visible');
-			var btn = banner.querySelector('[data-accept-cookies]');
-			if (btn) {
+			banner.querySelectorAll('[data-accept-cookies]').forEach(function(btn){
 				btn.addEventListener('click', function(){
 					setConsentAccepted();
 					banner.classList.remove('cookie-consent--visible');
 				});
-			}
+			});
 		}
 	}
 

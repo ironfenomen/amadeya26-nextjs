@@ -165,6 +165,16 @@
             });
         });
 
+        // Открытие из Core-элементов (футер мобильного меню world.js, финальный CTA подвала):
+        // элементы помечаются data-a26-modal="1" (site.config popupAttr).
+        // Делегирование: футер меню world.js создаётся ПОСЛЕ init — прямой bind его не поймает.
+        document.addEventListener('click', function(e){
+            var btn = e.target && e.target.closest ? e.target.closest('[data-a26-modal]') : null;
+            if (!btn) return;
+            e.preventDefault();
+            openModal();
+        });
+
         // Закрытие модального окна
         const closeButton = modalOverlay.querySelector('.modal-close');
         closeButton.addEventListener('click', closeModal);

@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 
 // G1 render-crawl: <main> taken verbatim from live (the_content() HTML, no Elementor render)
 const pageContent = `
