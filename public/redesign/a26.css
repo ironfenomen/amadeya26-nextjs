@@ -413,6 +413,21 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
 }
 .swiper-pagination-bullet { background: var(--mutedd2); opacity: 0.5; }
 .swiper-pagination-bullet-active { background: var(--gold); opacity: 1; }
+/* /kontakty: карта во всю ширину текстовой колонки */
+.entry-content iframe[src*="map-widget"] {
+  width: 100% !important; height: 440px; display: block;
+  border: 1px solid rgba(242,223,160,0.18); border-radius: 14px; margin: 18px 0;
+}
+/* /booking: стрелки и пагинация свайпера врачей */
+.booking-experts-next, .booking-experts-prev {
+  position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+  --swiper-navigation-color: var(--g2); display: flex; align-items: center; justify-content: center;
+}
+.booking-experts-prev { left: 4px; }
+.booking-experts-next { right: 4px; }
+.booking-experts-next:hover, .booking-experts-prev:hover { --swiper-navigation-color: var(--abyss); }
+.booking-experts-next::after, .booking-experts-prev::after { font-size: 15px; font-weight: 700; }
+.booking-experts-pagination.swiper-pagination { position: static; margin-top: 18px; text-align: center; }
 
 /* страница врача: карточка-профиль + таймлайн */
 .specialist-image img, .specialist-photo { border-radius: 14px; width: 100%; height: auto; display: block; }
@@ -444,6 +459,16 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
 .timeline-content:hover { box-shadow: 0 10px 28px rgba(3, 21, 42, 0.45); }
 .timeline-content strong { display: block; font-size: 16px; color: var(--parch); margin-bottom: 4px; }
 .timeline-place { margin: 0; color: var(--mutedd); font-size: 14px; line-height: 1.5; }
+
+/* WP-дамп: таймлайн лежит внутри <pre class="wp-block-code"><code> —
+   нейтрализуем pre-форматирование, иначе переносы строк раздувают карточки */
+pre.wp-block-code {
+  white-space: normal; font-family: inherit; font-size: inherit; line-height: inherit;
+  background: none; border: none; padding: 0; margin: 0; overflow: visible; color: inherit;
+}
+pre.wp-block-code code { font: inherit; background: none; padding: 0; border: none; color: inherit; }
+/* пустые заголовки из Elementor-дампов — не рисовать золотое подчёркивание-пустышку */
+.entry-content h2:empty, .entry-content h3:empty, .entry-content h4:empty, .entry-content h5:empty { display: none; }
 
 /* ==========================================================================
    ЧАСТЬ 4 — page family: REVIEWS (отзывы)
@@ -1111,6 +1136,30 @@ footer { padding: 15px 0; margin-top: 30px; }
 .a26-doc-card h3 a:hover { color: var(--gold); }
 .a26-doc-card > p { font-size: 13px; color: var(--mutedd2, rgba(233,238,246,0.6)); margin: 0 0 8px; }
 .a26-doc-card a[href*="booking.medflex"] { margin-top: auto; padding: 10px 18px; font-size: 11px; }
+
+/* Восстановленные service-страницы: сайдбар специалистов направления */
+.a26-side-specs {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px; margin: 34px 0 10px;
+}
+.a26-side-spec {
+  display: flex; gap: 16px; align-items: center;
+  background: rgba(19, 45, 78, 0.35); border-radius: 14px; padding: 16px 18px;
+  box-shadow: inset 0 0 0 1px rgba(242,223,160,0.14);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+.a26-side-spec:hover { box-shadow: inset 0 0 0 1px rgba(242,223,160,0.4); transform: translateY(-2px); }
+.a26-side-spec img {
+  width: 84px; height: 84px; object-fit: cover; border-radius: 50%; flex: 0 0 auto;
+  box-shadow: 0 0 0 1px rgba(242,223,160,0.3); max-width: none;
+}
+.a26-side-spec-info h3 {
+  font-family: var(--ff-serif, "Playfair Display", serif);
+  font-size: 17px; line-height: 1.3; margin: 0 0 4px; color: var(--t1, #eef2f8);
+}
+.a26-side-spec-info p { font-size: 13px; color: var(--mutedd2, rgba(233,238,246,0.6)); margin: 0; }
+.a26-side-spec-info .a26-side-spec-exp { color: var(--g2); font-size: 12px; letter-spacing: 0.05em; margin-top: 4px; }
+@media (max-width: 640px) { .a26-side-specs { grid-template-columns: 1fr; } }
 
 /* ==========================================================================
    ЧАСТЬ 16 — WP block-dump страницы (category/author/mutaeva)

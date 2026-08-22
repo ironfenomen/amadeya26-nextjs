@@ -71,8 +71,8 @@ const pageContent = `<main class="page-content">
                         </div>
                         <div class="booking-experts-pagination"></div>
                     </div>
-                    <div class="booking-experts-prev"></div>
-                    <div class="booking-experts-next"></div>
+                    <div class="swiper-button-prev booking-experts-prev"></div>
+                    <div class="swiper-button-next booking-experts-next"></div>
                 </div>
                 <div class="booking-actions booking-actions--single">
                     <button type="button" class="service-booking-button booking-medflex" id="medflex-booking-service-2">Запишитесь онлайн</button>

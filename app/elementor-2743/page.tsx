@@ -11,8 +11,10 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
+<p>Получите скидку на услуги центра при предъявлении вашего отзыва на площадках яндекс, 2гис, Гугл или ПроДокторов</p>
 <p>			<a href="https://prodoctorov.ru/stavropol/set/4874-laboratoriya-_liteh/" target="_blank" rel="noopener"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p></div>
+<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
+</div>
             </article>
             </div>
 </main>

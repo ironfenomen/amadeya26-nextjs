@@ -65,7 +65,7 @@ c003f25 PHASE 3: главная на v36-грамматике
 ## Debt registry (не трогали, фиксируем)
 
 1. `/speczialisty/denisenko-igor-aleksandrovich/` — ссылки из карточек Балакиной/Водолажского ведут на несуществующий роут (404). Контентный баг оригинала.
-2. Тонкие страницы после снятия хрома (честное состояние оригинала): `lechenie-zavisimostei-v-stavropole-2`, `priem-ginekologa-v-stavropole`, `uslugi-kliniki-amadeya-v-stavropole`, `psihiatricheskaya/psihologicheskaya/psihoterapevticheskaya-pomoshh-v-stavropole`, `elementor-2743`, `blog-kliniki-amadeya` (индекс пуст и в baseline).
+2. ~~Тонкие страницы…~~ **Исправлено в круге 3:** формулировка «пусты и в оригинале» была ошибочна — на проде у этих страниц есть контент, его потерял G1-краул порта (захватил только the_content с бейджем, контент рендерился Elementor/темой). Закрыто восстановлением (5 стр.) и редиректами по продy (2 стр.) — см. раздел «Круг 3». Остаётся: `blog-kliniki-amadeya` (индекс пуст и в baseline).
 3. Старые русскоязычные slug-страницы (26 шт.) потеряли внутренние ссылки вместе со старым хромом — в основной навигации их не было и раньше; в sitemap включены.
 4. Множественные H1 внутри контента ряда страниц (детоксикация и др.) — наследие Elementor.
 5. E-mail в футере `litehstavlab@gmail.com` — исходный контент.
@@ -81,5 +81,36 @@ c003f25 PHASE 3: главная на v36-грамматике
 3. **Бургер на контентных страницах**: проверен на /detoksikacziya/ 390px — открытие, аккордеон «Медицинские услуги» первым тапом (подменю + «Перейти в раздел», без перехода), нижняя панель (телефон/Вызвать врача/WhatsApp) закреплена, фон с водяным знаком. Работает.
 
 Контрольный замер overflow после правок: 0 на 390/1440 для /, /category/stati/, /avtorskie-vebinary…/, /speczialisty/.
+
+## 10. Круг 3 (восстановление потерянного G1-контента + 4 фикса)
+
+**Ключевая находка:** сравнение words baseline vs current выявило 7 страниц с потерей 385–719 слов. Прод разобран заново: контент этих страниц рендерился Elementor/темой вне the_content, G1-краул его не захватил (потеря произошла ДО редизайна, в момент порта).
+
+**Восстановлено из продового HTML** (whitelist-экстракция h2–h6/p/ul/ol/li/a/img/table/figure/blockquote; все 13 картинок существуют в public; проверено скринами 1440/390 и overflow=0):
+
+- `/psihologicheskaya-pomoshh-v-stavropole/` — 254 слова + 4 карточки врачей (новый блок `.a26-side-specs` в a26.css);
+- `/priem-ginekologa-v-stavropole/` — 244 слова + 3 карточки;
+- `/psihiatricheskaya-pomoshh-v-stavropole/` — 160 слов + 3 карточки;
+- `/uslugi-kliniki-amadeya-v-stavropole/` — 12 секций h2+p (409 слов);
+- `/elementor-2743/` — абзац акции «скидка за отзыв».
+
+**Два редиректа по продy** (на проде эти slug отдают 301, проверено curl 22.08; добавлены в `next.config.ts`, Next отдаёт 308 — SEO-эквивалент permanent redirect):
+
+- `/lechenie-zavisimostei-v-stavropole-2/` → `/lechenie-zavisimostei-v-stavropole/`
+- `/psihoterapevticheskaya-pomoshh-v-stavropole/` → `/psihoterapiya/`
+
+**Четыре фикса:**
+
+1. `/booking` — свайпер врачей не инициализировался (нет нативных классов swiper): добавлены `swiper-button-prev/next` + инит `.booking-experts-swiper` в layout (loop, slidesPerView 1/2/3, пагинация). Проверено скрином.
+2. `pre.wp-block-code` — таймлайн у Мутаевой лежал в `<pre><code>` и раздувался переносами (страница 4006px): `white-space: normal`. Заодно `h2–h5:empty { display: none }` против висячих золотых тире. wp-block-code встречается только у Мутаевой (проверено по 81 роуту).
+3. `/kontakty` — iframe Яндекс-карты растянут на всю колонку (`width:100% !important; height:440px`).
+4. Re-sweep 81 роута 1440px: только 4 diff по высотам против sweep1, все объяснимы (фиксы выше).
+
+**SEO re-snapshot круга 3:** 81/81 роутов — title/desc/canonical/robots/jsonld без расхождений с baseline; H1 отличается только на главной (осознанно). Два роuta стали 308 = соответствие продy. Words на восстановленных страницах выросли до уровня контента (разница с baseline — хром Elementor-навигации прода, который мы осознанно не переносим).
+
+**Debt registry, пополнение:**
+
+8. `/uslugi-kliniki-amadeya-v-stavropole/` — хвост the_content (телефон/адрес/e-mail/соцсети/лицензия/бейдж) дублирует футер; ссылка «Политика обработки персональных данных» ведёт на **narcologia26.ru/privacy.html** (чужой домен). Это контент прода 1:1 — оставлено за паритетом, правка — по решению владельца.
+9. Бейджи ПроДокторов на 4 страницах сохранены из G1-захвата; в текущем статическом HTML прода их нет (виджет отдаётся иначе). В реальном браузере бейджи отдаются 200 (403 — только curl/headless).
 
 Статус не изменился: **READY TO DEPLOY**, деплой — только по команде владельца.
