@@ -863,3 +863,107 @@ footer { padding: 15px 0; margin-top: 30px; }
   .footer-item-social { justify-content: flex-start; }
   .footer-item-social a { margin: 0 14px 0 0; }
 }
+
+/* ==========================================================================
+   ЧАСТЬ 12 — ГЛАВНАЯ v36: механика блоков (порт темы; цвета/скины — Core)
+   ========================================================================== */
+/* офферы */
+.offers-wrapper { margin: 30px 0; }
+.offer-item { padding: 25px; margin-bottom: 20px; }
+.offer-item:last-child { margin-bottom: 0; }
+.offer-item-title { display: flex; align-items: center; margin-bottom: 20px; }
+.offer-item h2 { margin: 0; }
+.offer-item-icon {
+  flex: 0 0 60px; height: 60px; border-radius: 50% 50% 50% 4px;
+  background-repeat: no-repeat; background-position: center; background-size: 35px;
+  background-image: url(/template/amadeya/images/sprite.svg#icon1); margin-right: 15px;
+}
+.offer-2 .offer-item-icon { background-image: url(/template/amadeya/images/sprite.svg#icon2); }
+.offer-item-action { margin-top: 20px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+/* generic .button (механика темы; Core красит .v36-dark .button) */
+.button {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 38px; padding: 10px 22px; box-sizing: border-box;
+  font-size: 14px; font-weight: 500; letter-spacing: 0.5px; line-height: 1.2;
+  text-decoration: none; border: none; cursor: pointer; border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* услуги (posts-block) */
+.posts-block .post-item { position: relative; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+.posts-block .post-item:last-child { margin-bottom: 0; }
+.posts-block .post-item-image { height: 200px; border-radius: 10px; overflow: hidden; }
+.posts-block .post-item-image img { height: 100%; width: 100%; display: block; margin: 0; padding: 0; object-fit: cover; }
+.posts-block .post-item-desc { padding: 15px; }
+.posts-block .post-item-title h3 { margin: 10px 0; }
+.posts-block .post-item .overlink { position: absolute; inset: 0; display: block; z-index: 2; }
+
+/* специалисты (people-block) */
+.people-block { margin: 30px 0; padding-bottom: 20px; position: relative; }
+.people-block .swiper-wrapper { align-items: stretch; padding-bottom: 20px; }
+.people-block .swiper-slide { padding-left: 15px; box-sizing: border-box; width: 280px; height: unset; }
+.people-block .swiper-nav-buttons { display: none; }
+.people-item { position: relative; height: 100%; border-radius: 8px; overflow: hidden; }
+.people-item-photo { height: 320px; }
+.people-item-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.people-item-desc { padding: 15px; }
+.people-item-name { font-size: 20px; margin-bottom: 15px; }
+.people-item-name span:first-child { display: block; font-weight: 600; }
+.people-item-name span:last-child { display: block; font-size: 0.9em; }
+.people-item-exp { margin-top: 10px; }
+.people-item .overlink { position: absolute; inset: 0; display: block; z-index: 2; }
+
+/* отзывы (reviews-block) */
+.reviews-block { margin: 30px 0; padding-bottom: 20px; position: relative; }
+.reviews-block .swiper-wrapper { align-items: stretch; }
+.reviews-block .swiper-slide { padding-left: 15px; box-sizing: border-box; width: 280px; height: unset; }
+.reviews-block .swiper-nav-buttons { display: none; }
+.reviews-item { height: 100%; padding: 20px; box-sizing: border-box; border-radius: 8px; position: relative; }
+.reviews-item::before {
+  content: ""; display: block; position: absolute; top: 15px; right: 15px;
+  width: 50%; max-width: 180px; height: 100%;
+  background-image: url(/template/amadeya/images/icon3.svg);
+  background-size: contain; background-repeat: no-repeat; background-position: top;
+  opacity: 0.5; pointer-events: none;
+}
+.reviews-item-head { display: flex; align-items: center; }
+.reviews-item-title { margin-bottom: 15px; }
+.reviews-item-title span {
+  background-image: url(/template/amadeya/images/stars.svg);
+  background-size: contain; background-repeat: no-repeat; display: block; height: 12px; margin-top: 10px;
+}
+
+/* карта (map-block) */
+.map-block { border-radius: 10px; overflow: hidden; }
+.map-block-content { padding: 25px; }
+.map-block-content h2 { margin-top: 0; }
+.map-wrap { height: 340px; filter: saturate(0.7); }
+.map-wrap iframe { display: block; width: 100%; height: 100%; }
+.contact-row { display: inline-block; background-repeat: no-repeat; padding-left: 25px; background-position: left center; background-size: 16px 16px; }
+.contact-row.icon-location { background-image: url(/template/amadeya/images/sprite.svg#icon4); }
+.contact-row.icon-phone { background-image: url(/template/amadeya/images/sprite.svg#icon5); }
+.contact-row.icon-time { background-image: url(/template/amadeya/images/sprite.svg#icon6); }
+
+@media only screen and (min-width: 768px) {
+  .offers-wrapper { display: flex; justify-content: space-between; }
+  .offer-item { flex-basis: calc(50% - 10px); box-sizing: border-box; margin-bottom: 0; }
+  .offer-item .offer-inner { display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
+  .offer-item .offer-item-text { flex-grow: 1; }
+  .posts-block { display: flex; justify-content: space-between; flex-wrap: wrap; }
+  .posts-block .post-item { width: calc(50% - 10px); }
+  .people-block .swiper-slide { width: 304px; }
+  .people-item-photo { height: 350px; }
+  .reviews-block .swiper-slide { padding-left: 25px; width: calc(50% - 80px); }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews-block .swiper-nav-buttons,
+  .people-block .swiper-nav-buttons { display: block; position: absolute; top: 50%; transform: translateY(-50%); left: -30px; right: -30px; pointer-events: none; }
+  .swiper-nav-buttons .swiper-nav-button {
+    pointer-events: auto; color: var(--parch); background: rgba(19, 45, 78, 0.75);
+    width: 40px; height: 40px; border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(242, 223, 160, 0.25);
+  }
+  .swiper-nav-buttons .swiper-nav-button::after { font-size: 13px; }
+  .swiper-nav-buttons .swiper-button-prev { border-radius: 50% 4px 4px 50%; }
+  .swiper-nav-buttons .swiper-button-next { border-radius: 4px 50% 50% 4px; }
+}

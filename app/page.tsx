@@ -1,545 +1,404 @@
 import type { Metadata } from "next";
+import { preload } from "react-dom";
 
-const pageContent = `
-
-<main>
-    <!-- Баннер -->
-    <section class="hero-banner">
-        <div class="container">
-            <div class="hero-banner__content">
-                <div class="hero-banner__content-left">
-                    <div class="hero-banner__text-content">
-                        <p class="hero-banner__title">Медицинский центр «АМАДЕЯ»</p>
-                        <p class="hero-banner__subtitle">Комплексный подход к лечению — ключ к достижению устойчивых
-                            результатов!</p>
-                    </div>
-                    <div class="hero-banner__buttons-container">
-                        <div class="hero-banner__actions">
-                            <a href="/booking/"
-                                class="hero-banner__button hero-banner__button--primary">Получить консультацию</a>
-                            <a href="https://wa.me/+79888641010"
-                                class="hero-banner__button hero-banner__button--secondary" target="_blank"
-                                rel="noopener">Написать на WhatsApp</a>
+const pageContent = `<main>
+    <!-- redesign/v36: hero «граница света» (макет v36-16) — фото ресепшна утро/вечер из эталона.
+         Тексты — текущие с сайта Амадеи (приоритет контенту). H1 добавлен: в baseline его не было -->
+    <section class="banner-section" data-gx="70%" data-gy="26%" data-ms="1" data-mo=".055">
+        <div class="swiper" id="service-banner-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="v36-hero h36-stage h36-real swiper-no-swiping" role="slider" tabindex="0" aria-label="Фото ресепшна клиники: до и после — серое утро и тёплый вечер" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">
+                        <div class="h36-layer h36-cold">
+                            <picture>
+                                <source type="image/avif" srcset="/redesign/reception-morning-390.avif 390w, /redesign/reception-morning-640.avif 640w, /redesign/reception-morning-768.avif 768w, /redesign/reception-morning-960.avif 960w, /redesign/reception-morning-1350.avif 1350w" sizes="100vw">
+                                <source type="image/webp" srcset="/redesign/reception-morning-390.webp 390w, /redesign/reception-morning-768.webp 768w, /redesign/reception-morning-960.webp 960w, /redesign/reception-morning-1350.webp 1350w" sizes="100vw">
+                                <img decoding="async" draggable="false" src="/redesign/reception-morning.jpg" width="1350" height="1800" alt="Ресепшн медицинского центра «Амадея» — утро" fetchpriority="high">
+                            </picture>
                         </div>
+                        <div class="h36-layer h36-warm">
+                            <picture>
+                                <source type="image/avif" srcset="/redesign/reception-evening-390.avif 390w, /redesign/reception-evening-640.avif 640w, /redesign/reception-evening-768.avif 768w, /redesign/reception-evening-960.avif 960w, /redesign/reception-evening-1350.avif 1350w" sizes="100vw">
+                                <source type="image/webp" srcset="/redesign/reception-evening-390.webp 390w, /redesign/reception-evening-768.webp 768w, /redesign/reception-evening-960.webp 960w, /redesign/reception-evening-1350.webp 1350w" sizes="100vw">
+                                <img decoding="async" draggable="false" src="/redesign/reception-evening.jpg" width="1350" height="1800" alt="" aria-hidden="true">
+                            </picture>
+                        </div>
+                        <div class="h36-div"></div>
+                        <div class="v36-hero-veil"></div>
+                        <div class="v36-hero-in">
+                            <div class="v36-eb"><i></i><span>Многопрофильный медицинский центр · Ставрополь</span></div>
+                            <h1><span class="ln"><span>Медицинский центр</span></span> <span class="ln"><span><em>«АМАДЕЯ»</em></span></span></h1>
+                            <div class="v36-lead">
+                                Комплексный подход к лечению — ключ к достижению устойчивых результатов!
+                            </div>
+                            <div class="v36-acts">
+                                <a class="v36-btn v36-btn-g" href="/booking/">Получить консультацию</a>
+                                <a href="https://wa.me/+79888641010" class="v36-btn v36-btn-w" target="_blank" rel="noopener">Написать на WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="v36-cue"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Быстрые услуги -->
-    <section class="quick-services">
-        <div class="container">
-            <div class="quick-services__grid">
-                <!-- Блок 1: Консультация врачей -->
-                <div class="quick-service-card">
-                    <div class="quick-service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                            <title>Heart-pulse-fill SVG Icon</title>
-                            <g fill="currentColor">
-                                <path
-                                    d="M1.475 9C2.702 10.84 4.779 12.871 8 15c3.221-2.129 5.298-4.16 6.525-6H12a.5.5 0 0 1-.464-.314l-1.457-3.642l-1.598 5.593a.5.5 0 0 1-.945.049L5.889 6.568l-1.473 2.21A.5.5 0 0 1 4 9z" />
-                                <path
-                                    d="M.88 8C-2.427 1.68 4.41-2 7.823 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C11.59-2 18.426 1.68 15.12 8h-2.783l-1.874-4.686a.5.5 0 0 0-.945.049L7.921 8.956L6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8z" />
-                            </g>
-                        </svg>
-                    </div>
-                    <div class="quick-service-card__content">
-                        <h3 class="quick-service-card__title">Консультация врачей</h3>
-                        <p class="quick-service-card__description">Профессиональные консультации врачей различных
-                            специальностей. Получите квалифицированную помощь и рекомендации по лечению.</p>
-                        <a href="/booking/"
-                            class="quick-service-card__button">Записаться</a>
+    <!-- redesign/v36: бегущая строка (.mq) — реальные разделы сайта -->
+    <div class="v36-mq" aria-hidden="true"><div>
+        <span>Психиатрия</span><span>Психотерапия</span><span>Наркология</span><span>Терапия</span><span>Дерматология</span><span>Гинекология</span><span>Гирудотерапия</span><span>Диагностика</span><span>Выезд врача на дом</span>
+        <span>Психиатрия</span><span>Психотерапия</span><span>Наркология</span><span>Терапия</span><span>Дерматология</span><span>Гинекология</span><span>Гирудотерапия</span><span>Диагностика</span><span>Выезд врача на дом</span>
+    </div></div>
+
+    <!-- redesign/v36: full-bleed момент (.moment) — цитата из реального отзыва с главной -->
+    <div class="v36-moment" data-gx="50%" data-gy="50%" data-ms="2.1" data-mo=".04">
+        <picture>
+            <source type="image/avif" srcset="/redesign/moment-doctor-390.avif 390w, /redesign/moment-doctor-768.avif 768w, /redesign/moment-doctor-981.avif 981w" sizes="100vw">
+            <source type="image/webp" srcset="/redesign/moment-doctor-390.webp 390w, /redesign/moment-doctor-768.webp 768w, /redesign/moment-doctor-981.webp 981w" sizes="100vw">
+            <img loading="lazy" decoding="async" src="/redesign/moment-doctor.jpg" width="981" height="1280" alt="Врач медицинского центра «Амадея» за рабочим столом">
+        </picture>
+        <div class="__container"><div class="__side-padding">
+            <blockquote>«Куда мы только не обращались, но здесь нашли грамотный подход к заболеванию»</blockquote>
+            <div class="v36-moment-src">Валентина Н. <span>· отзыв о лечении сына</span></div>
+        </div></div>
+    </div>
+
+    <!-- redesign/v36: цифры клиники (.nums) — значения реальные: 18 профилей специалистов,
+         средний стаж по 9 врачам главной ≈17 лет, 20+ услуг, лицензия от 10.08.2021 -->
+    <div class="v36-nums-wrap" data-gx="18%" data-gy="68%" data-ms="1.5" data-mo=".045"><div class="__container"><div class="__side-padding">
+        <div class="v36-nums">
+            <div class="v36-num"><b data-to="18">18</b><span>специалистов в штате: врачи, психологи, психотерапевты</span></div>
+            <div class="v36-num"><b data-to="17">17</b><span>лет — средний стаж врачей клиники</span></div>
+            <div class="v36-num"><b data-to="20" data-suf="+">20+</b><span>медицинских услуг — от психиатрии до УЗИ</span></div>
+            <div class="v36-num"><b data-to="2021">2021</b><span>год получения медицинской лицензии</span></div>
+        </div>
+    </div></div></div>
+
+    <!-- redesign/v36: офферы (.offers) — контент бывших quick-services и booking-блока -->
+    <section class="offers-section" data-gx="14%" data-gy="24%" data-ms="1.4" data-mo=".05">
+    <div class="__container">
+        <div class="__side-padding">
+            <div class="offers-wrapper">
+                <div class="offer-item offer-1">
+                    <div class="offer-inner">
+                        <div class="offer-item-title">
+                            <div class="offer-item-icon"></div>
+                            <h2>Консультация врачей и&nbsp;диагностика</h2>
+                        </div>
+                        <div class="offer-item-text">
+                            <p>Профессиональные консультации врачей различных специальностей. Получите квалифицированную помощь и рекомендации по лечению.</p>
+                            <p>Современное диагностическое оборудование для точной постановки диагноза. УЗИ, лабораторные анализы и другие виды обследований.</p>
+                        </div>
+                        <div class="offer-item-action">
+                            <div class="offer-action-call">
+                                <p>Запись на приём по телефону:</p>
+                                <a href="tel:+79888641010">+7 (988) 864-10-10</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Блок 2: Диагностика -->
-                <div class="quick-service-card">
-                    <div class="quick-service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                            <title>Diagnostic SVG Icon</title>
-                            <path fill="currentColor"
-                                d="M1920 128v1792H128V128zM256 256v1024h150l109-109q19-19 45-19t45 19l177 176l244-947q5-21 22-34t40-14q23 0 40 13t22 36l102 417h156q22 0 39 13t23 35l72 286h250V256zm1536 1536v-512h-300q-23 0-40-13t-22-36l-72-285h-156q-23 0-40-13t-22-36l-54-218l-208 809q-5 21-22 34t-40 14q-26 0-45-19l-211-211l-83 83q-19 19-45 19H256v384z" />
-                        </svg>
-                    </div>
-                    <div class="quick-service-card__content">
-                        <h3 class="quick-service-card__title">Диагностика</h3>
-                        <p class="quick-service-card__description">Современное диагностическое оборудование для точной
-                            постановки диагноза. УЗИ, лабораторные анализы и другие виды обследований.</p>
-                        <a href="/services/"
-                            class="quick-service-card__button">Узнать больше</a>
+                <div class="offer-item offer-2" id="booking">
+                    <div class="offer-inner">
+                        <div class="offer-item-title">
+                            <div class="offer-item-icon"></div>
+                            <h2>Выезд врача на&nbsp;дом</h2>
+                        </div>
+                        <div class="offer-item-text">
+                            <p>Если вы столкнулись с болезнью, не отчаивайтесь — специалисты клиники «Амадея» всегда готовы прийти на помощь! Мы быстро и эффективно лечим вирусные, инфекционные и психические заболевания и другие заболевания. Оказываем психологическую помощь.</p>
+                            <p>Вы можете вызвать врача на дом. Для этого просто свяжитесь с нами по телефону или оставьте заявку на сайте.</p>
+                        </div>
+                        <div class="offer-item-action">
+                            <div class="offer-action-button">
+                                <a class="button" href="javascript:;" data-a26-modal>Вызвать врача</a>
+                            </div>
+                            <div class="offer-action-button">
+                                <button type="button" class="button" id="medflex-booking-trigger">Записаться на приём</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-                <!-- Блок 3: Вызов врача на дом -->
-                <div class="quick-service-card">
-                    <div class="quick-service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                            <title>Ambulance SVG Icon</title>
-                            <path fill="currentColor"
-                                d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16M160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48m144-248c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8zm176 248c-26.5 0-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48m80-208H416V144h44.1l99.9 99.9z" />
-                        </svg>
+    <!-- redesign/v36: услуги (.posts-block на светлой sheet) — 8 карточек ключевых услуг, контент сохранён -->
+    <section class="v36-sheet" data-gx="82%" data-gy="78%" data-ms="1.2" data-mo=".05">
+        <div class="__container">
+            <div class="__side-padding">
+                <div class="section-title"><h2><span>Услуги</span> клиники</h2></div>
+                <div class="posts-block">
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock1.jpg" alt="Консультация психиатра"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Консультация психиатра</h3>
+                                <p>Профессиональный психиатр поможет справиться с любыми эмоциональными расстройствами.</p>
+                                <a href="/psychiatry/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/psychiatry/" aria-label="Подробнее: Консультация психиатра"></a>
                     </div>
-                    <div class="quick-service-card__content">
-                        <h3 class="quick-service-card__title">Вызов врача на дом</h3>
-                        <p class="quick-service-card__description">Вызов врача на дом в удобное для вас время.
-                            Экстренная помощь и плановые визиты специалистов на дому.</p>
-                        <a href="tel:+79888641010"
-                            class="quick-service-card__button">Вызвать врача</a>
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock2.jpg" alt="Консультация психотерапевта"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Консультация психотерапевта</h3>
+                                <p>Решите любые психологические проблемы с профессиональным психотерапевтом.</p>
+                                <a href="/psychotherapy/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/psychotherapy/" aria-label="Подробнее: Консультация психотерапевта"></a>
+                    </div>
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock14.jpg" alt="Лечение зависимостей в Ставрополе"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Лечение зависимостей в Ставрополе</h3>
+                                <p>Комплексное лечение различных зависимостей в нашем центре</p>
+                                <a href="/stavropol-treatment/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/stavropol-treatment/" aria-label="Подробнее: Лечение зависимостей в Ставрополе"></a>
+                    </div>
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock7.jpg" alt="Дерматология"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Дерматология</h3>
+                                <p>Диагностика и лечение кожных заболеваний</p>
+                                <a href="/dermatology/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/dermatology/" aria-label="Подробнее: Дерматология"></a>
+                    </div>
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock13.jpg" alt="Дезинтоксикация"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Дезинтоксикация</h3>
+                                <p>Очищение организма от токсинов, восстановление после интоксикации</p>
+                                <a href="/detoxification/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/detoxification/" aria-label="Подробнее: Дезинтоксикация"></a>
+                    </div>
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock6.jpeg" alt="Гирудотерапия"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Гирудотерапия</h3>
+                                <p>Лечение пиявками, восстановление кровообращения</p>
+                                <a href="/gymnotherapy/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/gymnotherapy/" aria-label="Подробнее: Гирудотерапия"></a>
+                    </div>
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock8.jpg" alt="Гинекология"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Гинекология</h3>
+                                <p>Женское здоровье, диагностика и лечение гинекологических заболеваний</p>
+                                <a href="/gynecology/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/gynecology/" aria-label="Подробнее: Гинекология"></a>
+                    </div>
+                    <div class="post-item __line-block-item">
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock10.jpg" alt="Консультация нарколога"/></div>
+                        <div class="post-item-desc">
+                            <div class="post-item-title">
+                                <h3>Консультация нарколога</h3>
+                                <p>Первичная консультация нарколога, диагностика, составление плана лечения</p>
+                                <a href="/narcologist-consultation/">Подробнее</a>
+                            </div>
+                        </div>
+                        <a class="overlink" href="/narcologist-consultation/" aria-label="Подробнее: Консультация нарколога"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Ключевые услуги -->
-    <section class="key-services">
-        <div class="container">
-            <div class="key-services__title">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <title>Task-list-square-ltr-20-regular SVG Icon</title>
-                    <path fill="currentColor"
-                        d="M9.354 7.104a.5.5 0 0 0-.708-.708L7.234 7.808l-.397-.362a.5.5 0 0 0-.674.738l.75.685a.5.5 0 0 0 .69-.016zm0 4.292a.5.5 0 0 1 0 .708l-1.75 1.75a.5.5 0 0 1-.691.015l-.75-.685a.5.5 0 0 1 .674-.738l.397.363l1.412-1.413a.5.5 0 0 1 .708 0M11 12a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 0-1zm-.5-4.5A.5.5 0 0 1 11 7h2.5a.5.5 0 0 1 0 1H11a.5.5 0 0 1-.5-.5M6 3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM4 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" />
-                </svg>
-                <h2><span>Услуги</span> клиники</h2>
-            </div>
-            <div class="key-services__grid">
-                <!-- Карточка 1 -->
-                <a href="/psychiatry/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock1.jpg"
-                            alt="Консультация психиатра">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Консультация психиатра</h4>
-                        </div>
-                        <p class="key-services__description">Профессиональный психиатр поможет справиться с любыми
-                            эмоциональными расстройствами.</p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-                <!-- Карточка 2 -->
-                <a href="/psychotherapy/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock2.jpg"
-                            alt="Консультация психотерапевта">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Консультация психотерапевта</h4>
-                        </div>
-                        <p class="key-services__description">Решите любые психологические проблемы с профессиональным
-                            психотерапевтом.</p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-                <!-- Карточка 3 -->
-                <a href="/stavropol-treatment/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock14.jpg"
-                            alt="Лечение зависимостей в Ставрополе">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Лечение зависимостей в Ставрополе</h4>
-                        </div>
-                        <p class="key-services__description">Комплексное лечение различных зависимостей в нашем центре
-                        </p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-                <!-- Карточка 4 -->
-                <a href="/dermatology/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock7.jpg"
-                            alt="Дерматология">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Дерматология</h4>
-                        </div>
-                        <p class="key-services__description">Диагностика и лечение кожных заболеваний</p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-                <!-- Карточка 5 -->
-                <a href="/detoxification/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock13.jpg"
-                            alt="Дезинтоксикация">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Дезинтоксикация</h4>
-                        </div>
-                        <p class="key-services__description">Очищение организма от токсинов, восстановление после
-                            интоксикации</p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-                <!-- Карточка 6 -->
-                <a href="/gymnotherapy/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock6.jpeg"
-                            alt="Гирудотерапия">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Гирудотерапия</h4>
-                        </div>
-                        <p class="key-services__description">Лечение пиявками, восстановление кровообращения</p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-                <!-- Карточка 7 -->
-                <a href="/gynecology/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock8.jpg"
-                            alt="Гинекология">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Гинекология</h4>
-                        </div>
-                        <p class="key-services__description">Женское здоровье, диагностика и лечение гинекологических
-                            заболеваний</p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-                <!-- Карточка 8 -->
-                <a href="/narcologist-consultation/" class="key-services__card">
-                    <div class="key-services__image">
-                        <img src="/wp-content/themes/amadeya-redesign/assets/img/stock10.jpg"
-                            alt="Консультация нарколога">
-                    </div>
-                    <div class="key-services__content">
-                        <div class="key-services__card-title">
-                            <h4>Консультация нарколога</h4>
-                        </div>
-                        <p class="key-services__description">Первичная консультация нарколога, диагностика, составление
-                            плана лечения</p>
-                        <span class="key-services__link">Подробнее</span>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Специалисты клиники -->
-    <section class="experts" id="experts">
-        <div class="container">
-            <div class="experts__title">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <title>User-doctor SVG Icon</title>
-                    <path fill="currentColor"
-                        d="M224 256a128 128 0 1 0 0-256a128 128 0 1 0 0 256m-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1V362c27.6 7.1 48 32.2 48 62v40c0 8.8-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16s7.2-16 16-16v-24c0-17.7-14.3-32-32-32s-32 14.3-32 32v24c8.8 0 16 7.2 16 16s-7.2 16-16 16h-16c-8.8 0-16-7.2-16-16v-40c0-29.8 20.4-54.9 48-62v-57.1c-6-.6-12.1-.9-18.3-.9h-91.4c-6.2 0-12.3.3-18.3.9v65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7zM144 448a24 24 0 1 0 0-48a24 24 0 1 0 0 48" />
-                </svg>
-                <h2><span>Специалисты</span> клиники</h2>
-            </div>
-            <div class="experts__carousel">
-                <div class="swiper experts-swiper">
+    <!-- redesign/v36: специалисты (.people-block swiper) — 9 врачей, контент сохранён -->
+    <section class="reviews-section" id="experts" data-gx="50%" data-gy="30%" data-ms="1.1" data-mo=".06">
+        <div class="__container">
+            <div class="people-block">
+                <div class="section-title"><h2><span>Специалисты</span> клиники</h2></div>
+                <div class="swiper" id="people-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg"
-                                        alt="Мутаева Ольга Юрьевна" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva.jpg" alt="Врач Мутаева Ольга Юрьевна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Мутаева</span><span>Ольга Юрьевна</span></div>
+                                    <div class="people-item-spec">Психиатр, клинический психолог, нарколог, психотерапевт</div>
+                                    <div class="people-item-exp">Стаж 21 год</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Мутаева Ольга Юрьевна</h3>
-                                    <p class="expert-card__specialty">Психиатр, клинический психолог, нарколог,
-                                        психолог, психотерапевт</p>
-                                    <p class="expert-card__experience">Стаж 21 год</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/kron.jpg"
-                                        alt="Крон Елена Ивановна" class="expert-card__image">
-                                </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Крон Елена Ивановна</h3>
-                                    <p class="expert-card__specialty">Психиатр, гирудотерапевт, нарколог, психотерапевт
-                                    </p>
-                                    <p class="expert-card__experience">Стаж 32 года</p>
-                                </div>
+                                <a class="overlink" href="/speczialisty/mutaeva-olga-yurevna/" aria-label="Подробнее: Мутаева Ольга Юрьевна"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/kamolikova.jpg"
-                                        alt="Камоликова Жанна Анатольевна" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kron.jpg" alt="Врач Крон Елена Ивановна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Крон</span><span>Елена Ивановна</span></div>
+                                    <div class="people-item-spec">Психиатр, гирудотерапевт, нарколог, психотерапевт</div>
+                                    <div class="people-item-exp">Стаж 32 года</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Камоликова Жанна Анатольевна</h3>
-                                    <p class="expert-card__specialty">Психиатр, нарколог, психотерапевт</p>
-                                    <p class="expert-card__experience">Стаж 21 год</p>
-                                </div>
+                                <a class="overlink" href="/speczialisty/kron-elena-ivanovn/" aria-label="Подробнее: Крон Елена Ивановна"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/bobrova.jpg"
-                                        alt="Боброва Александра Николаевна" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kamolikova.jpg" alt="Врач Камоликова Жанна Анатольевна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Камоликова</span><span>Жанна Анатольевна</span></div>
+                                    <div class="people-item-spec">Психиатр, нарколог, психотерапевт</div>
+                                    <div class="people-item-exp">Стаж 21 год</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Боброва Александра Николаевна</h3>
-                                    <p class="expert-card__specialty">Психотерапевт, психиатр, психолог</p>
-                                    <p class="expert-card__experience">Стаж 22 года</p>
-                                </div>
+                                <a class="overlink" href="/speczialisty/" aria-label="Подробнее: Камоликова Жанна Анатольевна"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/kumratova.jpg"
-                                        alt="Кумратова Наталья Александровна" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/bobrova.jpg" alt="Врач Боброва Александра Николаевна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Боброва</span><span>Александра Николаевна</span></div>
+                                    <div class="people-item-spec">Психотерапевт, психиатр, психолог</div>
+                                    <div class="people-item-exp">Стаж 22 года</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Кумратова Наталья Александровна</h3>
-                                    <p class="expert-card__specialty">Психиатр, психотерапевт</p>
-                                    <p class="expert-card__experience">Стаж 23 года</p>
-                                </div>
+                                <a class="overlink" href="/speczialisty/" aria-label="Подробнее: Боброва Александра Николаевна"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/mozharuk.jpg"
-                                        alt="Можарук Дарья Сергеевна" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kumratova.jpg" alt="Врач Кумратова Наталья Александровна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Кумратова</span><span>Наталья Александровна</span></div>
+                                    <div class="people-item-spec">Психиатр, психотерапевт</div>
+                                    <div class="people-item-exp">Стаж 23 года</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Можарук Дарья Сергеевна</h3>
-                                    <p class="expert-card__specialty">Терапевт, кардиолог, ревматолог</p>
-                                    <p class="expert-card__experience">Стаж 6 лет</p>
-                                </div>
+                                <a class="overlink" href="/speczialisty/" aria-label="Подробнее: Кумратова Наталья Александровна"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/boyunsuzova.jpg"
-                                        alt="Боюнсузова Зухра Руслановна" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mozharuk.jpg" alt="Врач Можарук Дарья Сергеевна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Можарук</span><span>Дарья Сергеевна</span></div>
+                                    <div class="people-item-spec">Терапевт, кардиолог, ревматолог</div>
+                                    <div class="people-item-exp">Стаж 6 лет</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Боюнсузова Зухра Руслановна</h3>
-                                    <p class="expert-card__specialty">Невролог</p>
-                                    <p class="expert-card__experience">Стаж 7 лет</p>
-                                </div>
+                                <a class="overlink" href="/speczialisty/mozharuk-darya-sergeevna/" aria-label="Подробнее: Можарук Дарья Сергеевна"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/borisova.jpg"
-                                        alt="Борисова Елена Алексеевна" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/boyunsuzova.jpg" alt="Врач Боюнсузова Зухра Руслановна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Боюнсузова</span><span>Зухра Руслановна</span></div>
+                                    <div class="people-item-spec">Невролог</div>
+                                    <div class="people-item-exp">Стаж 7 лет</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Борисова Елена Алексеевна </h3>
-                                    <p class="expert-card__specialty">Клинический психолог, психолог</p>
-                                    <p class="expert-card__experience">Стаж 15 лет</p>
-                                </div>
+                                <a class="overlink" href="/speczialisty/" aria-label="Подробнее: Боюнсузова Зухра Руслановна"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="expert-card">
-                                <div class="expert-card__photo">
-                                    <img src="/wp-content/themes/amadeya-redesign/assets/img/lavrentev.jpg"
-                                        alt="Лаврентьев Илья Дмитриевич" class="expert-card__image">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/borisova.jpg" alt="Врач Борисова Елена Алексеевна"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Борисова</span><span>Елена Алексеевна</span></div>
+                                    <div class="people-item-spec">Клинический психолог, психолог</div>
+                                    <div class="people-item-exp">Стаж 15 лет</div>
                                 </div>
-                                <div class="expert-card__info">
-                                    <h3 class="expert-card__name">Лаврентьев Илья Дмитриевич </h3>
-                                    <p class="expert-card__specialty">Клинический психолог, психолог</p>
-                                    <p class="expert-card__experience">Стаж 10 лет</p>
+                                <a class="overlink" href="/speczialisty/" aria-label="Подробнее: Борисова Елена Алексеевна"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="people-item __line-block-item">
+                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/lavrentev.jpg" alt="Врач Лаврентьев Илья Дмитриевич"></div>
+                                <div class="people-item-desc">
+                                    <div class="people-item-name"><span>Лаврентьев</span><span>Илья Дмитриевич</span></div>
+                                    <div class="people-item-spec">Клинический психолог, психолог</div>
+                                    <div class="people-item-exp">Стаж 10 лет</div>
                                 </div>
+                                <a class="overlink" href="/speczialisty/" aria-label="Подробнее: Лаврентьев Илья Дмитриевич"></a>
                             </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="swiper-button-prev experts__arrow experts__arrow--prev">
-                    <svg width="32" height="32" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M685.248 104.704a64 64 0 0 1 0 90.496L368.448 512l316.8 316.8a64 64 0 0 1-90.496 90.496L232.704 557.248a64 64 0 0 1 0-90.496l362.048-362.048a64 64 0 0 1 90.496 0"
-                            fill="currentColor" />
-                    </svg>
-                </div>
-                <div class="swiper-button-next experts__arrow experts__arrow--next">
-                    <svg width="32" height="32" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M338.752 919.296a64 64 0 0 1 0-90.496L655.552 512l-316.8-316.8a64 64 0 0 1 90.496-90.496l362.048 362.048a64 64 0 0 1 0 90.496L429.248 919.296a64 64 0 0 1-90.496 0"
-                            fill="currentColor" />
-                    </svg>
+                <div class="swiper-nav-buttons">
+                    <div class="swiper-nav-button swiper-button-prev vrachi-button-prev"></div>
+                    <div class="swiper-nav-button swiper-button-next vrachi-button-next"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Запись на прием и вызов врача -->
-    <section class="booking" id="booking">
-        <div class="container">
-            <div class="booking__content">
-                <div class="booking__top-button">
-                    <button type="button" class="booking__appointment-button" id="medflex-booking-trigger">Записаться на
-                        приём</button>
-                </div>
-                <div class="booking__title">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                        <title>House-check SVG Icon</title>
-                        <g fill="currentColor">
-                            <path
-                                d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z" />
-                            <path
-                                d="M12.5 16a3.5 3.5 0 1 0 0-7a3.5 3.5 0 0 0 0 7m1.679-4.493l-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547l1.17-1.951a.5.5 0 1 1 .858.514" />
-                        </g>
-                    </svg>
-                    <h2><span>Выезд врача</span> на дом</h2>
-                </div>
-                <div class="booking__main-content">
-                    <div class="booking__text-content">
-                        <p class="booking__description">Если вы столкнулись с болезнью, не отчаивайтесь — специалисты
-                            клиники «Амадея» всегда готовы прийти на помощь! Мы быстро и эффективно лечим вирусные,
-                            инфекционные и психические заболевания и другие заболевания. Оказываем психологическую
-                            помощь.</p>
-                        <p class="booking__description">Вы можете вызвать врача на дом. Для этого просто свяжитесь с
-                            нами по телефону или оставьте заявку на сайте.</p>
-                    </div>
-                    <div class="booking__bottom-button">
-                        <button type="button" class="site-header__button" id="cta-link-booking">Вызвать врача</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Отзывы пациентов -->
-    <section class="reviews" id="reviews">
-        <div class="container">
-            <div class="reviews__block">
-                <div class="reviews__title">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                        <title>Review-response-solid SVG Icon</title>
-                        <path fill="currentColor"
-                            d="M2029 1939q19 19 19 45t-19 45t-45 19t-45-19l-785-784q-95 80-210 121t-240 42q-97 0-187-25t-168-71t-143-110t-110-142t-71-169T0 704q0-97 25-187t71-168t110-143T348 96t169-71T704 0q97 0 187 25t168 71t143 110t110 142t71 169t25 187q0 124-41 239t-122 211zM1146 525l-135-135l-435 434l-156-156l-136 136l292 292z" />
-                    </svg>
-                    <h2><span>Отзывы</span> пациентов</h2>
-                </div>
-                <div class="reviews__carousel">
-                    <div class="swiper reviews-swiper">
-                        <div class="swiper-wrapper">
-                            <!-- Отзыв 1 -->
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__header">
-                                        <h4 class="review-card__name">Татьяна Л.</h4>
-                                        <div class="review-card__rating">
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                        </div>
-                                    </div>
-                                    <p class="review-card__text">Очень рада что обратилась именно в эту клинику. Здесь
-                                        работают самые лучшие врачи города. Очень приветливый персонал, чистота.
-                                        Врач внимательно выслушал,провели анализы ,назначили лечение.
-                                        Здесь можно обратиться за качественной медицинской помощью. Все анализы можно
-                                        сдать сразу в
-                                        клинике. Очень удобно и комфортно. Отношение медперсонала чуткое и внимательное.
-                                    </p>
+    <!-- redesign/v36: отзывы (.reviews-block swiper на sheet) — 3 реальных отзыва, контент сохранён -->
+    <section class="reviews-section v36-sheet" id="reviews" data-gx="18%" data-gy="72%" data-ms="1.3" data-mo=".045">
+        <div class="__container">
+            <div class="reviews-block">
+                <div class="section-title"><h2><span>Отзывы</span> пациентов</h2></div>
+                <div class="swiper" id="reviews-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="reviews-item __line-block-item">
+                                <div class="reviews-item-head">
+                                    <div class="reviews-item-title"><h3>Татьяна Л.</h3><span></span></div>
                                 </div>
-                            </div>
-
-                            <!-- Отзыв 2 -->
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__header">
-                                        <h4 class="review-card__name">Валентина Н.</h4>
-                                        <div class="review-card__rating">
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                        </div>
-                                    </div>
-                                    <p class="review-card__text">Очень понравилась клиника, врачи и медсестры, всё на
-                                        высшем уровне, всё грамотно и профессионально! Хочу отметить и поблагодарить
-                                        врача психиатра Мутаеву Ольгу Юрьевна - грамотно подошла к лечению моего сына,
-                                        очень благодарна. Куда мы только не обращались, но здесь нашли грамотный подход
-                                        к заболеванию!
-                                        Однозначно советую это место!</p>
-                                </div>
-                            </div>
-
-                            <!-- Отзыв 3 -->
-                            <div class="swiper-slide">
-                                <div class="review-card">
-                                    <div class="review-card__header">
-                                        <h4 class="review-card__name">Анна Т.</h4>
-                                        <div class="review-card__rating">
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                            <span class="star star--filled">★</span>
-                                        </div>
-                                    </div>
-                                    <p class="review-card__text">Отличная современная клиника! Приятный и вежливый
-                                        персонал, всё делают оперативно. Врачи опытные, я пошла по рекомендации знакомой
-                                        к конкретному врачу. Остались приятные впечатления от клиники и врача.</p>
-                                </div>
+                                <div class="reviews-item-text">Очень рада что обратилась именно в эту клинику. Здесь работают самые лучшие врачи города. Очень приветливый персонал, чистота. Врач внимательно выслушал, провели анализы, назначили лечение. Здесь можно обратиться за качественной медицинской помощью. Все анализы можно сдать сразу в клинике. Очень удобно и комфортно. Отношение медперсонала чуткое и внимательное.</div>
                             </div>
                         </div>
-                        <!-- Стрелки навигации -->
-                        <div class="swiper-button-prev reviews-button-prev"></div>
-                        <div class="swiper-button-next reviews-button-next"></div>
+                        <div class="swiper-slide">
+                            <div class="reviews-item __line-block-item">
+                                <div class="reviews-item-head">
+                                    <div class="reviews-item-title"><h3>Валентина Н.</h3><span></span></div>
+                                </div>
+                                <div class="reviews-item-text">Очень понравилась клиника, врачи и медсестры, всё на высшем уровне, всё грамотно и профессионально! Хочу отметить и поблагодарить врача психиатра Мутаеву Ольгу Юрьевну — грамотно подошла к лечению моего сына, очень благодарна. Куда мы только не обращались, но здесь нашли грамотный подход к заболеванию! Однозначно советую это место!</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews-item __line-block-item">
+                                <div class="reviews-item-head">
+                                    <div class="reviews-item-title"><h3>Анна Т.</h3><span></span></div>
+                                </div>
+                                <div class="reviews-item-text">Отличная современная клиника! Приятный и вежливый персонал, всё делают оперативно. Врачи опытные, я пошла по рекомендации знакомой к конкретному врачу. Остались приятные впечатления от клиники и врача.</div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="swiper-nav-buttons">
+                    <div class="swiper-nav-button swiper-button-prev reviews-button-prev"></div>
+                    <div class="swiper-nav-button swiper-button-next reviews-button-next"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Яндекс карта -->
-    <section class="map" id="contacts">
-        <div class="container">
-            <div class="map__wrapper">
-                <div class="map__info">
-                    <h3 class="map__subtitle">Где мы находимся?</h3>
-                    <div class="map__contacts">
-                        <p class="map__address">
-                            г. Ставрополь, ул. 45 параллель, 2                        </p>
-                        <p class="map__phone">Телефон: <a
-                                href="tel:+79888641010">+7 (988) 864-10-10</a>
-                        </p>
-                        <p class="map__hours">Время работы:
-                            пн-сб: 7:30-20:00, вс: 7:30-13:00                        </p>
+    <!-- redesign/v36: карта (.map-block) — iframe тот же, ленивая загрузка через data-src -->
+    <section class="map-section" id="contacts" data-gx="50%" data-gy="78%" data-ms=".95" data-mo=".06">
+        <div class="__container">
+            <div class="__side-padding">
+                <div class="map-block">
+                    <div class="map-block-content">
+                        <h2>Где мы находимся?</h2>
+                        <div class="contacts">
+                            <p class="contact-row icon-location">г. Ставрополь, ул. 45 параллель, 2</p>
+                            <p class="contact-row icon-phone"><a class="phone" href="tel:+79888641010">+7 (988) 864-10-10</a></p>
+                            <p class="contact-row icon-time">пн-сб: 7:30–20:00, вс: 7:30–13:00</p>
+                        </div>
                     </div>
-                </div>
-                <div class="map__container">
-                    <iframe loading="lazy" title="Карта проезда — Медицинский центр Амадея"
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A83bc031fae9b9b52a046f0b9659520fe4a9940e7803a9ad20b0bac4a52889c5a&amp;source=constructor"
-                        width="1200" height="400" frameborder="0"></iframe>
+                    <div class="map-wrap">
+                        <iframe loading="lazy" title="Карта проезда — Медицинский центр Амадея" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A83bc031fae9b9b52a046f0b9659520fe4a9940e7803a9ad20b0bac4a52889c5a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
-
 `;
 
 export const metadata: Metadata = {
@@ -550,6 +409,23 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  // LCP: preload hero-фото (утро+вечер в одной высокой очереди — паттерн детокса 21.08)
+  preload("/redesign/reception-morning-1350.avif", {
+    as: "image",
+    type: "image/avif",
+    imageSrcSet:
+      "/redesign/reception-morning-390.avif 390w, /redesign/reception-morning-640.avif 640w, /redesign/reception-morning-768.avif 768w, /redesign/reception-morning-960.avif 960w, /redesign/reception-morning-1350.avif 1350w",
+    imageSizes: "100vw",
+    fetchPriority: "high",
+  });
+  preload("/redesign/reception-evening-1350.avif", {
+    as: "image",
+    type: "image/avif",
+    imageSrcSet:
+      "/redesign/reception-evening-390.avif 390w, /redesign/reception-evening-640.avif 640w, /redesign/reception-evening-768.avif 768w, /redesign/reception-evening-960.avif 960w, /redesign/reception-evening-1350.avif 1350w",
+    imageSizes: "100vw",
+    fetchPriority: "high",
+  });
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://amadeya26.ru/","url":"https://amadeya26.ru/","name":"Медицинский центр Амадея в Ставрополе","isPartOf":{"@id":"https://amadeya26.ru/#website"},"about":{"@id":"https://amadeya26.ru/#organization"},"primaryImageOfPage":{"@id":"https://amadeya26.ru/#primaryimage"},"image":{"@id":"https://amadeya26.ru/#primaryimage"},"thumbnailUrl":"https://amadeya26.ru/wp-content/uploads/2024/06/photo_323-1024x1024.webp","datePublished":"2023-12-02T17:59:09+00:00","dateModified":"2025-10-24T19:22:26+00:00","description":"Медицинский центр «Амадея» в Ставрополе - профессиональная медицинская помощь. Психиатрия, психотерапия, наркология, терапия. Опытные врачи.","breadcrumb":{"@id":"https://amadeya26.ru/#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://amadeya26.ru/"]}]},{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://amadeya26.ru/#primaryimage","url":"https://amadeya26.ru/wp-content/uploads/2024/06/photo_323.webp","contentUrl":"https://amadeya26.ru/wp-content/uploads/2024/06/photo_323.webp","width":1280,"height":1280},{"@type":"BreadcrumbList","@id":"https://amadeya26.ru/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная страница"}]},{"@type":"WebSite","@id":"https://amadeya26.ru/#website","url":"https://amadeya26.ru/","name":"Медицинский центр Амадея в Ставрополе","description":"","publisher":{"@id":"https://amadeya26.ru/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://amadeya26.ru/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"ru-RU"},{"@type":"Organization","@id":"https://amadeya26.ru/#organization","name":"Медицинский центр Амадея в Ставрополе","url":"https://amadeya26.ru/","logo":{"@type":"ImageObject","inLanguage":"ru-RU","@id":"https://amadeya26.ru/#/schema/logo/image/","url":"https://amadeya26.ru/wp-content/uploads/2022/10/LOGO12.png","contentUrl":"https://amadeya26.ru/wp-content/uploads/2022/10/LOGO12.png","width":68,"height":68,"caption":"Медицинский центр Амадея в Ставрополе"},"image":{"@id":"https://amadeya26.ru/#/schema/logo/image/"}}]}` }} />

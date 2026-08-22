@@ -38,6 +38,10 @@ const THEME_JS = [
   "/wp-content/themes/amadeya-redesign/assets/js/specialist-list.js?ver=1.0.0",
 ];
 
+/* Swiper-иниты главной в Core-грамматике (#people-swiper/#reviews-swiper/#service-banner-swiper).
+   Порт инитов layout детокса (21.08): retry пока не поднимется window.Swiper. */
+const INIT_HOME = `(function(){var tries=0;function init(){try{if(!window.Swiper){if(++tries<40)return setTimeout(init,150);}var pe=document.getElementById('people-swiper');if(pe&&!pe.classList.contains('swiper-initialized'))new Swiper('#people-swiper',{slidesPerView:'auto',loop:true,navigation:{nextEl:'.vrachi-button-next',prevEl:'.vrachi-button-prev'},breakpoints:{1280:{slidesPerView:4}}});var re=document.getElementById('reviews-swiper');if(re&&!re.classList.contains('swiper-initialized'))new Swiper('#reviews-swiper',{slidesPerView:'auto',loop:false,navigation:{prevEl:'.reviews-button-prev',nextEl:'.reviews-button-next'},breakpoints:{1280:{spaceBetween:-30,slidesPerView:2}}});var sb=document.getElementById('service-banner-swiper');if(sb&&!sb.classList.contains('swiper-initialized'))new Swiper('#service-banner-swiper',{slidesPerView:1,loop:false,navigation:{prevEl:'.service-banner-prev',nextEl:'.service-banner-next'}});}catch(e){}}if(document.readyState!=='loading')init();else document.addEventListener('DOMContentLoaded',init);})();`;
+
 /* Я.Метрика 91506218 — точный код счётчика; tag.js отложен (первый жест или idle 4с),
    события до загрузки копятся в очереди ym.a (паттерн детокса 21.08). */
 const METRIKA_BLOCK = `<!-- Yandex.Metrika counter -->
@@ -125,6 +129,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Ленивая загрузка iframe-карт (data-src → src при приближении к вьюпорту) */}
         <Script id="iframe-lazy" strategy="afterInteractive">
           {`(function(){var ifr=document.querySelectorAll('iframe[data-src]');if(!ifr.length)return;function go(el){if(el.dataset.src){el.src=el.dataset.src;el.removeAttribute('data-src');}}if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){go(e.target);io.unobserve(e.target);}});},{rootMargin:'300px'});ifr.forEach(function(e){io.observe(e);});}else{ifr.forEach(go);}})();`}
+        </Script>
+        {/* Swiper-иниты главной в грамматике Core (паттерн детокса): баннер, врачи, отзывы.
+            Все иниты охранены наличием элемента — на остальных страницах no-op. */}
+        <Script id="v36-home-init" strategy="afterInteractive">
+          {INIT_HOME}
         </Script>
         <script type="speculationrules" dangerouslySetInnerHTML={{ __html: `{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\\\\/*"},{"not":{"href_matches":["\\\\/wp-*.php","\\\\/wp-admin\\\\/*","\\\\/wp-content\\\\/*","\\\\/*\\\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\\"nofollow\\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}` }} />
         <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: METRIKA_BLOCK }} />
