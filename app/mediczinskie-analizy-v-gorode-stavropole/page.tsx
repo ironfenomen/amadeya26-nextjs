@@ -8,108 +8,7 @@ const pageContent = `<main>
                     <h1 class="entry-title">Медицинские анализы в городе Ставрополе</h1>
                 </header>
 
-                <div class="entry-content">
-                    <p><a href="https://vk.com/amadeya26" target="_blank"><br>
-						Icon-social-vkontakte<br>
-											</a><br>
-					<a href="https://wa.me/79888641010" target="_blank"><br>
-						Whatsapp<br>
-											</a><br>
-					<a href="https://t.me/amadeya26" target="_blank"><br>
-						Telegram<br>
-											</a></p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br>
-										8 (988) 864-10-10<br>
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br>
-											Онлайн-запись<br>
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br>
-											Блог<br>
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br>
-											контакты<br>
-											</a>
-									</li>
-</ul>
-<p>					<a href="https://vk.com/amadeya26" target="_blank"><br>
-						Icon-social-vkontakte<br>
-											</a><br>
-					<a href="https://wa.me/79888641010" target="_blank"><br>
-						Whatsapp<br>
-											</a><br>
-					<a href="https://t.me/amadeya26" target="_blank"><br>
-						Telegram<br>
-											</a></p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br>
-										8 (988) 864-10-10<br>
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br>
-											Онлайн-запись<br>
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br>
-											Блог<br>
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br>
-											контакты<br>
-											</a>
-									</li>
-</ul>
-<nav>
-<ul id="menu-obrezannoe-menyu-dlya-rediza-2">
-<li><a title="Главная" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-4821">Главная</a>
-<ul aria-labelledby="menu-item-dropdown-4821" role="menu">
-<li><a title="Специалисты" href="/speczialisty/">Специалисты</a></li>
-</ul>
-</li>
-<li><a title="Лечение зависимостей" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-5535">Лечение зависимостей</a>
-<ul aria-labelledby="menu-item-dropdown-5535" role="menu">
-<li><a title="Наши услуги" href="/lechenie-zavisimostei-v-stavropole-2/">Наши услуги</a></li>
-<li><a title="Консультация нарколога" href="/konsultacziya-vracha-narkologa-v-stavr/">Консультация нарколога</a></li>
-<li><a title="Онлайн-консультация нарколога" href="/onlain-konsultacziya-narkologa/">Онлайн-консультация нарколога</a></li>
-<li><a title="Выезд врача-нарколога на дом" href="/vyezd-vracha-narkologa-na-dom/">Выезд врача-нарколога на дом</a></li>
-<li><a title="Дезинтоксикация" href="/detoksikacziya/">Дезинтоксикация</a></li>
-<li><a title="Лечение зависимостей в Ставрополе" href="/lechenie-zavisimostei-v-stavropole/">Лечение зависимостей в Ставрополе</a></li>
-<li><a title="Прием психолога-аддиктолога в Ставрополе" href="/priem-psihologa-addiktologa-v-stavro/">Прием психолога-аддиктолога в Ставрополе</a></li>
-<li><a title="Психотерапия при зависимости" href="/psihoterapiya-pri-zavisimosti/">Психотерапия при зависимости</a></li>
-<li><a title="Супервизия при зависимости в Ставрополе" href="/superviziya-pri-zavisimosti-v-stavrop/">Супервизия при зависимости в Ставрополе</a></li>
-</ul>
-</li>
-<li><a title="Психиатрия" href="/psihiatricheskaya-pomoshh-v-stavropole/">Психиатрия</a></li>
-<li><a title="Психотерапия" href="/psihoterapevticheskaya-pomoshh-v-stavropole/">Психотерапия</a></li>
-<li><a title="Психолог" href="/psihologicheskaya-pomoshh-v-stavropole/">Психолог</a></li>
-<li><a title="Терапия" href="/priem-vracha-terapevta-v-stavropole/">Терапия</a></li>
-<li><a title="Эндокринология" href="/priem-vracha-endokrinologa-v-stavropole/">Эндокринология</a></li>
-<li><a title="Гирудотерапия" href="/girudoterapiya/">Гирудотерапия</a></li>
-<li><a title="Онлайн-запись" href="/online-zapis-k-specialistam/">Онлайн-запись</a></li>
-<li><a title="Ревматология" href="/elementor-1309/">Ревматология</a></li>
-<li><a title="Дерматология" href="/priem-dermatologa-v-stavropole-klini/">Дерматология</a></li>
-<li><a title="УЗИ" href="/ultrazvuovaya-diagnostika-v-stavrop/">УЗИ</a></li>
-<li><a title="Гинекология" href="/priem-ginekologa-v-stavropole/">Гинекология</a></li>
-</ul>
-</nav>
-<div id="footable_parent_8848" class="footable_parent ninja_table_wrapper wp_table_data_press_parent semantic_ui">
-                <table data-ninja_table_instance="ninja_table_instance_0" data-footable_id="8848" data-filter-delay="1000" aria-label="Название временной таблицы" id="footable_8848" data-unique_identifier="ninja_table_unique_id_963311312_8848" class="foo-table ninja_footable foo_table_8848 ninja_table_unique_id_963311312_8848 ui table nt_type_ajax_table selectable striped vertical_centered footable-paging-right footable footable-1 footable-filtering footable-filtering-right footable-paging breakpoint-lg" style=""><thead><tr class="footable-filtering"><th colspan="4" scope="row"><form class="form-inline"><div class="form-group footable-filtering-search"><label class="sr-only">Search</label><div class="input-group"><input type="text" class="form-control" placeholder="Поиск" spellcheck="false" autocorrect="off" autocapitalize="off" aria-label="Search in Table"><div class="input-group-btn"><button type="submit" class="btn btn-primary" aria-label="Search" value="Search"><span class="fooicon fooicon-search"></span></button><button type="button" class="btn btn-default dropdown-toggle" aria-label="Search in" value="Search in"><span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right" role="group" aria-labelledby="ninja_drop_down_id_footable_8848"><li class="dropdown-header" id="ninja_drop_down_id_footable_8848">Искать в</li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">КОД</label></a></li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">НАИМЕНОВАНИЕ УСЛУГИ</label></a></li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">Цена</label></a></li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">заказать</label></a></li></ul></div></div></div></form></th></tr><tr class="footable-header"><th class="ninja_column_0 ninja_clmn_nm_КОД footable-sortable footable-first-visible" style="display: table-cell;" scope="col">КОД<span class="fooicon fooicon-sort"></span></th><th class="ninja_column_1 ninja_clmn_nm_НАИМЕНОВАНИЕ УСЛУГИ footable-sortable" style="display: table-cell;" scope="col">НАИМЕНОВАНИЕ УСЛУГИ<span class="fooicon fooicon-sort"></span></th><th class="ninja_column_2 ninja_clmn_nm_Цена footable-sortable" style="display: table-cell;" scope="col">Цена<span class="fooicon fooicon-sort"></span></th><th class="ninja_column_3 ninja_clmn_nm_заказать footable-sortable footable-last-visible" style="display: table-cell;" scope="col">заказать<span class="fooicon fooicon-sort"></span></th></tr></thead>
+                <div class="entry-content"><table data-ninja_table_instance="ninja_table_instance_0" data-footable_id="8848" data-filter-delay="1000" aria-label="Название временной таблицы" id="footable_8848" data-unique_identifier="ninja_table_unique_id_963311312_8848" class="foo-table ninja_footable foo_table_8848 ninja_table_unique_id_963311312_8848 ui table nt_type_ajax_table selectable striped vertical_centered footable-paging-right footable footable-1 footable-filtering footable-filtering-right footable-paging breakpoint-lg" style=""><thead><tr class="footable-filtering"><th colspan="4" scope="row"><form class="form-inline"><div class="form-group footable-filtering-search"><label class="sr-only">Search</label><div class="input-group"><input type="text" class="form-control" placeholder="Поиск" spellcheck="false" autocorrect="off" autocapitalize="off" aria-label="Search in Table"><div class="input-group-btn"><button type="submit" class="btn btn-primary" aria-label="Search" value="Search"><span class="fooicon fooicon-search"></span></button><button type="button" class="btn btn-default dropdown-toggle" aria-label="Search in" value="Search in"><span class="caret"></span></button><ul class="dropdown-menu dropdown-menu-right" role="group" aria-labelledby="ninja_drop_down_id_footable_8848"><li class="dropdown-header" id="ninja_drop_down_id_footable_8848">Искать в</li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">КОД</label></a></li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">НАИМЕНОВАНИЕ УСЛУГИ</label></a></li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">Цена</label></a></li><li><a class="checkbox"><label><input type="checkbox" checked="checked" spellcheck="false" autocorrect="off" autocapitalize="off">заказать</label></a></li></ul></div></div></div></form></th></tr><tr class="footable-header"><th class="ninja_column_0 ninja_clmn_nm_КОД footable-sortable footable-first-visible" style="display: table-cell;" scope="col">КОД<span class="fooicon fooicon-sort"></span></th><th class="ninja_column_1 ninja_clmn_nm_НАИМЕНОВАНИЕ УСЛУГИ footable-sortable" style="display: table-cell;" scope="col">НАИМЕНОВАНИЕ УСЛУГИ<span class="fooicon fooicon-sort"></span></th><th class="ninja_column_2 ninja_clmn_nm_Цена footable-sortable" style="display: table-cell;" scope="col">Цена<span class="fooicon fooicon-sort"></span></th><th class="ninja_column_3 ninja_clmn_nm_заказать footable-sortable footable-last-visible" style="display: table-cell;" scope="col">заказать<span class="fooicon fooicon-sort"></span></th></tr></thead>
                 <colgroup>
                             <col class="ninja_column_0 ">
                             <col class="ninja_column_1 ">
@@ -122,53 +21,9 @@ const pageContent = `<main>
     
 </div>
 
-<h4>Телефон:</h4>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br>
-											+7 (988) 864-10-10<br>
-											</a>
-									</li>
-</ul>
-<h4>Адрес:</h4>
-<ul>
-<li>
-										г. Ставрополь, ул. 45 Параллель, д. 2
-									</li>
-</ul>
-<h4>E-mail:</h4>
-<ul>
-<li>
-											<a href="mailto:litehstavlab@gmail.com"><br>
-											litehstavlab@gmail.com<br>
-											</a>
-									</li>
-</ul>
-<h4>Соц. сети:</h4>
-<ul>
-<li>
-											<a href="https://vk.com/amadeya26"><br>
-										vkontakte<br>
-											</a>
-									</li>
-<li>
-											<a href="https://t.me/amadeya26"><br>
-										Telegram<br>
-											</a>
-									</li>
-<li>
-											<a href="https://wa.me/79888641010"><br>
-										WhatsApp<br>
-											</a>
-									</li>
-</ul>
+
 <p>			<a href="https://prodoctorov.ru/stavropol/set/4874-laboratoriya-_liteh/" target="_blank"><br>
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь"></a>		</p>
-<p>Номер лицензии: Л041-01197-26/00327766</p>
-<p>ИНН/ОГРН: 2635248939/1212600004165</p>
-<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
-<p><a href="http://narcologia26.ru/privacy.html" target="_blank" rel="noopener">Политика обработки<br>персональных данных</a></p>
-                </div>
+<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь"></a>		</p></div>
             </article>
             </div>
 </main>`;

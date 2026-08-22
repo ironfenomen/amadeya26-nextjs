@@ -10,119 +10,7 @@ const pageContent = `
                     <h1 class="entry-title">Прием дерматолога в Ставрополе | Клиника &#171;Амадея&#187;</h1>
                 </header>
 
-                <div class="entry-content">
-                    <p><a href="https://vk.com/amadeya26" target="_blank"><br />
-						Icon-social-vkontakte<br />
-											</a><br />
-					<a href="https://wa.me/79888641010" target="_blank"><br />
-						Whatsapp<br />
-											</a><br />
-					<a href="https://t.me/amadeyastav" target="_blank"><br />
-						Telegram<br />
-											</a></p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-										8 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br />
-											Онлайн-запись<br />
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br />
-											Блог<br />
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br />
-											контакты<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="#"><br />
-										О нас<br />
-											</a>
-									</li>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br />
-										Врачи<br />
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br />
-											Контакты<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="https://vk.com/amadeya26"><br />
-											</a>
-									</li>
-<li>
-											<a href="https://wa.me/79888641010"><br />
-											</a>
-									</li>
-<li>
-											<a href="https://t.me/amadeyastav"><br />
-											</a>
-									</li>
-</ul>
-<p>													<img fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/06/photo_323-1024x1024.webp" alt="" srcset="/wp-content/uploads/2024/06/photo_323-1024x1024.webp 1024w, /wp-content/uploads/2024/06/photo_323-300x300.webp 300w, /wp-content/uploads/2024/06/photo_323-150x150.webp 150w, /wp-content/uploads/2024/06/photo_323-768x768.webp 768w, /wp-content/uploads/2024/06/photo_323-225x225.webp 225w, /wp-content/uploads/2024/06/photo_323.webp 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
-<h2>КЛИНИКА АМАДЕЯ</h2>
-<p>			<a href="tel:+79888641010"><br />
-									ВЫЗВАТЬ ВРАЧА<br />
-					</a></p>
-<p>ул. 45 параллель 2</p>
-<p>пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00</p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-										8 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<nav>
-<ul id="menu-obrezannoe-menyu-dlya-rediza-2">
-<li><a title="Главная" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-4821">Главная</a>
-<ul aria-labelledby="menu-item-dropdown-4821" role="menu">
-<li><a title="Специалисты" href="/speczialisty/">Специалисты</a></li>
-</ul>
-</li>
-<li><a title="Лечение зависимостей" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-5535">Лечение зависимостей</a>
-<ul aria-labelledby="menu-item-dropdown-5535" role="menu">
-<li><a title="Наши услуги" href="/lechenie-zavisimostei-v-stavropole-2/">Наши услуги</a></li>
-<li><a title="Консультация нарколога" href="/konsultacziya-vracha-narkologa-v-stavr/">Консультация нарколога</a></li>
-<li><a title="Онлайн-консультация нарколога" href="/onlain-konsultacziya-narkologa/">Онлайн-консультация нарколога</a></li>
-<li><a title="Выезд врача-нарколога на дом" href="/vyezd-vracha-narkologa-na-dom/">Выезд врача-нарколога на дом</a></li>
-<li><a title="Дезинтоксикация" href="/detoksikacziya/">Дезинтоксикация</a></li>
-<li><a title="Лечение зависимостей в Ставрополе" href="/lechenie-zavisimostei-v-stavropole/">Лечение зависимостей в Ставрополе</a></li>
-<li><a title="Прием психолога-аддиктолога в Ставрополе" href="/priem-psihologa-addiktologa-v-stavro/">Прием психолога-аддиктолога в Ставрополе</a></li>
-<li><a title="Психотерапия при зависимости" href="/psihoterapiya-pri-zavisimosti/">Психотерапия при зависимости</a></li>
-<li><a title="Супервизия при зависимости в Ставрополе" href="/superviziya-pri-zavisimosti-v-stavrop/">Супервизия при зависимости в Ставрополе</a></li>
-</ul>
-</li>
-<li><a title="Психиатрия" href="/psihiatricheskaya-pomoshh-v-stavropole/">Психиатрия</a></li>
-<li><a title="Психотерапия" href="/psihoterapevticheskaya-pomoshh-v-stavropole/">Психотерапия</a></li>
-<li><a title="Психолог" href="/psihologicheskaya-pomoshh-v-stavropole/">Психолог</a></li>
-<li><a title="Терапия" href="/priem-vracha-terapevta-v-stavropole/">Терапия</a></li>
-<li><a title="Эндокринология" href="/priem-vracha-endokrinologa-v-stavropole/">Эндокринология</a></li>
-<li><a title="Гирудотерапия" href="/girudoterapiya/">Гирудотерапия</a></li>
-<li><a title="Онлайн-запись" href="/online-zapis-k-specialistam/">Онлайн-запись</a></li>
-<li><a title="Ревматология" href="/elementor-1309/">Ревматология</a></li>
-<li><a title="Дерматология" href="/priem-dermatologa-v-stavropole-klini/">Дерматология</a></li>
-<li><a title="УЗИ" href="/ultrazvuovaya-diagnostika-v-stavrop/">УЗИ</a></li>
-<li><a title="Гинекология" href="/priem-ginekologa-v-stavropole/">Гинекология</a></li>
-</ul>
-</nav>
-<h1>Дерматология в клинике Амадея. Ваша кожа в надежных руках</h1>
+                <div class="entry-content"><h1>Дерматология в клинике Амадея. Ваша кожа в надежных руках</h1>
 <p><strong>Добро пожаловать в Клинику Амадея в городе Ставрополе </strong>, где забота о вашей коже становится нашим приоритетом. Наша команда высококвалифицированных дерматологов готова предложить вам <strong>современные методы диагностики, лечения и профилактики заболеваний кожи, волос и ногтей</strong>, обеспечивая максимальный комфорт и деликатность в каждом визите. Узнать подробнее</p>
 <p>			<a href="tel:+79888641010"><br />
 									Позвонить<br />
@@ -145,11 +33,11 @@ const pageContent = `
 <p>											Дерматолог • венеролог										</p>
 <p>
 											 Стаж 20 лет										</p>
-<p>											 <!-- swiper-wrapper --></p>
-<p>8 (988) 864-10-10</p>
-<p>ул. 45 параллель 2 </br></p>
-<p> пн-сб: с 7:30 &#8212; 20:00</p>
-<p> вс: с 7:30 до 13:00		</p>
+
+
+
+
+
 <ul>
 <li title="icon-social-vkontakte" data-toggle="tooltip" data-placement="top">
 									        </li>
@@ -160,14 +48,10 @@ const pageContent = `
 </ul>
 <p>			<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
 <img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>		</p>
-<p>Номер лицензии: Л041-01197-26/00327766</p>
-<p>ИНН/ОГРН: 2635248939/1212600004165</p>
-<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
-<p><a href="/privacy/">Политика обработки персональных данных</a><br />
-			<a href="#top"><br />
-	</a><br />
-        <a href="tel:+79888641010">обратный звонок</a><br />
-        <a href="https://wa.me/79888641010">написать в whatsapp</a></p>
+
+
+
+
                 </div>
             </article>
             </div>

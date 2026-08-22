@@ -143,24 +143,17 @@ const pageContent = `
 <p><p>Освойте передовые техники ведения групп. Количество мест ограничено!</h2>
 <p>															<img loading="lazy" decoding="async" width="673" height="200" src="/wp-content/uploads/2025/04/86_digital_course-footer-img_1.jpg.webp" alt="" srcset="/wp-content/uploads/2025/04/86_digital_course-footer-img_1.jpg.webp 673w, /wp-content/uploads/2025/04/86_digital_course-footer-img_1-300x89.jpg.webp 300w" sizes="auto, (max-width: 673px) 100vw, 673px" /><br />
 															<img loading="lazy" decoding="async" width="673" height="200" src="/wp-content/uploads/2025/04/86_digital_course-footer-img_2.jpg.webp" alt="" srcset="/wp-content/uploads/2025/04/86_digital_course-footer-img_2.jpg.webp 673w, /wp-content/uploads/2025/04/86_digital_course-footer-img_2-300x89.jpg.webp 300w" sizes="auto, (max-width: 673px) 100vw, 673px" />															</p>
-<p>8 (988) 864-10-10</p>
-<p>ул. 45 параллель 2 </br></p>
-<p> пн-сб: с 7:30 &#8212; 20:00</p>
-<p> вс: с 7:30 до 13:00		</p>
-<ul>
-<li title="icon-social-vkontakte" data-toggle="tooltip" data-placement="top">
-									        </li>
-<li title="whatsapp" data-toggle="tooltip" data-placement="top">
-									        </li>
-<li title="telegram-plane" data-toggle="tooltip" data-placement="top">
-									        </li>
-</ul>
+
+
+
+
+
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
 <img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p>
-<p>Номер лицензии: Л041-01197-26/00327766</p>
-<p>ИНН/ОГРН: 2635248939/1212600004165</p>
-<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
-<p><a href="/privacy/">Политика обработки персональных данных</a></p>
+
+
+
+
                 </div>
             </article>
             </div>

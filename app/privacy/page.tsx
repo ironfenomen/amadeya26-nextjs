@@ -10,103 +10,7 @@ const pageContent = `
                     <h1 class="entry-title">Политика конфеденциальности</h1>
                 </header>
 
-                <div class="entry-content">
-                    <nav itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
-<ul id="menu-1-dd4f56f">
-<li id="menu-item-4821" itemprop="name"><a href="/" itemprop="url" class = "hfe-menu-item">Главная</a></li>
-<li id="menu-item-5535" itemprop="name"><a href="/lechenie-zavisimostei-v-stavropole-2/" itemprop="url" class = "hfe-menu-item">Лечение зависимостей</a>
-<ul>
-<li id="menu-item-5643" itemprop="name"><a href="/lechenie-zavisimostei-v-stavropole-2/" itemprop="url" class = "hfe-sub-menu-item">Наши услуги</a></li>
-<li id="menu-item-5277" itemprop="name"><a href="/konsultacziya-vracha-narkologa-v-stavr/" itemprop="url" class = "hfe-sub-menu-item">Консультация нарколога</a></li>
-<li id="menu-item-5293" itemprop="name"><a href="/onlain-konsultacziya-narkologa/" itemprop="url" class = "hfe-sub-menu-item">Онлайн-консультация нарколога</a></li>
-<li id="menu-item-5337" itemprop="name"><a href="/vyezd-vracha-narkologa-na-dom/" itemprop="url" class = "hfe-sub-menu-item">Выезд врача-нарколога на дом</a></li>
-<li id="menu-item-5112" itemprop="name"><a href="/detoksikacziya/" itemprop="url" class = "hfe-sub-menu-item">Дезинтоксикация</a></li>
-<li id="menu-item-5352" itemprop="name"><a href="/lechenie-zavisimostei-v-stavropole/" itemprop="url" class = "hfe-sub-menu-item">Лечение зависимостей в Ставрополе</a></li>
-<li id="menu-item-5359" itemprop="name"><a href="/priem-psihologa-addiktologa-v-stavro/" itemprop="url" class = "hfe-sub-menu-item">Прием психолога-аддиктолога в Ставрополе</a></li>
-<li id="menu-item-5366" itemprop="name"><a href="/psihoterapiya-pri-zavisimosti/" itemprop="url" class = "hfe-sub-menu-item">Психотерапия при зависимости</a></li>
-<li id="menu-item-5372" itemprop="name"><a href="/superviziya-pri-zavisimosti-v-stavrop/" itemprop="url" class = "hfe-sub-menu-item">Супервизия при зависимости в Ставрополе</a></li>
-</ul>
-</li>
-<li id="menu-item-5871" itemprop="name"><a href="/psihiatricheskaya-pomoshh-v-stavropole/" itemprop="url" class = "hfe-menu-item">Психиатрия</a></li>
-<li id="menu-item-6037" itemprop="name"><a href="/psihoterapevticheskaya-pomoshh-v-stavropole/" itemprop="url" class = "hfe-menu-item">Психотерапия</a></li>
-<li id="menu-item-6119" itemprop="name"><a href="/psihologicheskaya-pomoshh-v-stavropole/" itemprop="url" class = "hfe-menu-item">Психолог</a></li>
-<li id="menu-item-6179" itemprop="name"><a href="/priem-vracha-terapevta-v-stavropole/" itemprop="url" class = "hfe-menu-item">Терапия</a></li>
-<li id="menu-item-6228" itemprop="name"><a href="/priem-vracha-endokrinologa-v-stavropole/" itemprop="url" class = "hfe-menu-item">Эндокринология</a></li>
-<li id="menu-item-4785" itemprop="name"><a href="/girudoterapiya/" itemprop="url" class = "hfe-menu-item">Гирудотерапия</a></li>
-<li id="menu-item-4786" itemprop="name"><a href="/online-zapis-k-specialistam/" itemprop="url" class = "hfe-menu-item">Онлайн-запись</a></li>
-<li id="menu-item-4787" itemprop="name"><a href="/elementor-1309/" itemprop="url" class = "hfe-menu-item">Ревматология</a></li>
-<li id="menu-item-4800" itemprop="name"><a href="/priem-dermatologa-v-stavropole-klini/" itemprop="url" class = "hfe-menu-item">Дерматология</a></li>
-<li id="menu-item-4801" itemprop="name"><a href="/ultrazvuovaya-diagnostika-v-stavrop/" itemprop="url" class = "hfe-menu-item">УЗИ</a></li>
-<li id="menu-item-6174" itemprop="name"><a href="/priem-ginekologa-v-stavropole/" itemprop="url" class = "hfe-menu-item">Гинекология</a></li>
-</ul>
-</nav>
-<p>														<a href="/"><br />
-							<img decoding="async" width="300" height="165" src="/wp-content/uploads/2024/06/bezymyannyj-300x165.webp" alt="" srcset="/wp-content/uploads/2024/06/bezymyannyj-300x165.webp 300w, /wp-content/uploads/2024/06/bezymyannyj.webp 310w" sizes="(max-width: 300px) 100vw, 300px" />								</a></p>
-<style>/*! elementor - v3.23.0 - 15-07-2024 */
-.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));height:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#69727d;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#69727d}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-threads{background-color:#000}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-x-twitter{background-color:#000}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>
-<p>					<a href="https://vk.com/amadeya26" target="_blank" rel="noopener"><br />
-						Icon-social-vkontakte<br />
-											</a><br />
-					<a href="https://wa.me/79888641010" target="_blank" rel="noopener"><br />
-						Whatsapp<br />
-											</a><br />
-					<a href="https://t.me/amadeya26" target="_blank" rel="noopener"><br />
-						Telegram<br />
-											</a></p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-										8 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br />
-											Онлайн-запись<br />
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br />
-											Блог<br />
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br />
-											контакты<br />
-											</a>
-									</li>
-</ul>
-<nav>
-<ul id="menu-obrezannoe-menyu-dlya-rediza-2">
-<li><a title="Главная" href="/">Главная</a></li>
-<li><a title="Лечение зависимостей" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-5535">Лечение зависимостей</a>
-<ul aria-labelledby="menu-item-dropdown-5535" role="menu">
-<li><a title="Наши услуги" href="/lechenie-zavisimostei-v-stavropole-2/">Наши услуги</a></li>
-<li><a title="Консультация нарколога" href="/konsultacziya-vracha-narkologa-v-stavr/">Консультация нарколога</a></li>
-<li><a title="Онлайн-консультация нарколога" href="/onlain-konsultacziya-narkologa/">Онлайн-консультация нарколога</a></li>
-<li><a title="Выезд врача-нарколога на дом" href="/vyezd-vracha-narkologa-na-dom/">Выезд врача-нарколога на дом</a></li>
-<li><a title="Дезинтоксикация" href="/detoksikacziya/">Дезинтоксикация</a></li>
-<li><a title="Лечение зависимостей в Ставрополе" href="/lechenie-zavisimostei-v-stavropole/">Лечение зависимостей в Ставрополе</a></li>
-<li><a title="Прием психолога-аддиктолога в Ставрополе" href="/priem-psihologa-addiktologa-v-stavro/">Прием психолога-аддиктолога в Ставрополе</a></li>
-<li><a title="Психотерапия при зависимости" href="/psihoterapiya-pri-zavisimosti/">Психотерапия при зависимости</a></li>
-<li><a title="Супервизия при зависимости в Ставрополе" href="/superviziya-pri-zavisimosti-v-stavrop/">Супервизия при зависимости в Ставрополе</a></li>
-</ul>
-</li>
-<li><a title="Психиатрия" href="/psihiatricheskaya-pomoshh-v-stavropole/">Психиатрия</a></li>
-<li><a title="Психотерапия" href="/psihoterapevticheskaya-pomoshh-v-stavropole/">Психотерапия</a></li>
-<li><a title="Психолог" href="/psihologicheskaya-pomoshh-v-stavropole/">Психолог</a></li>
-<li><a title="Терапия" href="/priem-vracha-terapevta-v-stavropole/">Терапия</a></li>
-<li><a title="Эндокринология" href="/priem-vracha-endokrinologa-v-stavropole/">Эндокринология</a></li>
-<li><a title="Гирудотерапия" href="/girudoterapiya/">Гирудотерапия</a></li>
-<li><a title="Онлайн-запись" href="/online-zapis-k-specialistam/">Онлайн-запись</a></li>
-<li><a title="Ревматология" href="/elementor-1309/">Ревматология</a></li>
-<li><a title="Дерматология" href="/priem-dermatologa-v-stavropole-klini/">Дерматология</a></li>
-<li><a title="УЗИ" href="/ultrazvuovaya-diagnostika-v-stavrop/">УЗИ</a></li>
-<li><a title="Гинекология" href="/priem-ginekologa-v-stavropole/">Гинекология</a></li>
-</ul>
-</nav>
-<h2>Политика в отношении обработки персональных данных</h2>
+                <div class="entry-content"><h2>Политика в отношении обработки персональных данных</h2>
 <h3>1. Общие положения</h3>
 <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее &#8212; Закон о персональных данных) и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые ООО «АМАДЕЯ» (далее – Оператор).</p>
 <p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на неприкосновенность частной жизни, личную и семейную тайну.</p>
@@ -217,54 +121,9 @@ const pageContent = `
 <p>14.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты <a href="mailto:amadeya@internet.ru">amadeya@internet.ru</a>.</p>
 <p>14.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором. Политика действует бессрочно до замены ее новой версией.</p>
 <p>14.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу <a href="/privacy">/privacy</a></p>
-<h4>Телефон:</h4>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-											+7 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<h4>Адрес:</h4>
-<ul>
-<li>
-										г. Ставрополь, ул. 45 Параллель, д. 2
-									</li>
-</ul>
-<h4>E-mail:</h4>
-<ul>
-<li>
-											<a href="mailto:litehstavlab@gmail.com"><br />
-											litehstavlab@gmail.com<br />
-											</a>
-									</li>
-</ul>
-<h4>Соц. сети:</h4>
-<ul>
-<li>
-											<a href="https://vk.com/amadeya26"><br />
-										vkontakte<br />
-											</a>
-									</li>
-<li>
-											<a href="https://t.me/amadeya26"><br />
-										Telegram<br />
-											</a>
-									</li>
-<li>
-											<a href="https://wa.me/79888641010"><br />
-										WhatsApp<br />
-											</a>
-									</li>
-</ul>
+
 <p>			<a href="https://prodoctorov.ru/stavropol/set/4874-laboratoriya-_liteh/" target="_blank" rel="noopener"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
-<p>Номер лицензии: Л041-01197-26/00327766</p>
-<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
-<p><a href="http://narcologia26.ru/privacy.html" target="_blank" rel="noopener">Политика обработки<br />персональных данных</a></p>
-<p>			<a href="#top"><br />
-	</a></p>
-                </div>
+<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p></div>
             </article>
             </div>
 </main>

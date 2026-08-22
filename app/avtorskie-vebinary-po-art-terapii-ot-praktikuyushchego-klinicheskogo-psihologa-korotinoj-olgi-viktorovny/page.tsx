@@ -124,24 +124,17 @@ const pageContent = `
 <a href="tel:+79282643017">+7 (928) 264-30-17</a> </p>
 <p> Количество мест в онлайн комнате строго ограничено!</h2>
 <p>															<img loading="lazy" decoding="async" width="1280" height="960" src="/wp-content/uploads/2025/06/87647d67-df07-400e-88e1-b2052761d24c.jpg.webp" alt="" srcset="/wp-content/uploads/2025/06/87647d67-df07-400e-88e1-b2052761d24c.jpg.webp 1280w, /wp-content/uploads/2025/06/87647d67-df07-400e-88e1-b2052761d24c-300x225.jpg.webp 300w, /wp-content/uploads/2025/06/87647d67-df07-400e-88e1-b2052761d24c-1024x768.jpg.webp 1024w, /wp-content/uploads/2025/06/87647d67-df07-400e-88e1-b2052761d24c-768x576.jpg.webp 768w" sizes="auto, (max-width: 1280px) 100vw, 1280px" />															</p>
-<p>8 (988) 864-10-10</p>
-<p>ул. 45 параллель 2 </br></p>
-<p> пн-сб: с 7:30 &#8212; 20:00</p>
-<p> вс: с 7:30 до 13:00		</p>
-<ul>
-<li title="icon-social-vkontakte" data-toggle="tooltip" data-placement="top">
-									        </li>
-<li title="whatsapp" data-toggle="tooltip" data-placement="top">
-									        </li>
-<li title="telegram-plane" data-toggle="tooltip" data-placement="top">
-									        </li>
-</ul>
+
+
+
+
+
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
 <img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p>
-<p>Номер лицензии: Л041-01197-26/00327766</p>
-<p>ИНН/ОГРН: 2635248939/1212600004165</p>
-<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
-<p><a href="/privacy/">Политика обработки персональных данных</a></p>
+
+
+
+
                 </div>
             </article>
             </div>

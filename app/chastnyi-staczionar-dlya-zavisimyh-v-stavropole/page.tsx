@@ -10,120 +10,7 @@ const pageContent = `
                     <h1 class="entry-title">Частный стационар для зависимых в Ставрополе</h1>
                 </header>
 
-                <div class="entry-content">
-                    <ul>
-<li>
-											<a href="#"><br />
-										О нас<br />
-											</a>
-									</li>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br />
-										Врачи<br />
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br />
-										Блог<br />
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br />
-											Контакты<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="https://vk.com/amadeya26"><br />
-											</a>
-									</li>
-<li>
-											<a href="https://wa.me/79888641010"><br />
-											</a>
-									</li>
-<li>
-											<a href="https://t.me/amadeya26"><br />
-											</a>
-									</li>
-</ul>
-<p>													<img fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/06/photo_323-1024x1024.webp" alt="" srcset="/wp-content/uploads/2024/06/photo_323-1024x1024.webp 1024w, /wp-content/uploads/2024/06/photo_323-300x300.webp 300w, /wp-content/uploads/2024/06/photo_323-150x150.webp 150w, /wp-content/uploads/2024/06/photo_323-768x768.webp 768w, /wp-content/uploads/2024/06/photo_323-225x225.webp 225w, /wp-content/uploads/2024/06/photo_323.webp 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
-<h2>КЛИНИКА АМАДЕЯ</h2>
-<p>			<a href="tel:+79888641010"><br />
-									ВЫЗВАТЬ ВРАЧА<br />
-					</a></p>
-<p>ул. 45 параллель 2</p>
-<p>пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00</p>
-<p>8 (988) 864-10-10</p>
-<nav>
-<ul id="menu-obrezannoe-menyu-dlya-rediza-2">
-<li><a title="Главная" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-4821">Главная</a>
-<ul aria-labelledby="menu-item-dropdown-4821" role="menu">
-<li><a title="Специалисты" href="/speczialisty/">Специалисты</a></li>
-</ul>
-</li>
-<li><a title="Лечение зависимостей" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-5535">Лечение зависимостей</a>
-<ul aria-labelledby="menu-item-dropdown-5535" role="menu">
-<li><a title="Наши услуги" href="/lechenie-zavisimostei-v-stavropole-2/">Наши услуги</a></li>
-<li><a title="Консультация нарколога" href="/konsultacziya-vracha-narkologa-v-stavr/">Консультация нарколога</a></li>
-<li><a title="Онлайн-консультация нарколога" href="/onlain-konsultacziya-narkologa/">Онлайн-консультация нарколога</a></li>
-<li><a title="Выезд врача-нарколога на дом" href="/vyezd-vracha-narkologa-na-dom/">Выезд врача-нарколога на дом</a></li>
-<li><a title="Дезинтоксикация" href="/detoksikacziya/">Дезинтоксикация</a></li>
-<li><a title="Лечение зависимостей в Ставрополе" href="/lechenie-zavisimostei-v-stavropole/">Лечение зависимостей в Ставрополе</a></li>
-<li><a title="Прием психолога-аддиктолога в Ставрополе" href="/priem-psihologa-addiktologa-v-stavro/">Прием психолога-аддиктолога в Ставрополе</a></li>
-<li><a title="Психотерапия при зависимости" href="/psihoterapiya-pri-zavisimosti/">Психотерапия при зависимости</a></li>
-<li><a title="Супервизия при зависимости в Ставрополе" href="/superviziya-pri-zavisimosti-v-stavrop/">Супервизия при зависимости в Ставрополе</a></li>
-</ul>
-</li>
-<li><a title="Психиатрия" href="/psihiatricheskaya-pomoshh-v-stavropole/">Психиатрия</a></li>
-<li><a title="Психотерапия" href="/psihoterapevticheskaya-pomoshh-v-stavropole/">Психотерапия</a></li>
-<li><a title="Психолог" href="/psihologicheskaya-pomoshh-v-stavropole/">Психолог</a></li>
-<li><a title="Терапия" href="/priem-vracha-terapevta-v-stavropole/">Терапия</a></li>
-<li><a title="Эндокринология" href="/priem-vracha-endokrinologa-v-stavropole/">Эндокринология</a></li>
-<li><a title="Гирудотерапия" href="/girudoterapiya/">Гирудотерапия</a></li>
-<li><a title="Онлайн-запись" href="/online-zapis-k-specialistam/">Онлайн-запись</a></li>
-<li><a title="Ревматология" href="/elementor-1309/">Ревматология</a></li>
-<li><a title="Дерматология" href="/priem-dermatologa-v-stavropole-klini/">Дерматология</a></li>
-<li><a title="УЗИ" href="/ultrazvuovaya-diagnostika-v-stavrop/">УЗИ</a></li>
-<li><a title="Гинекология" href="/priem-ginekologa-v-stavropole/">Гинекология</a></li>
-</ul>
-</nav>
-<p>														<a href="/"><br />
-							<img decoding="async" width="310" height="171" src="/wp-content/uploads/2024/06/bezymyannyj.webp" alt="" srcset="/wp-content/uploads/2024/06/bezymyannyj.webp 310w, /wp-content/uploads/2024/06/bezymyannyj-300x165.webp 300w" sizes="(max-width: 310px) 100vw, 310px" />								</a><br />
-					<a href="https://vk.com/amadeya26" target="_blank"><br />
-						Icon-social-vkontakte<br />
-											</a><br />
-					<a href="https://wa.me/79888641010" target="_blank"><br />
-						Whatsapp<br />
-											</a><br />
-					<a href="https://t.me/amadeya26" target="_blank"><br />
-						Telegram<br />
-											</a></p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-										8 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="#"><br />
-											Онлайн-запись<br />
-											</a>
-									</li>
-<li>
-											<a href="#"><br />
-											Блог<br />
-											</a>
-									</li>
-<li>
-											<a href="#"><br />
-											контакты<br />
-											</a>
-									</li>
-</ul>
-<h2>Зависимость можно победить</h2>
+                <div class="entry-content"><h2>Зависимость можно победить</h2>
 <h2>Лечение наркомании и алкоголизма в наркологической<br />
 клинике “Амадея”</h2>
 <p>Анонимно. По официальной лицензии. В стационаре и на дому.<br />Стаж специалистов &#8212; от 5 до 30 лет</p>
@@ -150,14 +37,7 @@ const pageContent = `
 <h2>Из 1920 часов бодрствования 1500 часов у пациента уходит на работу со<br />
 специалистами, в группе или индивидуально</h2>
 <h2>Гарантируем достойные условия содержания</h2>
-<p>														Previous<br />
-														Next<br />
-														Previous<br />
-														Next<br />
-														Previous<br />
-														Next<br />
-														Previous<br />
-														Next</p>
+<p></p>
 <p>Клиника “Амадея” — это, прежде всего, медицинское заведение, мы не<br />используем околорелигиозные практики. Да, в реабилитационном центре царит дисциплина,<br />но это —<b> не трудовой лагерь. Медики меняют образ жизни и<br />мировосприятие больного исключительно при помощи медикаментов и<br />методов психотерапии</b></p>
 <h2>Мы используем методику Когнитивно-поведенческой терапии в лечении зависимостей</h2>
 <p>													<img decoding="async" width="1024" height="872" src="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp" alt="" srcset="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp 1024w, /wp-content/uploads/2023/05/back-view-senior-pat-300x255.jpg.webp 300w, /wp-content/uploads/2023/05/back-view-senior-pat-768x654.jpg.webp 768w, /wp-content/uploads/2023/05/back-view-senior-pat-264x225.jpg.webp 264w, /wp-content/uploads/2023/05/back-view-senior-pat.jpg.webp 1500w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
@@ -165,11 +45,9 @@ const pageContent = `
 <p>КПТ помогает вывести пациента из замкнутого круга «ненормальное мышление – ненормальное поведение». Его мысли и поступки направляются в нужное русло. Со временем меняются паттерны поведения.</p>
 <p>Есть возможность оплатить лечение в рассрочку</p>
 <h2>С пациентами работают опытные наркологи-психотерапевты</h2>
-<p>						[elementor-template id=&#187;3542&#8243;]<br />
-						[elementor-template id=&#187;1364&#8243;]<br />
-						[elementor-template id=&#187;2281&#8243;]<br />
-														Previous<br />
-														Next</p>
+<p>						
+						
+						</p>
 <h2>Программы разрабатываются персонально, но<br />
 обязательно включает 4 важных этапа</h2>
 <p>Детоксикация<br />организма и<br />снятие ломки</p>
@@ -180,61 +58,22 @@ const pageContent = `
 “Амадея” и их близкие</h2>
 <p>						Обратилась к Ольге Юрьевне после неудачных попыток вылечиться от депрессии и тревоги. С 2020 года искала своего врача и, кажется, нашла. Ольга Юрьевна мой четвёртый психиатр. Мне понравилось бережное отношение, открытость, другие врачи не говорили мне о диагнозе, а здесь сразу сказали предположительный. С июня получаю медикаментозную терапию, сначала не подошел препарат, со второго раза получилось. Сейчас продолжаю пить лекарства, чувствую себя лучше, появились силы, настроение стабильное, хочется жить и к чему-то стремиться. Ольга Юрьевна, спасибо за Ваш труд!<br />
 						Был на приеме у Игоря Александровича 2 месяца назад, проблема была алкоголизм, долго решался на лечение, но посоветовали данную клинику и специалиста. Прием прошел хорошо, провели кодировку, сделал на 1 год. Самочувствие хорошее, проведённой консультацией и лечением доволен, специалиста рекомендую.<br />
-						10.01.2021 года наша семья обратилась к Крон Елене Ивановне, требовалась срочная помощь нашему близкому родственнику, страдающему алкогольной зависимостью. Уважаемая Елена Ивановна! Огромное спасибо за Ваш высокий профессионализм, внимательное отношение к пациентам, спасибо за высокие человеческие качества, за Ваше трудолюбие! Благодарю от всей души и желаю дальнейших профессиональных успехов! Вы даете шанс на вторую жизнь! Очень рекомендуем!<br />
-														Previous<br />
-														Next</p>
+						10.01.2021 года наша семья обратилась к Крон Елене Ивановне, требовалась срочная помощь нашему близкому родственнику, страдающему алкогольной зависимостью. Уважаемая Елена Ивановна! Огромное спасибо за Ваш высокий профессионализм, внимательное отношение к пациентам, спасибо за высокие человеческие качества, за Ваше трудолюбие! Благодарю от всей души и желаю дальнейших профессиональных успехов! Вы даете шанс на вторую жизнь! Очень рекомендуем!<br /></p>
 <p>Хотите избавиться от<br />зависимости? Тогда сделайте<br />простой первый шаг —<br />свяжитесь с нами, вас это ни к<br />чему не обяжет. Сообщите о<br />своей проблеме и мы<br />расскажем, как сможем помочь.<br />А дальше — выбор за вами.</p>
-<p>					<a href="https://vk.com/amadeya26" target="_blank"><br />
-						Icon-social-vkontakte<br />
-											</a><br />
-					<a href="https://wa.me/79888641010" target="_blank"><br />
-						Whatsapp<br />
-											</a><br />
-					<a href="https://t.me/amadeya26" target="_blank"><br />
-						Telegram<br />
-											</a></p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-										8 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br />
-											Онлайн-запись<br />
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br />
-											Блог<br />
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br />
-											контакты<br />
-											</a>
-									</li>
-</ul>
-<p>8 (988) 864-10-10</p>
-<p>ул. 45 параллель 2 </br></p>
-<p> пн-сб: с 7:30 &#8212; 20:00</p>
-<p> вс: с 7:30 до 13:00		</p>
-<ul>
-<li title="icon-social-vkontakte" data-toggle="tooltip" data-placement="top">
-									        </li>
-<li title="whatsapp" data-toggle="tooltip" data-placement="top">
-									        </li>
-<li title="telegram-plane" data-toggle="tooltip" data-placement="top">
-									        </li>
-</ul>
+
+
+
+
+
+
+
+
 <p>			<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
 <img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>		</p>
-<p>Номер лицензии: Л041-01197-26/00327766</p>
-<p>ИНН/ОГРН: 2635248939/1212600004165</p>
-<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
-<p><a href="/privacy/">Политика обработки персональных данных</a></p>
+
+
+
+
                 </div>
             </article>
             </div>

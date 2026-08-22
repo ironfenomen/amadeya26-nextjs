@@ -10,124 +10,7 @@ const pageContent = `
                     <h1 class="entry-title">Лечение зависимостей в Ставрополе</h1>
                 </header>
 
-                <div class="entry-content">
-                    <p><a href="https://vk.com/amadeya26" target="_blank"><br />
-						Icon-social-vkontakte<br />
-											</a><br />
-					<a href="https://wa.me/79888641010" target="_blank"><br />
-						Whatsapp<br />
-											</a><br />
-					<a href="https://t.me/amadeyastav" target="_blank"><br />
-						Telegram<br />
-											</a></p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-										8 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br />
-											Онлайн-запись<br />
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br />
-											Блог<br />
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br />
-											контакты<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="#"><br />
-										О нас<br />
-											</a>
-									</li>
-<li>
-											<a href="/blog-kliniki-amadeya/"><br />
-											Блог<br />
-											</a>
-									</li>
-<li>
-											<a href="/online-zapis-k-specialistam/"><br />
-										Врачи<br />
-											</a>
-									</li>
-<li>
-											<a href="/kontakty/"><br />
-											Контакты<br />
-											</a>
-									</li>
-</ul>
-<ul>
-<li>
-											<a href="https://vk.com/amadeya26"><br />
-											</a>
-									</li>
-<li>
-											<a href="https://wa.me/79888641010"><br />
-											</a>
-									</li>
-<li>
-											<a href="https://t.me/amadeyastav"><br />
-											</a>
-									</li>
-</ul>
-<p>													<img fetchpriority="high" decoding="async" width="1024" height="1024" src="/wp-content/uploads/2024/06/photo_323-1024x1024.webp" alt="" srcset="/wp-content/uploads/2024/06/photo_323-1024x1024.webp 1024w, /wp-content/uploads/2024/06/photo_323-300x300.webp 300w, /wp-content/uploads/2024/06/photo_323-150x150.webp 150w, /wp-content/uploads/2024/06/photo_323-768x768.webp 768w, /wp-content/uploads/2024/06/photo_323-225x225.webp 225w, /wp-content/uploads/2024/06/photo_323.webp 1280w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
-<h2>КЛИНИКА АМАДЕЯ</h2>
-<p>			<a href="tel:+79888641010"><br />
-									ВЫЗВАТЬ ВРАЧА<br />
-					</a></p>
-<p>ул. 45 параллель 2</p>
-<p>пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00</p>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-										8 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<nav>
-<ul id="menu-obrezannoe-menyu-dlya-rediza-2">
-<li><a title="Главная" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-4821">Главная</a>
-<ul aria-labelledby="menu-item-dropdown-4821" role="menu">
-<li><a title="Специалисты" href="/speczialisty/">Специалисты</a></li>
-</ul>
-</li>
-<li><a title="Лечение зависимостей" href="#" data-toggle="dropdown" aria-expanded="false" id="menu-item-dropdown-5535">Лечение зависимостей</a>
-<ul aria-labelledby="menu-item-dropdown-5535" role="menu">
-<li><a title="Наши услуги" href="/lechenie-zavisimostei-v-stavropole-2/">Наши услуги</a></li>
-<li><a title="Консультация нарколога" href="/konsultacziya-vracha-narkologa-v-stavr/">Консультация нарколога</a></li>
-<li><a title="Онлайн-консультация нарколога" href="/onlain-konsultacziya-narkologa/">Онлайн-консультация нарколога</a></li>
-<li><a title="Выезд врача-нарколога на дом" href="/vyezd-vracha-narkologa-na-dom/">Выезд врача-нарколога на дом</a></li>
-<li><a title="Дезинтоксикация" href="/detoksikacziya/">Дезинтоксикация</a></li>
-<li><a title="Лечение зависимостей в Ставрополе" href="/lechenie-zavisimostei-v-stavropole/">Лечение зависимостей в Ставрополе</a></li>
-<li><a title="Прием психолога-аддиктолога в Ставрополе" href="/priem-psihologa-addiktologa-v-stavro/">Прием психолога-аддиктолога в Ставрополе</a></li>
-<li><a title="Психотерапия при зависимости" href="/psihoterapiya-pri-zavisimosti/">Психотерапия при зависимости</a></li>
-<li><a title="Супервизия при зависимости в Ставрополе" href="/superviziya-pri-zavisimosti-v-stavrop/">Супервизия при зависимости в Ставрополе</a></li>
-</ul>
-</li>
-<li><a title="Психиатрия" href="/psihiatricheskaya-pomoshh-v-stavropole/">Психиатрия</a></li>
-<li><a title="Психотерапия" href="/psihoterapevticheskaya-pomoshh-v-stavropole/">Психотерапия</a></li>
-<li><a title="Психолог" href="/psihologicheskaya-pomoshh-v-stavropole/">Психолог</a></li>
-<li><a title="Терапия" href="/priem-vracha-terapevta-v-stavropole/">Терапия</a></li>
-<li><a title="Эндокринология" href="/priem-vracha-endokrinologa-v-stavropole/">Эндокринология</a></li>
-<li><a title="Гирудотерапия" href="/girudoterapiya/">Гирудотерапия</a></li>
-<li><a title="Онлайн-запись" href="/online-zapis-k-specialistam/">Онлайн-запись</a></li>
-<li><a title="Ревматология" href="/elementor-1309/">Ревматология</a></li>
-<li><a title="Дерматология" href="/priem-dermatologa-v-stavropole-klini/">Дерматология</a></li>
-<li><a title="УЗИ" href="/ultrazvuovaya-diagnostika-v-stavrop/">УЗИ</a></li>
-<li><a title="Гинекология" href="/priem-ginekologa-v-stavropole/">Гинекология</a></li>
-</ul>
-</nav>
-<h1>Лечение зависимостей: Профессиональная помощь на пути к свободе</h1>
+                <div class="entry-content"><h1>Лечение зависимостей: Профессиональная помощь на пути к свободе</h1>
 <p>Если вы или ваши близкие столкнулись с проблемой зависимости, не откладывайте решение на потом. Наши специалисты готовы помочь вам справиться с любой формой зависимости и вернуть контроль над своей жизнью. Мы предлагаем комплексное лечение и поддержку на каждом этапе вашего пути к выздоровлению.</p>
 <p>			<a href="tel:+79888641010"><br />
 									Позвонить<br />
@@ -161,56 +44,10 @@ const pageContent = `
 <p>											Нарколог										</p>
 <p>
 											Стаж 30 лет • высшая категория										</p>
-<p>											 <!-- swiper-wrapper --></p>
-<h4>Телефон:</h4>
-<ul>
-<li>
-											<a href="tel:+79888641010"><br />
-											+7 (988) 864-10-10<br />
-											</a>
-									</li>
-</ul>
-<h4>Адрес:</h4>
-<ul>
-<li>
-										г. Ставрополь, ул. 45 Параллель, д. 2
-									</li>
-</ul>
-<h4>E-mail:</h4>
-<ul>
-<li>
-											<a href="mailto:litehstavlab@gmail.com"><br />
-											litehstavlab@gmail.com<br />
-											</a>
-									</li>
-</ul>
-<h4>Соц. сети:</h4>
-<ul>
-<li>
-											<a href="https://vk.com/amadeya26"><br />
-										vkontakte<br />
-											</a>
-									</li>
-<li>
-											<a href="https://t.me/amadeyastav"><br />
-										Telegram<br />
-											</a>
-									</li>
-<li>
-											<a href="https://wa.me/79888641010"><br />
-										WhatsApp<br />
-											</a>
-									</li>
-</ul>
+
+
 <p>			<a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
-<p>Номер лицензии: Л041-01197-26/00327766</p>
-<p>ИНН/ОГРН: 2635248939/1212600004165</p>
-<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
-<p><a href="http://narcologia26.ru/privacy.html" target="_blank" rel="noopener">Политика обработки<br />персональных данных</a></p>
-<p>			<a href="#top"><br />
-	</a></p>
-                </div>
+<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p></div>
             </article>
             </div>
 </main>
