@@ -11,72 +11,107 @@ const pageContent = `
                 </header>
 
                 <div class="entry-content">
-                    <p><img fetchpriority="high" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/1531642-580327-chimshit_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/1531642-580327-chimshit_square.jpg.webp 300w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/1531642-580327-chimshit_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
-<h2>Чимшит Анна Фаритовна</h2>
-<p>Функциональный диагност</p>
-<p>					<a href="/speczialisty/chimshit-anna-faritovna/"><br />
-	    Подробнее<br />
-	</a><br />
-															<img decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp 300w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/305112-361490-fomenko_square-100x100.jpg.webp 100w" sizes="(max-width: 300px) 100vw, 300px" />															</p>
-<h2>Фоменко Оксана Анатольевна</h2>
-<p>Дерматолог</p>
-<p>					<a href="/speczialisty/fomenko-oksana-anatolevna/"><br />
-	    Подробнее<br />
-	</a><br />
-															<img decoding="async" width="800" height="800" src="/wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1.jpg.webp 800w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-300x300.jpg.webp 300w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-150x150.jpg.webp 150w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-768x768.jpg.webp 768w, /wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1-225x225.jpg.webp 225w" sizes="(max-width: 800px) 100vw, 800px" />															</p>
-<h2>Карамышева Ирина Николаевна</h2>
-<p>Гинеколог</p>
-<p>					<a href="/speczialisty/karamysheva-irina-nikolaevna/"><br />
-	    Подробнее<br />
-	</a><br />
-															<img loading="lazy" decoding="async" width="768" height="1024" src="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg" alt="" srcset="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg 768w, /wp-content/uploads/2024/07/IMG_8627-225x300.jpeg 225w, /wp-content/uploads/2024/07/IMG_8627-1152x1536.jpeg 1152w, /wp-content/uploads/2024/07/IMG_8627-1536x2048.jpeg 1536w, /wp-content/uploads/2024/07/IMG_8627-169x225.jpeg 169w, /wp-content/uploads/2024/07/IMG_8627-scaled.jpeg 1920w" sizes="auto, (max-width: 768px) 100vw, 768px" />															</p>
-<h2>Мутаева Ольга Юрьевна</h2>
-<p>Нарколог • психиатр • психотерапевт</p>
-<p>					<a href="/speczialisty/mutaeva-olga-yurevna/"><br />
-	    Подробнее<br />
-	</a><br />
-															<img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2023/07/543210-151413-kron_square.jpg.webp" alt="" srcset="/wp-content/uploads/2023/07/543210-151413-kron_square.jpg.webp 300w, /wp-content/uploads/2023/07/543210-151413-kron_square-150x150.jpg.webp 150w, /wp-content/uploads/2023/07/543210-151413-kron_square-225x225.jpg.webp 225w" sizes="auto, (max-width: 300px) 100vw, 300px" />															</p>
-<h2>Крон Елена Ивановна</h2>
-<p>нарколог • психиатр • психотерапевт</p>
-<p>					<a href="/speczialisty/kron-elena-ivanovna/"><br />
-	    Подробнее<br />
-	</a><br />
-															<img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/08/1607082-451396-rahmatulina_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/08/1607082-451396-rahmatulina_square.jpg.webp 300w, /wp-content/uploads/2024/08/1607082-451396-rahmatulina_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/08/1607082-451396-rahmatulina_square-225x225.jpg.webp 225w, /wp-content/uploads/2024/08/1607082-451396-rahmatulina_square-100x100.jpg.webp 100w" sizes="auto, (max-width: 300px) 100vw, 300px" />															</p>
-<h2>Рахматулина Елена Николаевна</h2>
-<p>Врач УЗИ</p>
-<p>					<a href="/speczialisty/rahmatulina-elena-nikolaevna/"><br />
-	    Подробнее<br />
-	</a><br />
-															<img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp 300w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-225x225.jpg.webp 225w" sizes="auto, (max-width: 300px) 100vw, 300px" />															</p>
-<h2>Лукашевич Лада Сергеевна</h2>
-<p>Эндокринолог • детский эндокринолог</p>
-<p>					<a><br />
-	    Подробнее<br />
-	</a><br />
-															<img decoding="async" src="/wp-content/uploads/2024/08/photo_2024-06-27_12-59-20.jpg.webp" title="" alt="" loading="lazy" />															</p>
-<h2><a href="/speczialisty/denisenko-igor-aleksandrovich/">Денисенко Игорь Александрович</a></h2>
-<p>Нарколог • психиатр • психотерапевт</p>
-<p>					<a><br />
-	    Подробнее<br />
-	</a><br />
-															<img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2023/03/1361978-967328-balakina_square.jpg.webp" alt="" srcset="/wp-content/uploads/2023/03/1361978-967328-balakina_square.jpg.webp 300w, /wp-content/uploads/2023/03/1361978-967328-balakina_square-150x150.jpg.webp 150w, /wp-content/uploads/2023/03/1361978-967328-balakina_square-225x225.jpg.webp 225w" sizes="auto, (max-width: 300px) 100vw, 300px" />															</p>
-<h2><a href="/speczialisty/denisenko-igor-aleksandrovich/">Балакина Светлана Александровна</a></h2>
-<p>Хирург</p>
-<p>					<a><br />
-	    Подробнее<br />
-	</a><br />
-															<img decoding="async" src="/wp-content/uploads/2024/07/Водолажский-768x1024.webp" title="" alt="" loading="lazy" />															</p>
-<h2><a href="/speczialisty/denisenko-igor-aleksandrovich/">Водолажский Андрей Федорович</a></h2>
-<p>Психотерапевт • нарколог</p>
-<p>					<a><br />
-	    Подробнее<br />
-	</a><br />
-															<img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2022/12/1519383-939888-mozharuk_square.jpg.webp" alt="" srcset="/wp-content/uploads/2022/12/1519383-939888-mozharuk_square.jpg.webp 300w, /wp-content/uploads/2022/12/1519383-939888-mozharuk_square-150x150.jpg.webp 150w, /wp-content/uploads/2022/12/1519383-939888-mozharuk_square-225x225.jpg.webp 225w" sizes="auto, (max-width: 300px) 100vw, 300px" />															</p>
-<h2>Можарук Дарья Сергеевна</h2>
-<p>Терапевт • кардиолог</p>
-<p>					<a href="/speczialisty/mozharuk-darya-sergeevna/"><br />
-	    Подробнее<br />
-	</a></p>
+<div class="a26-docs-grid">
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/08/1531642-580327-chimshit_square.jpg.webp" alt="Врач Чимшит Анна Фаритовна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Чимшит</span><span>Анна Фаритовна</span></div>
+                                <div class="people-item-spec">Функциональный диагност</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/chimshit-anna-faritovna/" aria-label="Подробнее: Чимшит Анна Фаритовна"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/08/305112-361490-fomenko_square.jpg.webp" alt="Врач Фоменко Оксана Анатольевна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Фоменко</span><span>Оксана Анатольевна</span></div>
+                                <div class="people-item-spec">Дерматолог</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/fomenko-oksana-anatolevna/" aria-label="Подробнее: Фоменко Оксана Анатольевна"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2023/03/kb0musurvkhgq5yprfozxzl998zwf2nibtgarcwp-1.jpg.webp" alt="Врач Карамышева Ирина Николаевна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Карамышева</span><span>Ирина Николаевна</span></div>
+                                <div class="people-item-spec">Гинеколог</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/karamysheva-irina-nikolaevna/" aria-label="Подробнее: Карамышева Ирина Николаевна"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg" alt="Врач Мутаева Ольга Юрьевна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Мутаева</span><span>Ольга Юрьевна</span></div>
+                                <div class="people-item-spec">Нарколог • психиатр • психотерапевт</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/mutaeva-olga-yurevna/" aria-label="Подробнее: Мутаева Ольга Юрьевна"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2023/07/543210-151413-kron_square.jpg.webp" alt="Врач Крон Елена Ивановна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Крон</span><span>Елена Ивановна</span></div>
+                                <div class="people-item-spec">нарколог • психиатр • психотерапевт</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/kron-elena-ivanovna/" aria-label="Подробнее: Крон Елена Ивановна"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/08/1607082-451396-rahmatulina_square.jpg.webp" alt="Врач Рахматулина Елена Николаевна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Рахматулина</span><span>Елена Николаевна</span></div>
+                                <div class="people-item-spec">Врач УЗИ</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/rahmatulina-elena-nikolaevna/" aria-label="Подробнее: Рахматулина Елена Николаевна"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp" alt="Врач Лукашевич Лада Сергеевна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Лукашевич</span><span>Лада Сергеевна</span></div>
+                                <div class="people-item-spec">Эндокринолог • детский эндокринолог</div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/08/photo_2024-06-27_12-59-20.jpg.webp" alt="Врач Денисенко Игорь Александрович"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Денисенко</span><span>Игорь Александрович</span></div>
+                                <div class="people-item-spec">Нарколог • психиатр • психотерапевт</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/denisenko-igor-aleksandrovich/" aria-label="Подробнее: Денисенко Игорь Александрович"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2023/03/1361978-967328-balakina_square.jpg.webp" alt="Врач Балакина Светлана Александровна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Балакина</span><span>Светлана Александровна</span></div>
+                                <div class="people-item-spec">Хирург</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/denisenko-igor-aleksandrovich/" aria-label="Подробнее: Балакина Светлана Александровна"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/07/Водолажский-768x1024.webp" alt="Врач Водолажский Андрей Федорович"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Водолажский</span><span>Андрей Федорович</span></div>
+                                <div class="people-item-spec">Психотерапевт • нарколог</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/denisenko-igor-aleksandrovich/" aria-label="Подробнее: Водолажский Андрей Федорович"></a>
+                        </div>
+                        <div class="people-item __line-block-item">
+                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2022/12/1519383-939888-mozharuk_square.jpg.webp" alt="Врач Можарук Дарья Сергеевна"></div>
+                            <div class="people-item-desc">
+                                <div class="people-item-name"><span>Можарук</span><span>Дарья Сергеевна</span></div>
+                                <div class="people-item-spec">Терапевт • кардиолог</div>
+                                <div class="people-item-more">Подробнее</div>
+                            </div>
+                            <a class="overlink" href="/speczialisty/mozharuk-darya-sergeevna/" aria-label="Подробнее: Можарук Дарья Сергеевна"></a>
+                        </div>
+                    </div>
                 </div>
             </article>
             </div>
