@@ -990,3 +990,76 @@ footer { padding: 15px 0; margin-top: 30px; }
   .a26-docs-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
   .a26-docs-grid .people-item-photo { height: 220px; }
 }
+
+/* ==========================================================================
+   ЧАСТЬ 14 — WP-контентные страницы: типографика + карточка врача
+   (site-owned: оформление verbatim the_content, разметка не меняется)
+   ========================================================================== */
+.entry-content { max-width: 860px; font-size: 16px; line-height: 1.72; color: var(--t2, rgba(233,238,246,0.82)); }
+.entry-content > * + * { margin-top: 1.1em; }
+.entry-content h2 {
+  margin: 1.6em 0 0.6em; font-size: clamp(24px, 3vw, 32px); line-height: 1.25;
+  position: relative; padding-bottom: 14px;
+}
+.entry-content h2::after {
+  content: ""; position: absolute; left: 0; bottom: 0; width: 56px; height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+}
+.entry-content h3 {
+  margin: 1.4em 0 0.35em; font-family: var(--ff-sans, "Golos Text", sans-serif);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--g2);
+}
+.entry-content h3 + p { margin-top: 0.3em; }
+.entry-content p { margin: 0.8em 0; }
+.entry-content ul, .entry-content ol { margin: 1em 0; padding-left: 0; list-style: none; }
+.entry-content ul li {
+  position: relative; padding-left: 26px; margin: 0.55em 0;
+}
+.entry-content ul li::before {
+  content: ""; position: absolute; left: 4px; top: 0.62em; width: 7px; height: 7px;
+  background: var(--gold); transform: rotate(45deg); opacity: 0.85;
+}
+.entry-content ol { counter-reset: a26ol; }
+.entry-content ol li { position: relative; padding-left: 34px; margin: 0.55em 0; counter-increment: a26ol; }
+.entry-content ol li::before {
+  content: counter(a26ol); position: absolute; left: 0; top: 0.1em;
+  font-family: var(--ff-serif, "Playfair Display", serif); font-size: 1.15em; color: var(--gold);
+}
+.entry-content strong { color: var(--t1, #eef2f8); font-weight: 600; }
+.entry-content a { color: var(--g2); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(242,223,160,0.35); }
+.entry-content a:hover { color: var(--gold); text-decoration-color: var(--gold); }
+.entry-content img { border-radius: 10px; height: auto; }
+
+/* Фото врача в начале страницы — карточка с золотой рамкой */
+.entry-content > p:first-of-type:has(> img:only-child),
+.entry-content > p:first-of-type > img {
+  margin-top: 0.4em;
+}
+.entry-content > p:first-of-type > img {
+  width: min(280px, 62vw); border-radius: 14px;
+  box-shadow: 0 0 0 1px rgba(242,223,160,0.28), 0 18px 44px -18px rgba(0,0,0,0.65);
+}
+@media (min-width: 1024px) {
+  .entry-content > p:first-of-type:has(> img:only-child) {
+    float: left; margin: 0.3em 34px 14px 0;
+  }
+}
+/* Ссылка «Записаться» (Medflex) — как кнопка */
+.entry-content a[href*="booking.medflex"] {
+  display: inline-flex; align-items: center; gap: 10px; margin: 0.6em 0;
+  padding: 13px 26px; border-radius: 6px; text-decoration: none;
+  font-size: 12.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); box-shadow: inset 0 0 0 1px rgba(242,223,160,0.5);
+  transition: color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.entry-content a[href*="booking.medflex"]:hover {
+  color: #101f33; background: var(--gold); box-shadow: inset 0 0 0 1px var(--gold);
+}
+/* Цитата-эпиграф врача */
+.entry-content > p > strong > em, .entry-content > p > em > strong {
+  font-family: var(--ff-serif, "Playfair Display", serif); font-weight: 500;
+  font-size: 1.18em; color: var(--g2);
+}
+/* Галерея лицензий (пустые lightbox-якоря) — аккуратный подзаголовок */
+.entry-content a[data-gallery-index] { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; }
