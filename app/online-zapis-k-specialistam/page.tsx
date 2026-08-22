@@ -12,7 +12,7 @@ const pageContent = `
 
                 <div class="entry-content"><h2>Онлайн-запись к специалистам клиники &#171;Амадея&#187;</h2>
 <div class="a26-docs-grid a26-docs-grid--zapis">
-<div class="a26-doc-card"><figure><img decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/d69c3f3090ae5bf72cd78c3a1c96150312f7d8b861c8b9e120a25188e4b137c8e35a66f89a5fc7914e2101de15ee1c64cd63dd20007b52d5e27fbcf5e7f46db1_150x150.jpg.webp" alt="" /></figure>
+<div class="a26-doc-card"><figure><img loading="lazy" decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/d69c3f3090ae5bf72cd78c3a1c96150312f7d8b861c8b9e120a25188e4b137c8e35a66f89a5fc7914e2101de15ee1c64cd63dd20007b52d5e27fbcf5e7f46db1_150x150.jpg.webp" alt="" /></figure>
 <h3>Мутаева Ольга Юрьевна</h3>
 <p>Нарколог • психиатр • психотерапевт • рефлексотерапевт<br />
 <P>стаж 20 лет<br />
@@ -20,7 +20,7 @@ const pageContent = `
 <p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=579654" target="_blank" rel="nofollow"><br />
 									Записаться<br />
 					</a></p></div>
-<div class="a26-doc-card"><figure><img decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/de9002ffef829917189d032bc040cd6128a151f8d4c029f3c3550660c5a44ea970b91c3c898918d57f5d2e69abd395ce34a8197cefc5dc9aafc34a4f23c789b9_150x150.jpg.webp" alt="" /></figure>
+<div class="a26-doc-card"><figure><img loading="lazy" decoding="async" width="150" height="150" src="/wp-content/uploads/2022/12/de9002ffef829917189d032bc040cd6128a151f8d4c029f3c3550660c5a44ea970b91c3c898918d57f5d2e69abd395ce34a8197cefc5dc9aafc34a4f23c789b9_150x150.jpg.webp" alt="" /></figure>
 <h3>Денисенко Игорь Александрович</h3>
 <p>Нарколог • психиатр • психотерапевт<br />
 <P>стаж 14 лет</p>
@@ -218,9 +218,12 @@ const pageContent = `
 					</a></p>
 
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>				</p>
+<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>				</p>
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p></div>
+<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p><p>Номер лицензии: Л041-01197-26/00327766</p>
+<p>ИНН/ОГРН: 2635248939/1212600004165</p>
+<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
+</div>
             </article>
             </div>
 </main>
@@ -229,7 +232,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Онлайн-запись - Медицинский центр Амадея в Ставрополе",
-  description: "Icon-social-vkontakte Whatsapp Telegram 8 (988) 864-10-10 Онлайн-запись Блог контакты О нас Врачи Контакты КЛИНИКА АМАДЕЯ ВЫЗВАТЬ ВРАЧА ул. 45 параллель 2пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00 8 (988) 864-10-10 Главная Специалисты Лечение зависимостей Наши услуги Консультация…",
+  description: "Онлайн-запись к специалистам клиники «Амадея» в Ставрополе: удобная запись к врачу через сайт или по телефону ☎ 8 (988) 864-10-10.",
   alternates: { canonical: "https://amadeya26.ru/online-zapis-k-specialistam/" },
   openGraph: { locale: "ru_RU", type: "website", title: "Онлайн-запись - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/online-zapis-k-specialistam/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };

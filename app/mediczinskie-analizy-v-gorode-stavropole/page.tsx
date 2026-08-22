@@ -23,14 +23,18 @@ const pageContent = `<main>
 
 
 <p>			<a href="https://prodoctorov.ru/stavropol/set/4874-laboratoriya-_liteh/" target="_blank"><br>
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь"></a>		</p></div>
+<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь"></a>		</p>
+<p>Номер лицензии: Л041-01197-26/00327766</p>
+<p>ИНН/ОГРН: 2635248939/1212600004165</p>
+<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
+                </div>
             </article>
             </div>
 </main>`;
 
 export const metadata: Metadata = {
   title: "Медицинские анализы в городе Ставрополе - Медицинский центр Амадея в Ставрополе",
-  description: "Icon-social-vkontakte Whatsapp Telegram 8 (988) 864-10-10 Онлайн-запись Блог контакты Icon-social-vkontakte Whatsapp Telegram 8 (988) 864-10-10 Онлайн-запись Блог контакты Главная Специалисты Лечение зависимостей Наши услуги Консультация нарколога Онлайн-консультация нарколога Выезд врача-нарколога на дом Дезинтоксикация Лечение зависимостей в Ставрополе Прием психолога-аддиктолога в…",
+  description: "Медицинские анализы в Ставрополе в клинике «Амадея»: широкий спектр лабораторных исследований, быстрые результаты. Записаться ☎ 8 (988) 864-10-10.",
   alternates: { canonical: "https://amadeya26.ru/mediczinskie-analizy-v-gorode-stavropole/" },
   openGraph: { locale: "ru_RU", type: "website", title: "Медицинские анализы в городе Ставрополе - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/mediczinskie-analizy-v-gorode-stavropole/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };

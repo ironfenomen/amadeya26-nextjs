@@ -27,12 +27,12 @@ const pageContent = `<main>
                         <div class="v36-hero-veil"></div>
                         <div class="v36-hero-in">
                             <div class="v36-eb"><i></i><span>Многопрофильный медицинский центр · Ставрополь</span></div>
-                            <h1><span class="ln"><span>Медицинский центр</span></span> <span class="ln"><span><em>«АМАДЕЯ»</em></span></span></h1>
+                            <h1><span class="ln"><span>Медицинский центр</span></span> <span class="ln"><span><em>«АМАДЕЯ»</em></span></span> <span class="ln"><span>в Ставрополе</span></span></h1>
                             <div class="v36-lead">
                                 Комплексный подход к лечению — ключ к достижению устойчивых результатов!
                             </div>
                             <div class="v36-acts">
-                                <a class="v36-btn v36-btn-g" href="/booking/">Получить консультацию</a>
+                                <a class="v36-btn v36-btn-g" href="/online-zapis-k-specialistam/">Получить консультацию</a>
                                 <a href="https://wa.me/+79888641010" class="v36-btn v36-btn-w" target="_blank" rel="noopener">Написать на WhatsApp</a>
                             </div>
                         </div>
@@ -134,10 +134,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Консультация психиатра</h3>
                                 <p>Профессиональный психиатр поможет справиться с любыми эмоциональными расстройствами.</p>
-                                <a href="/psychiatry/">Подробнее</a>
+                                <a href="/psihiatricheskaya-pomoshh-v-stavropole/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/psychiatry/" aria-label="Подробнее: Консультация психиатра"></a>
+                        <a class="overlink" href="/psihiatricheskaya-pomoshh-v-stavropole/" aria-label="Подробнее: Консультация психиатра"></a>
                     </div>
                     <div class="post-item __line-block-item">
                         <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock2.jpg" alt="Консультация психотерапевта"/></div>
@@ -145,10 +145,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Консультация психотерапевта</h3>
                                 <p>Решите любые психологические проблемы с профессиональным психотерапевтом.</p>
-                                <a href="/psychotherapy/">Подробнее</a>
+                                <a href="/psihoterapiya/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/psychotherapy/" aria-label="Подробнее: Консультация психотерапевта"></a>
+                        <a class="overlink" href="/psihoterapiya/" aria-label="Подробнее: Консультация психотерапевта"></a>
                     </div>
                     <div class="post-item __line-block-item">
                         <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock14.jpg" alt="Лечение зависимостей в Ставрополе"/></div>
@@ -156,10 +156,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Лечение зависимостей в Ставрополе</h3>
                                 <p>Комплексное лечение различных зависимостей в нашем центре</p>
-                                <a href="/stavropol-treatment/">Подробнее</a>
+                                <a href="/lechenie-zavisimostei-v-stavropole/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/stavropol-treatment/" aria-label="Подробнее: Лечение зависимостей в Ставрополе"></a>
+                        <a class="overlink" href="/lechenie-zavisimostei-v-stavropole/" aria-label="Подробнее: Лечение зависимостей в Ставрополе"></a>
                     </div>
                     <div class="post-item __line-block-item">
                         <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock7.jpg" alt="Дерматология"/></div>
@@ -167,10 +167,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Дерматология</h3>
                                 <p>Диагностика и лечение кожных заболеваний</p>
-                                <a href="/dermatology/">Подробнее</a>
+                                <a href="/priem-dermatologa-v-stavropole-klini/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/dermatology/" aria-label="Подробнее: Дерматология"></a>
+                        <a class="overlink" href="/priem-dermatologa-v-stavropole-klini/" aria-label="Подробнее: Дерматология"></a>
                     </div>
                     <div class="post-item __line-block-item">
                         <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock13.jpg" alt="Дезинтоксикация"/></div>
@@ -178,10 +178,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Дезинтоксикация</h3>
                                 <p>Очищение организма от токсинов, восстановление после интоксикации</p>
-                                <a href="/detoxification/">Подробнее</a>
+                                <a href="/detoksikacziya/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/detoxification/" aria-label="Подробнее: Дезинтоксикация"></a>
+                        <a class="overlink" href="/detoksikacziya/" aria-label="Подробнее: Дезинтоксикация"></a>
                     </div>
                     <div class="post-item __line-block-item">
                         <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock6.jpeg" alt="Гирудотерапия"/></div>
@@ -189,10 +189,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Гирудотерапия</h3>
                                 <p>Лечение пиявками, восстановление кровообращения</p>
-                                <a href="/gymnotherapy/">Подробнее</a>
+                                <a href="/girudoterapiya/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/gymnotherapy/" aria-label="Подробнее: Гирудотерапия"></a>
+                        <a class="overlink" href="/girudoterapiya/" aria-label="Подробнее: Гирудотерапия"></a>
                     </div>
                     <div class="post-item __line-block-item">
                         <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock8.jpg" alt="Гинекология"/></div>
@@ -200,10 +200,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Гинекология</h3>
                                 <p>Женское здоровье, диагностика и лечение гинекологических заболеваний</p>
-                                <a href="/gynecology/">Подробнее</a>
+                                <a href="/priem-ginekologa-v-stavropole/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/gynecology/" aria-label="Подробнее: Гинекология"></a>
+                        <a class="overlink" href="/priem-ginekologa-v-stavropole/" aria-label="Подробнее: Гинекология"></a>
                     </div>
                     <div class="post-item __line-block-item">
                         <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock10.jpg" alt="Консультация нарколога"/></div>
@@ -211,10 +211,10 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Консультация нарколога</h3>
                                 <p>Первичная консультация нарколога, диагностика, составление плана лечения</p>
-                                <a href="/narcologist-consultation/">Подробнее</a>
+                                <a href="/konsultacziya-vracha-narkologa-v-stavr/">Подробнее</a>
                             </div>
                         </div>
-                        <a class="overlink" href="/narcologist-consultation/" aria-label="Подробнее: Консультация нарколога"></a>
+                        <a class="overlink" href="/konsultacziya-vracha-narkologa-v-stavr/" aria-label="Подробнее: Консультация нарколога"></a>
                     </div>
                 </div>
             </div>

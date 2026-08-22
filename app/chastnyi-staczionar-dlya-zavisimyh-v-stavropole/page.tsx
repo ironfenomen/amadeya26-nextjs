@@ -40,7 +40,7 @@ const pageContent = `
 <p></p>
 <p>Клиника “Амадея” — это, прежде всего, медицинское заведение, мы не<br />используем околорелигиозные практики. Да, в реабилитационном центре царит дисциплина,<br />но это —<b> не трудовой лагерь. Медики меняют образ жизни и<br />мировосприятие больного исключительно при помощи медикаментов и<br />методов психотерапии</b></p>
 <h2>Мы используем методику Когнитивно-поведенческой терапии в лечении зависимостей</h2>
-<p>													<img decoding="async" width="1024" height="872" src="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp" alt="" srcset="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp 1024w, /wp-content/uploads/2023/05/back-view-senior-pat-300x255.jpg.webp 300w, /wp-content/uploads/2023/05/back-view-senior-pat-768x654.jpg.webp 768w, /wp-content/uploads/2023/05/back-view-senior-pat-264x225.jpg.webp 264w, /wp-content/uploads/2023/05/back-view-senior-pat.jpg.webp 1500w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
+<p>													<img loading="lazy" decoding="async" width="1024" height="872" src="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp" alt="" srcset="/wp-content/uploads/2023/05/back-view-senior-pat-1024x872.jpg.webp 1024w, /wp-content/uploads/2023/05/back-view-senior-pat-300x255.jpg.webp 300w, /wp-content/uploads/2023/05/back-view-senior-pat-768x654.jpg.webp 768w, /wp-content/uploads/2023/05/back-view-senior-pat-264x225.jpg.webp 264w, /wp-content/uploads/2023/05/back-view-senior-pat.jpg.webp 1500w" sizes="(max-width: 1024px) 100vw, 1024px" />													</p>
 <p>Человек систематически делает что-то, что нарушает качество его жизни. Решение употребить принимается человеком осознанно: он понимает, что у этого поступка будут тяжелые последствия. Но продолжает совершать разрушительные действия. Он идет употреблять.</p>
 <p>КПТ помогает вывести пациента из замкнутого круга «ненормальное мышление – ненормальное поведение». Его мысли и поступки направляются в нужное русло. Со временем меняются паттерны поведения.</p>
 <p>Есть возможность оплатить лечение в рассрочку</p>
@@ -69,12 +69,15 @@ const pageContent = `
 
 
 <p>			<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>		</p>
+<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>		</p>
 
 
 
 
-                </div>
+                <p>Номер лицензии: Л041-01197-26/00327766</p>
+<p>ИНН/ОГРН: 2635248939/1212600004165</p>
+<p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
+</div>
             </article>
             </div>
 </main>
@@ -83,7 +86,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Частный стационар для зависимых в Ставрополе - Медицинский центр Амадея в Ставрополе",
-  description: "О нас Врачи Блог Контакты КЛИНИКА АМАДЕЯ ВЫЗВАТЬ ВРАЧА ул. 45 параллель 2пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:008 (988) 864-10-10 Главная Специалисты Лечение зависимостей Наши услуги Консультация нарколога Онлайн-консультация нарколога Выезд врача-нарколога на дом Дезинтоксикация Лечение…",
+  description: "Частный стационар для зависимых в Ставрополе в клинике «Амадея»: комфортное круглосуточное лечение алкогольной и наркотической зависимости, анонимно. ☎ 8 (988) 864-10-10.",
   alternates: { canonical: "https://amadeya26.ru/chastnyi-staczionar-dlya-zavisimyh-v-stavropole/" },
   openGraph: { locale: "ru_RU", type: "website", title: "Частный стационар для зависимых в Ставрополе - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/chastnyi-staczionar-dlya-zavisimyh-v-stavropole/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };

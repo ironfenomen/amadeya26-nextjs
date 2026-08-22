@@ -128,3 +128,30 @@ c003f25 PHASE 3: главная на v36-грамматике
 10. `/elementor-1309/` — битая ссылка из контента uslugi; 404 и на проде.
 
 Статус не изменился: **READY TO DEPLOY**, деплой — только по команде владельца.
+
+## 12. Круг 5 — МЕРЖ С SEO-РАБОТОЙ ПРОДА (критический этап перед деплоем)
+
+**Обнаружено при деплое:** origin/main и сам прод ушли вперёд на 12 коммитов SEO-дедупликации (25×301 канонических редиректов, перенос чистого контента на 16 русских keyword-URL, 22 исправленных description, favicon, PageSpeed lazy-load, H1 с гео, sitemap 52 URL, robots Clean-param). Моя ветка строилась на b0e796b — ДО этой работы. Слепой деплой откатил бы всё это. Два коммита прода (adb82de, e2ef8d9) существовали только на VPS — сохранены веткой `vps-seo-p0-backup` на GitHub.
+
+**Мерж (61 конфликт):**
+- 25 старых slug-роутов удалены (их версия — страницы за 301);
+- 17 канонических страниц взяты ИХ версии (продовый контент = истина) + убран двойной Header/Footer (шелл даёт layout);
+- next.config.ts: их 25 редиректов 301 (statusCode, по требованию Яндекса) + мой kron-elena-ivanovna → 26 штук, все проверены 301→верная цель;
+- sitemap.xml/sitemap_index.xml — их версии;
+- Header: мой редизайн + ремап всех ссылок на канонические URL (их дедуп); такой же ремап в page.tsx и 9 контентных страницах (убраны 301-цепочки);
+- главная: мой редизайн + H1 «Медицинский центр «АМАДЕЯ» в Ставрополе» (их гео-правка);
+- description перенесены их: kontakty, online-zapis, elementor-2743, chastnyi-staczionar, uslugi;
+- юр-блоки (лицензия/ИНН/дисклеймер) добавлены в kontakty, online-zapis, chastnyi-staczionar, mediczinskie-analizy, privacy — паритет с продом; Elementor-мусор (меню/стили/социконки в теле privacy) осознанно НЕ перенесён;
+- CSS: добавлены .service-why/.service-list/.service-hero-content/.specialist-info;
+- lazy-load: 30 контентных img получили loading="lazy" (паритет их PageSpeed-коммита); hero-кадры главной оставлены eager+fetchpriority.
+
+**Regression gate против ИСТИННОГО продового baseline (52 canonical URL, снят с живого прода 22.08):**
+- title/desc/canonical/robots/h1/jsonld — **0 расхождений на всех 52 роутах**;
+- 26 редиректов — все 301 → верные цели;
+- overflow 390px (настоящий вьюпорт) — 0 на всех 52 роутах;
+- build чистый (60 страниц static);
+- визуальные спот-чеки: главная, detoksikacziya, priem-ginekologa, speczialisty, kontakty — единый дизайн, один шелл.
+
+**Debt registry, пополнение:**
+11. Базовый baseline кругов 1–4 был локальным (b0e796b), а не продовым — урок учтён, истинный baseline: /tmp/a26-prod-baseline.json.
+12. Ссылки «Политика обработки» → narcologia26.ru в теле privacy/mediczinskie-analizy на проде — НЕ перенесены (чужой домен, баг прода); каноническая /privacy/ есть в футере.

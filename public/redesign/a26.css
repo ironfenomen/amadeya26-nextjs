@@ -1252,3 +1252,17 @@ img[src*="s.w.org/images/core/emoji"] {
 .contacts-content .contact-card { height: 100%; }
 .contacts-content .modal-form-container { grid-column: 1 / -1; }
 @media (max-width: 860px) { .contacts-content { grid-template-columns: 1fr; } }
+
+/* доводка мержа SEO-контента: классы их service-шаблона, не покрытые ранее */
+.service-why { margin-top: 8px; }
+.service-hero-content { max-width: 720px; }
+.specialist-info { display: flex; flex-direction: column; gap: 4px; }
+.service-list { margin: 1em 0; padding-left: 0; list-style: none; }
+.service-list li {
+  position: relative; padding-left: 1.4em; margin: 0.45em 0;
+}
+.service-list li::before {
+  content: ""; position: absolute; left: 0; top: 0.52em;
+  width: 7px; height: 7px; transform: rotate(45deg);
+  background: var(--gold);
+}

@@ -9,7 +9,7 @@ const pageContent = `
             <div class="entry-content a26-wpblocks">
 <div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-<figure class="wp-block-image aligncenter size-large is-resized"><img width="768" height="1024" src="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg" alt="" class="wp-image-5045" style="width:453px;height:auto" srcset="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg 768w, /wp-content/uploads/2024/07/IMG_8627-225x300.jpeg 225w, /wp-content/uploads/2024/07/IMG_8627-1152x1536.jpeg 1152w, /wp-content/uploads/2024/07/IMG_8627-1536x2048.jpeg 1536w, /wp-content/uploads/2024/07/IMG_8627-169x225.jpeg 169w, /wp-content/uploads/2024/07/IMG_8627-scaled.jpeg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
+<figure class="wp-block-image aligncenter size-large is-resized"><img loading="lazy" width="768" height="1024" src="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg" alt="" class="wp-image-5045" style="width:453px;height:auto" srcset="/wp-content/uploads/2024/07/IMG_8627-768x1024.jpeg 768w, /wp-content/uploads/2024/07/IMG_8627-225x300.jpeg 225w, /wp-content/uploads/2024/07/IMG_8627-1152x1536.jpeg 1152w, /wp-content/uploads/2024/07/IMG_8627-1536x2048.jpeg 1536w, /wp-content/uploads/2024/07/IMG_8627-169x225.jpeg 169w, /wp-content/uploads/2024/07/IMG_8627-scaled.jpeg 1920w" sizes="(max-width: 768px) 100vw, 768px" /></figure>
 </div>
 
 

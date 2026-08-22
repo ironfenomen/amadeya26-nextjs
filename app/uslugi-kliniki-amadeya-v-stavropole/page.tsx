@@ -56,12 +56,12 @@ const pageContent = `
 <ul><li><a href="mailto:litehstavlab@gmail.com"><br> litehstavlab@gmail.com<br></a></li></ul>
 <h4>Соц. сети:</h4>
 <ul><li><a href="https://vk.com/amadeya26"><br> vkontakte<br></a></li><li><a href="https://t.me/amadeya26"><br> Telegram<br></a></li><li><a href="https://wa.me/79888641010"><br> WhatsApp<br></a></li></ul>
-<p><a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br><img title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png"></a></p>
+<p><a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br><img loading="lazy" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png"></a></p>
 <p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
 <p><a rel="['noopener']" href="http://narcologia26.ru/privacy.html" target="_blank">Политика обработки<br>персональных данных</a></p>
 <p>			<a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br />
-<img decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
+<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
 </div>
             </article>
             </div>
@@ -71,7 +71,7 @@ const pageContent = `
 
 export const metadata: Metadata = {
   title: "Услуги клиники Амадея в Ставрополе - Медицинский центр Амадея в Ставрополе",
-  description: "Icon-social-vkontakte Whatsapp Telegram 8 (988) 864-10-10 Онлайн-запись Блог контакты О нас Врачи Контакты КЛИНИКА АМАДЕЯ ВЫЗВАТЬ ВРАЧА ул. 45 параллель 2пн-сб: с 7:30 до 20:00, вс: с 7:30 до 13:00 8 (988) 864-10-10 Главная Специалисты Лечение зависимостей Наши услуги Консультация…",
+  description: "Услуги клиники «Амадея» в Ставрополе: наркология, психиатрия, психотерапия, терапия, эндокринология, дерматология, УЗИ и лабораторные анализы. Запись ☎ 8 (988) 864-10-10.",
   alternates: { canonical: "https://amadeya26.ru/uslugi-kliniki-amadeya-v-stavropole/" },
   openGraph: { locale: "ru_RU", type: "website", title: "Услуги клиники Амадея в Ставрополе - Медицинский центр Амадея в Ставрополе", url: "https://amadeya26.ru/uslugi-kliniki-amadeya-v-stavropole/", siteName: "Медицинский центр Амадея в Ставрополе" },
 };
