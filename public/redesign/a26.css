@@ -1111,3 +1111,70 @@ footer { padding: 15px 0; margin-top: 30px; }
 .a26-doc-card h3 a:hover { color: var(--gold); }
 .a26-doc-card > p { font-size: 13px; color: var(--mutedd2, rgba(233,238,246,0.6)); margin: 0 0 8px; }
 .a26-doc-card a[href*="booking.medflex"] { margin-top: auto; padding: 10px 18px; font-size: 11px; }
+
+/* ==========================================================================
+   ЧАСТЬ 16 — WP block-dump страницы (category/author/mutaeva)
+   ========================================================================== */
+.a26-page-title {
+  font-family: var(--ff-serif, "Playfair Display", serif);
+  font-size: clamp(30px, 4.5vw, 44px); line-height: 1.2; color: var(--t1, #eef2f8);
+  margin: 0.2em 0 0.8em;
+}
+.a26-wpblocks .wp-block-spacer { display: none; }
+.a26-wpblocks .wp-block-query-title {
+  font-family: var(--ff-serif, "Playfair Display", serif);
+  font-size: clamp(30px, 4.5vw, 44px); line-height: 1.2; color: var(--t1, #eef2f8);
+  margin: 0.2em 0 0.9em; padding-top: 0 !important;
+}
+.a26-wpblocks .wp-block-query ul.wp-block-post-template,
+.a26-wpblocks .wp-block-query ul {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+  list-style: none; padding: 0; margin: 0;
+}
+@media (max-width: 1023px) { .a26-wpblocks .wp-block-query ul { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .a26-wpblocks .wp-block-query ul { grid-template-columns: 1fr; } }
+.a26-wpblocks li.wp-block-post,
+.a26-wpblocks .wp-block-query ul > li {
+  background: rgba(19, 45, 78, 0.35); border-radius: 14px; overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(242,223,160,0.14);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+.a26-wpblocks .wp-block-query ul > li:hover { box-shadow: inset 0 0 0 1px rgba(242,223,160,0.4); transform: translateY(-3px); }
+.a26-wpblocks .wp-block-post-featured-image img,
+.a26-wpblocks li figure img {
+  width: 100%; height: 220px; object-fit: cover; display: block; border-radius: 0;
+  max-width: none;
+}
+.a26-wpblocks li .wp-block-group { padding: 18px 20px 22px; }
+.a26-wpblocks .wp-block-post-title,
+.a26-wpblocks li h2, .a26-wpblocks li h3 {
+  font-family: var(--ff-serif, "Playfair Display", serif);
+  font-size: 20px; line-height: 1.35; margin: 0 0 10px;
+}
+.a26-wpblocks .wp-block-post-title a,
+.a26-wpblocks li h2 a, .a26-wpblocks li h3 a { color: var(--t1, #eef2f8); text-decoration: none; }
+.a26-wpblocks .wp-block-post-title a:hover { color: var(--gold); }
+.a26-wpblocks .wp-block-post-date, .a26-wpblocks li time,
+.a26-wpblocks li .wp-block-post-author-name, .a26-wpblocks li .wp-block-post-terms {
+  font-size: 12px; color: var(--g2); letter-spacing: 0.06em;
+}
+.a26-wpblocks .wp-block-post-excerpt, .a26-wpblocks li p {
+  font-size: 14px; line-height: 1.65; color: var(--mutedd2, rgba(233,238,246,0.65));
+}
+/* Колонки (страница врача из дампа) */
+.a26-wpblocks .wp-block-columns { display: flex; gap: 44px; align-items: flex-start; flex-wrap: wrap; }
+.a26-wpblocks .wp-block-column { flex: 1 1 0; min-width: 0; }
+.a26-wpblocks .wp-block-column:has(> .wp-block-image) { flex: 0 0 340px; }
+.a26-wpblocks .wp-block-image img { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 0 0 1px rgba(242,223,160,0.28), 0 18px 44px -18px rgba(0,0,0,0.65); }
+@media (max-width: 768px) {
+  .a26-wpblocks .wp-block-columns { flex-direction: column; }
+  .a26-wpblocks .wp-block-column:has(> .wp-block-image) { flex: 1 1 auto; max-width: 320px; }
+}
+.a26-wpblocks li > .wp-block-group:has(> .wp-block-post-featured-image),
+.a26-wpblocks li > .wp-block-group:has(> figure) { padding: 0; }
+
+/* contacts: компактная сетка карточек */
+.contacts-content { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+.contacts-content .contact-card { height: 100%; }
+.contacts-content .modal-form-container { grid-column: 1 / -1; }
+@media (max-width: 860px) { .contacts-content { grid-template-columns: 1fr; } }
