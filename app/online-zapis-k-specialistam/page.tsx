@@ -132,7 +132,7 @@ const pageContent = `
 <p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=812066&#038;source=4" target="_blank" rel="nofollow"><br />
 									Записаться<br />
 					</a></p></div>
-<div class="a26-doc-card"><figure><a href="https://prodoctorov.ru/stavropol/vrach/362572-lomonosova/" tabindex="-1"><img decoding="async" src="https://prodoctorov.ru/media/photo/stavropol/doctorimage/362572/2081646-362572-lomonosova_square.jpg" title="" alt="" loading="lazy" /></a></figure>
+<div class="a26-doc-card"><figure><a href="https://prodoctorov.ru/stavropol/vrach/362572-lomonosova/" tabindex="-1"><img referrerpolicy="no-referrer" decoding="async" src="/images/ext/lomonosova_square.jpg" title="" alt="" loading="lazy" /></a></figure>
 <h3><a href="https://prodoctorov.ru/stavropol/vrach/362572-lomonosova/">Кильдишева Ксения Владимировна</a></h3>
 <p>Кардиолог • Терапевт<br />
 <P>Стаж 9 лет</p>
@@ -153,14 +153,14 @@ const pageContent = `
 <p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=809137&#038;source=4" target="_blank" rel="nofollow"><br />
 									Записаться<br />
 					</a></p></div>
-<div class="a26-doc-card"><figure><a href="https://prodoctorov.ru/stavropol/vrach/808605-rusanova/" tabindex="-1"><img decoding="async" src="https://prodoctorov.ru/media/photo/stavropol/doctorimage/808605/2991169-808605-rusanova_square.jpg" title="" alt="" loading="lazy" /></a></figure>
+<div class="a26-doc-card"><figure><a href="https://prodoctorov.ru/stavropol/vrach/808605-rusanova/" tabindex="-1"><img referrerpolicy="no-referrer" decoding="async" src="/images/ext/rusanova_square.jpg" title="" alt="" loading="lazy" /></a></figure>
 <h3><a href="https://prodoctorov.ru/stavropol/vrach/808605-rusanova/">Боброва (Русанова) Мария Юрьевна</a></h3>
 <p>Педиатр • аллерголог • детский аллерголог<br />
 <P>Стаж 5 лет</p>
 <p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=1126274&#038;source=4" target="_blank" rel="nofollow"><br />
 									Записаться<br />
 					</a></p></div>
-<div class="a26-doc-card"><figure><a href="https://prodoctorov.ru/stavropol/vrach/1186826-blohina/" tabindex="-1"><img decoding="async" src="https://prodoctorov.ru/media/photo/stavropol/doctorimage/1186826/2922615-1186826-blohina_square.jpg" title="" alt="" loading="lazy" /></a></figure>
+<div class="a26-doc-card"><figure><a href="https://prodoctorov.ru/stavropol/vrach/1186826-blohina/" tabindex="-1"><img referrerpolicy="no-referrer" decoding="async" src="/images/ext/blohina_square.jpg" title="" alt="" loading="lazy" /></a></figure>
 <h3><a href="https://prodoctorov.ru/stavropol/vrach/1186826-blohina/">Блохина Юлия Алексеевна</a></h3>
 <p>Психолог • детский психолог<br />
 <P>Стаж 16 лет</p>
@@ -174,7 +174,7 @@ const pageContent = `
 <p>					<a href="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=1068600&#038;source=4%20" target="_blank" rel="nofollow"><br />
 									Записаться<br />
 					</a></p></div>
-<div class="a26-doc-card"><figure><a href="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=14987&#038;source=4" tabindex="-1"><img decoding="async" src="https://prodoctorov.ru/media/photo/stavropol/doctorimage/14987/2867632-14987-bobrova_square.jpg" title="" alt="" loading="lazy" /></a></figure>
+<div class="a26-doc-card"><figure><a href="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=14987&#038;source=4" tabindex="-1"><img referrerpolicy="no-referrer" decoding="async" src="/images/ext/bobrova_square.jpg" title="" alt="" loading="lazy" /></a></figure>
 <h3><a href="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=14987&#038;source=4">Боброва Александра Николаевна</a></h3>
 <p>Психотерапевт • Психолог •Психиатр<br />
 <P>Стаж 21 год.</p>
@@ -215,14 +215,17 @@ const pageContent = `
 <P>Стаж 2 года</p>
 <p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=1126250&#038;source=4" target="_blank" rel="nofollow"><br />
 									Записаться<br />
-					</a></p>
+					</a></p></div>
+</div>
 
+<div class="a26-zapis-legal">
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br />
-<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>				</p>
+<img referrerpolicy="no-referrer" loading="lazy" decoding="async" src="/images/ext/pd-recommend-liteh-240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>				</p>
 <p>					<a href="https://prodoctorov.ru/stavropol/lpu/98216-amadeya/" target="_blank"><br />
-<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/round/98216/200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p><p>Номер лицензии: Л041-01197-26/00327766</p>
+<img referrerpolicy="no-referrer" loading="lazy" decoding="async" src="/images/ext/pd-round-amadeya-200.png" title="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" alt="ПроДокторов - Клиника «Амадея» (Лаборатория «Литех» на 45-й Параллели 2)" ></a>				</p><p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>ИНН/ОГРН: 2635248939/1212600004165</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
+</div>
 </div>
             </article>
             </div>

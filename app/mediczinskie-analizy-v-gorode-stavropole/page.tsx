@@ -23,7 +23,7 @@ const pageContent = `<main>
 
 
 <p>			<a href="https://prodoctorov.ru/stavropol/set/4874-laboratoriya-_liteh/" target="_blank"><br>
-<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь"></a>		</p>
+<img referrerpolicy="no-referrer" loading="lazy" decoding="async" src="/images/ext/pd-recommend-amadeya-240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь"></a>		</p>
 <p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>ИНН/ОГРН: 2635248939/1212600004165</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>

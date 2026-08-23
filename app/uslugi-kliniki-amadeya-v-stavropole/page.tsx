@@ -56,12 +56,12 @@ const pageContent = `
 <ul><li><a href="mailto:litehstavlab@gmail.com"><br> litehstavlab@gmail.com<br></a></li></ul>
 <h4>Соц. сети:</h4>
 <ul><li><a href="https://vk.com/amadeya26"><br> vkontakte<br></a></li><li><a href="https://t.me/amadeya26"><br> Telegram<br></a></li><li><a href="https://wa.me/79888641010"><br> WhatsApp<br></a></li></ul>
-<p><a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br><img loading="lazy" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png"></a></p>
+<p><a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br><img referrerpolicy="no-referrer" loading="lazy" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" src="/images/ext/pd-recommend-liteh-240.png"></a></p>
 <p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
 <p><a rel="['noopener']" href="http://narcologia26.ru/privacy.html" target="_blank">Политика обработки<br>персональных данных</a></p>
 <p>			<a href="https://prodoctorov.ru/stavropol/lpu/78673-liteh/" target="_blank"><br />
-<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/78673/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
+<img referrerpolicy="no-referrer" loading="lazy" decoding="async" src="/images/ext/pd-recommend-liteh-240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
 </div>
             </article>
             </div>

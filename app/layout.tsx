@@ -78,10 +78,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preload" href="/fonts/playfair-display-500-cyrillic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/golos-text-400-cyrillic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         {/* CSS-порядок = каскад: токены Core → шрифты Core → Core (v36) → site-слой a26 → swiper */}
-        <link rel="stylesheet" href="/redesign/tokens.css?v=20260822a" />
-        <link rel="stylesheet" href="/fonts/fonts.css?v=20260822a" />
-        <link rel="stylesheet" href="/redesign/v36.css?v=20260822a" />
-        <link rel="stylesheet" href="/redesign/a26.css?v=20260822a" />
+        <link rel="stylesheet" href="/redesign/tokens.css?v=20260823a" />
+        <link rel="stylesheet" href="/fonts/fonts.css?v=20260823a" />
+        <link rel="stylesheet" href="/redesign/v36.css?v=20260823a" />
+        <link rel="stylesheet" href="/redesign/a26.css?v=20260823a" />
         <link rel="stylesheet" href="/vendor/swiper/swiper-bundle.min.css?ver=11.2.10" />
       </head>
       <body>

@@ -123,7 +123,7 @@ const pageContent = `
 <p>14.3. Актуальная версия Политики в свободном доступе расположена в сети Интернет по адресу <a href="/privacy">/privacy</a></p>
 
 <p>			<a href="https://prodoctorov.ru/stavropol/set/4874-laboratoriya-_liteh/" target="_blank" rel="noopener"><br />
-<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
+<img referrerpolicy="no-referrer" loading="lazy" decoding="async" src="/images/ext/pd-recommend-amadeya-240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p>
 <p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
                 </div>

@@ -1263,6 +1263,10 @@ body:has(.v36-dark) .header-item-social a.s-tg {
 .over-container.is_show .menu-items.level-1 > li:nth-child(4) { transition-delay: 0.31s; }
 .over-container.is_show .menu-items.level-1 > li:nth-child(5) { transition-delay: 0.38s; }
 .over-content .menu-items.level-1 > li > a {
+  /* display:block обязателен: шеврон ::after позиционируется right:4px от бокса ссылки;
+     при inline-ссылке (сайт без legacy-стилей темы, a26) шеврон «прилипал» к тексту
+     вместо правой кромки колонки. На детоксе block задавался legacy ov.css — регрессии нет. */
+  display: block;
   font-family: var(--serif);
   font-size: clamp(21px, 5.2vw, 26px) !important;
   font-weight: 400;

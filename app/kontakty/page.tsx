@@ -18,19 +18,15 @@ const pageContent = `
 <p><a href="tel:+380441234567">+7 (988) 864-10-10</a></p>
 <p><a href="mailto:litehstavlab@gmail.com">litehstavlab@gmail.com</a></p>
 <h2>Соц.сети и мессенджеры</h2>
-<p>					<a href="https://wa.me/79888641010" target="_blank" rel="noopener"><br />
-						Whatsapp<br />
-											</a><br />
-					<a href="https://t.me/liteh_stav_lab" target="_blank" rel="noopener"><br />
-						Telegram<br />
-											</a><br />
-					<a href="https://vk.com/litehstavlab" target="_blank" rel="noopener"><br />
-						Vk<br />
-											</a><br />
-			<iframe loading="lazy" title="Карта проезда — Медицинский центр Амадея" src="https://yandex.ru/map-widget/v1/?um=constructor%3A04d5da944667e458e6c1e125894c012662d627fa15e09ad9f11f2f612627fd23&amp;source=constructor" width="500" height="720" frameborder="0"></iframe>		</p>
+<div class="a26-contacts-social">
+					<a class="a26-soc a26-soc--wt" href="https://wa.me/79888641010" target="_blank" rel="noopener">Whatsapp</a>
+					<a class="a26-soc a26-soc--tg" href="https://t.me/liteh_stav_lab" target="_blank" rel="noopener">Telegram</a>
+					<a class="a26-soc a26-soc--vk" href="https://vk.com/litehstavlab" target="_blank" rel="noopener">Vk</a>
+</div>
+<p>			<iframe loading="lazy" title="Карта проезда — Медицинский центр Амадея" src="https://yandex.ru/map-widget/v1/?um=constructor%3A04d5da944667e458e6c1e125894c012662d627fa15e09ad9f11f2f612627fd23&amp;source=constructor" width="500" height="720" frameborder="0"></iframe>		</p>
 
 <p>			<a href="https://prodoctorov.ru/stavropol/set/4874-laboratoriya-_liteh/" target="_blank" rel="noopener"><br />
-<img loading="lazy" decoding="async" src="https://prodoctorov.ru/rating/widget/recommend/98216/240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p><p>Номер лицензии: Л041-01197-26/00327766</p>
+<img referrerpolicy="no-referrer" loading="lazy" decoding="async" src="/images/ext/pd-recommend-amadeya-240.png" title="ПроДокторов - Лаборатория «Литех», Ставрополь" alt="ПроДокторов - Лаборатория «Литех», Ставрополь" ></a>		</p><p>Номер лицензии: Л041-01197-26/00327766</p>
 <p>Информация, предоставленная на сайте носит ознакомительный характер и не является публичной офертой. Для получения подробной информации обращайтесь к администраторам клиники. До проведения процедур необходима консультация врача.</p>
 </div>
             </article>

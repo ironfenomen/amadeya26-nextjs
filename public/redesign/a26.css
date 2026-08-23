@@ -19,6 +19,7 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: border-box; /* иначе width:100% + padding 2×15 вылезал за .__wrapper (overflow 30px на узких экранах) */
 }
 
 .v36-dark .page-content {
@@ -730,8 +731,8 @@ pre.wp-block-code code { font: inherit; background: none; padding: 0; border: no
    не на что ложиться: в детоксе каркас давал AmadeusCMS-шаблон.
    ========================================================================== */
 * { -webkit-appearance: none; -webkit-tap-highlight-color: transparent; }
-HTML { margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100%; min-width: 380px; line-height: 1.5; -webkit-text-size-adjust: 100%; }
-BODY { margin: 0; padding: 0; display: flex; flex: 1; width: 100%; min-width: 380px; }
+HTML { margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100%; min-width: 320px; line-height: 1.5; -webkit-text-size-adjust: 100%; }
+BODY { margin: 0; padding: 0; display: flex; flex: 1; width: 100%; min-width: 320px; }
 HTML, BODY { max-width: 100%; overflow-x: hidden; }
 DIV, SECTION { position: relative; }
 h1 { margin: 0.67em 0; }
@@ -739,7 +740,7 @@ img { border-style: none; max-width: 100%; }
 [hidden] { display: none; }
 a { text-decoration: none; color: inherit; }
 
-.__wrapper { display: flex; flex: 1; flex-direction: column; width: 100%; min-width: 360px; margin: 0 auto !important; }
+.__wrapper { display: flex; flex: 1; flex-direction: column; width: 100%; min-width: 320px; margin: 0 auto !important; }
 .__container { width: 100%; max-width: 1300px; margin: auto; }
 .__stretch { display: flex; flex: 1; flex-direction: column; }
 .__side-padding { padding: 0 15px; }
@@ -1266,3 +1267,30 @@ img[src*="s.w.org/images/core/emoji"] {
   width: 7px; height: 7px; transform: rotate(45deg);
   background: var(--gold);
 }
+
+/* /kontakty: чипы соцсетей/мессенджеров (иконка + подпись), в духе кнопок-контуров */
+.a26-contacts-social { display: flex; flex-wrap: wrap; gap: 12px; margin: 4px 0 10px; }
+.a26-soc {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 18px 10px 14px; min-height: 44px; box-sizing: border-box;
+  border: 1px solid rgba(214, 179, 102, 0.55); border-radius: 999px;
+  color: var(--parch); font-size: 14px; font-weight: 500; letter-spacing: 0.04em;
+  text-decoration: none !important;
+  transition: border-color 0.25s var(--EO, ease), background 0.25s, transform 0.25s;
+}
+.a26-soc::before {
+  content: ""; width: 20px; height: 20px; flex: 0 0 20px;
+  background: center / contain no-repeat;
+}
+.a26-soc--wt::before { background-image: url(/template/amadeya/images/sprite.svg#wt-icon-w); }
+.a26-soc--tg::before { background-image: url(/template/amadeya/images/sprite.svg#tg-icon-w); }
+.a26-soc--vk::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -120 512.00201 512'%3E%3Cpath fill='%23F2DFA0' d='m409.898438%20153.902344%20101.796874-153.902344h-156.117187l-2.914063%2011.292969c-7.480468%2028.992187-21.519531%2068.285156-45.914062%2090.839843-3.015625%202.785157-5.871094%205.023438-8.5%206.816407v-108.949219h-135.972656v30.101562h12.703125v68.222657c-15.242188-13.40625-34.394531-38.988281-39.410157-84.90625l-1.464843-13.417969h-134.105469l4.605469%2018.65625c16.558593%2067.09375%2041.398437%20122.058594%2073.835937%20163.367188%2026.480469%2033.726562%2058.019532%2058.488281%2093.738282%2073.59375%2031.898437%2013.492187%2061.269531%2016.800781%2082.402343%2016.800781%2019.4375%200%2031.902344-2.800781%2032.949219-3.042969l11.464844-2.671875.59375-41.351563%2051.058594%2044.417969h161.355468zm-139.484376%206.175781-1.164062%2081.546875c-16.808594%201.496094-50.109375%201.554688-86.859375-14.378906-30.691406-13.308594-57.953125-35.101563-81.027344-64.777344-26.425781-33.984375-47.449219-78.449219-62.613281-132.367188h68.777344c14.886718%2086.335938%2074.78125%20108.675782%2077.449218%20109.625l20.105469%207.171876v-116.796876h63.070313v116.945313l15.835937-.828125c1.925781-.101562%2019.414063-1.496094%2040.066407-19.195312%2023.464843-20.113282%2041.828124-52.683594%2054.664062-96.921876h76.976562l-83.617187%20126.410157%2073.277344%2083.152343h-83.449219zm0%200'/%3E%3C/svg%3E"); }
+.a26-soc:hover { border-color: var(--gold); background: rgba(214, 179, 102, 0.08); transform: translateY(-1px); color: var(--g2); }
+
+/* /online-zapis: юрблок с бейджами ПроДокторов — на всю ширину под сеткой врачей */
+.a26-zapis-legal {
+  margin: 36px 0 0; padding-top: 24px;
+  border-top: 1px solid rgba(242, 223, 160, 0.12);
+}
+.a26-zapis-legal > p { margin: 0 0 10px; }
+.a26-zapis-legal img { width: auto; max-width: 240px; height: auto; border-radius: 10px; }
