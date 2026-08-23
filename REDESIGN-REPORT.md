@@ -155,3 +155,12 @@ c003f25 PHASE 3: главная на v36-грамматике
 **Debt registry, пополнение:**
 11. Базовый baseline кругов 1–4 был локальным (b0e796b), а не продовым — урок учтён, истинный baseline: /tmp/a26-prod-baseline.json.
 12. Ссылки «Политика обработки» → narcologia26.ru в теле privacy/mediczinskie-analizy на проде — НЕ перенесены (чужой домен, баг прода); каноническая /privacy/ есть в футере.
+
+## 13. Post-deploy fixes (23.08, commit 9f0015d)
+
+1. **Core 1.0.1**: `display:block` на ссылках L1 оверлей-меню — шеврон `::after` теперь у правой кромки колонки (core defect: правило `right:4px` молча опиралось на block-бокс; на детоксе block давал legacy ov.css). Sync в оба сайта, check-core PASS. На детоксе визуально no-op (бандл не пересобирался, source-only).
+2. **Prodoctorov-хотлинки локализованы** (7 файлов в `public/images/ext/`): Chrome блокировал их по ORB несмотря на 200/image/png — бились 4 фото врачей на /online-zapis и бейджи рейтинга на 9 страницах. Теперь локальные копии (бейджи generic, без цифр рейтинга — заморозка ничего не устаревает). Href-ссылки на prodoctorov не тронуты.
+3. **/kontakty**: соцсети — чипы с иконками (sprite tg/wt + VK data-URI), iframe карты вынесен из `<p>`; карта проверена в реальном браузере — рендерится (пустая рамка в headless — артефакт).
+4. **/online-zapis**: юрблок (бейджи+лицензия) был ВНУТРИ последней карточки грида — вынесен в `.a26-zapis-legal` на всю ширину; 29/29 изображений грузятся.
+5. **Мобильный overflow <380px**: legacy `min-width:380px` (HTML/BODY) и 360px (.__wrapper) + `.container` без box-sizing (410px при 380 wrapper) → заменено на 320px и border-box. Sweep 81 роут @390 — 0 overflow.
+6. SEO-контроль: title/description/canonical/H1 изменённых страниц == prod baseline (0 diff).
