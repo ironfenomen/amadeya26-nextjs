@@ -10,6 +10,7 @@
 body {
   background: transparent; /* сквозь body живёт .v36-world */
   font-family: var(--sans);
+  font-size: 15px; /* паритет с эталоном детокса (style.css: BODY 15px), сверка 23.08 */
   color: #C4D0DC;
   -webkit-font-smoothing: antialiased;
 }
@@ -151,7 +152,7 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
 .header-item-logo .header-logo { background-image: none !important; width: auto; }
 .header-item-logo .header-logo img { height: 44px; width: auto; display: block; }
 .footer-logo a { display: inline-block; background: none !important; }
-.footer-logo img { height: 56px; width: auto; }
+.footer-logo img { height: 64px; width: auto; } /* эталон: лого подвала крупное (замер 23.08) */
 
 /* ---------- cookie-баннер (тёмная плашка системы) ---------- */
 .cookie-consent {
@@ -870,10 +871,9 @@ footer { padding: 15px 0; margin-top: 30px; }
 .footer-item-social { display: flex; justify-content: center; }
 .footer-item-social a {
   display: flex; align-items: center; justify-content: center;
-  width: 36px; height: 36px; margin: 0 10px; border-radius: 50%;
-  border: 1px solid rgba(214, 179, 102, 0.6);
-  background-size: 20px; background-position: center; background-repeat: no-repeat;
-}
+  width: 28px; height: 28px; margin: 0 10px;
+  background-size: 26px; background-position: center; background-repeat: no-repeat;
+} /* эталон: 28px без рамки (style.css:222), сверка 23.08 */
 .footer-item-social a.s-wt { background-image: url(/template/amadeya/images/sprite.svg#wt-icon-w); }
 .footer-item-social a.s-tg { background-image: url(/template/amadeya/images/sprite.svg#tg-icon-w); }
 .footer-item-copyright { padding-top: 20px; margin-top: 20px; }
@@ -929,7 +929,7 @@ footer { padding: 15px 0; margin-top: 30px; }
 .people-block .swiper-wrapper { align-items: stretch; padding-bottom: 20px; }
 .people-block .swiper-slide { padding-left: 15px; box-sizing: border-box; width: 280px; height: unset; }
 .people-block .swiper-nav-buttons { display: none; }
-.people-item { position: relative; height: 100%; border-radius: 8px; overflow: hidden; }
+.people-item { position: relative; height: 100%; border-radius: 20px; overflow: hidden; } /* радиус эталона (core 20px), сверка 23.08 */
 .people-item-photo { height: 320px; }
 .people-item-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .people-item-desc { padding: 15px; }
@@ -959,12 +959,24 @@ footer { padding: 15px 0; margin-top: 30px; }
   background-size: contain; background-repeat: no-repeat; display: block; height: 12px; margin-top: 10px;
 }
 
-/* карта (map-block) */
-.map-block { border-radius: 10px; overflow: hidden; }
-.map-block-content { padding: 25px; }
-.map-block-content h2 { margin-top: 0; }
+/* карта (map-block) — эталон детокса: белая карточка, на десктопе плавает поверх карты */
+.map-block { border-radius: 10px; overflow: hidden; box-shadow: 0 4px 24px -3px rgba(0, 0, 0, 0.15); }
+.map-block .map-block-content { padding: 25px; background: #FFFFFF; color: #22324A; }
+/* специфичность поднята: перебивает core .v36-dark .page h2/p (светлые на тёмном) — сверка 23.08 */
+.map-block .map-block-content h2,
+.map-block .map-block-content h3 { margin-top: 0; color: #16233A; }
+.map-block .map-block-content p,
+.map-block .map-block-content .contact-row { color: #22324A; }
+.map-block .map-block-content .phone { color: #16233A; }
 .map-wrap { height: 340px; filter: saturate(0.7); }
 .map-wrap iframe { display: block; width: 100%; height: 100%; }
+@media only screen and (min-width: 1024px) {
+  .map-block-content {
+    position: absolute; z-index: 10; top: 50px; left: 50px; width: 290px;
+    box-shadow: 0 4px 24px -3px rgba(0, 0, 0, 0.15); border-radius: 10px;
+  }
+  .map-wrap { height: 400px; }
+}
 .contact-row { display: inline-block; background-repeat: no-repeat; padding-left: 25px; background-position: left center; background-size: 16px 16px; }
 .contact-row.icon-location { background-image: url(/template/amadeya/images/sprite.svg#icon4); }
 .contact-row.icon-phone { background-image: url(/template/amadeya/images/sprite.svg#icon5); }
@@ -1294,3 +1306,61 @@ img[src*="s.w.org/images/core/emoji"] {
 }
 .a26-zapis-legal > p { margin: 0 0 10px; }
 .a26-zapis-legal img { width: auto; max-width: 240px; height: auto; border-radius: 10px; }
+
+/* medflex round widget → айдентика: глубина + золото вместо чужого синего #1A5DD0 */
+.medflex-round-widget__button {
+  background: var(--abyss) !important;
+  border: 1px solid rgba(214, 179, 102, 0.75) !important;
+  color: var(--g2) !important;
+  font-family: "Golos Text", sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.55) !important;
+}
+.medflex-round-widget__button:hover { background: #122A44 !important; }
+
+/* ==========================================================================
+   ЧАСТЬ 15 — ПАРИТЕТ С ЭТАЛОНОМ ДЕТОКСА (computed-сверка продов 23.08)
+   Детокс получает эти визуальные слои из legacy style.css в своём бандле;
+   a26 тему не грузит — переносим правила сюда, значения = замеры эталона.
+   ========================================================================== */
+
+/* маркер-ромб у заголовков секций (style.css:134-136 + margin @1280) */
+.section-title { padding: 25px; padding-left: 30px; margin-left: 20px; }
+.section-title::before {
+  content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0;
+  width: 40px; height: 100%;
+  background: url(/template/amadeya/images/sprite.svg#marker) no-repeat left 19px / 20px 36px;
+}
+@media only screen and (min-width: 1280px) { .section-title { margin-left: 40px; } }
+
+/* карточки услуг — раскладка эталона: 480+ строка с фото слева,
+   768-1023 колонка с фото сверху, 1024+ снова строка (style.css:317/392/468) */
+@media only screen and (min-width: 480px) {
+  .posts-block .post-item { display: flex; }
+  .posts-block .post-item-image { min-width: 150px; max-width: 150px; }
+  .posts-block .post-item-desc { padding-left: 25px; }
+  .reviews-block .__line-block-item { padding: 25px; }
+}
+@media only screen and (min-width: 768px) {
+  .posts-block .post-item { flex-direction: column; }
+  .posts-block .post-item-image { max-width: none; }
+}
+@media only screen and (min-width: 1024px) {
+  .posts-block .post-item { flex-direction: row; }
+  .posts-block .post-item-image { max-width: 150px; }
+}
+/* «Подробнее» — кегль эталона 14px (core задаёт 11px, детокс перебит темой) */
+.posts-block .post-item-title a { font-size: 14px; }
+
+/* отзывы на пергаменте: имя автора тёмное, как в эталоне
+   (у a26 главная лежит в .page — core-правило .v36-dark .page h3 красило в parch) */
+.v36-dark .page .v36-sheet .reviews-item-title h3 { color: var(--abyss); }
+
+/* футер: акцент первой строки юрблока (style.css:216 — 1.3em/700/white85) */
+.footer-item p:first-child {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
