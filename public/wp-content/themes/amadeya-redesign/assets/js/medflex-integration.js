@@ -66,6 +66,19 @@
         });
     }
 
+    // a11y/PSI 24.08: у крестика round-виджета MedFlex нет accessible name
+    // (PSI: buttons must have discernible text — ломает a11y-дерево и агентный просмотр).
+    // Виджет сторонний, разметку не контролируем — патчим при появлении в DOM.
+    function patchMedflexCross(root) {
+        (root || document).querySelectorAll('.medflex-round-widget__cross:not([aria-label])').forEach(function (b) {
+            b.setAttribute('aria-label', 'Закрыть окно онлайн-записи');
+            b.setAttribute('title', 'Закрыть');
+        });
+    }
+    const medflexA11yObserver = new MutationObserver(function () { patchMedflexCross(document); });
+    medflexA11yObserver.observe(document.documentElement, { childList: true, subtree: true });
+    patchMedflexCross(document);
+
     // Инициализация при загрузке DOM
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initMedFlexIntegration);

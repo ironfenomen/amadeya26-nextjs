@@ -8,7 +8,7 @@ export default function Header() {
           <div class="__side-padding">
             <div class="header-items __line-blocks _items-center _content-justify">
               <div class="header-item header-item-logo">
-                <a class="header-logo" href="/" title="Медицинский центр Амадея"><img src="/redesign/logo-a26.png" alt="Медицинский центр Амадея в Ставрополе" width="220" height="70"></a>
+                <a class="header-logo" href="/" title="Медицинский центр Амадея"><img src="/redesign/logo-a26-440.webp" alt="Медицинский центр Амадея в Ставрополе" width="220" height="70"></a>
               </div>
 
               <div class="header-item header-item-slogan">
