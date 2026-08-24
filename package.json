@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "css:inline": "node scripts/build-css-inline.mjs"
+    "css:inline": "node scripts/build-css-split.mjs",
+    "css:split": "node scripts/build-css-split.mjs"
   },
   "dependencies": {
     "next": "16.2.9",

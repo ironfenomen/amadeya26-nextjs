@@ -14,13 +14,14 @@ const WORLD_JS = readFileSync(
   "utf8"
 );
 
-/* CSS-ИНЛАЙН (паттерн детокса 21.08): PSI mobile 24.08 — 5 блокирующих
-   стилей (41.6KiB, 3340ms на медленном 4G, экономия 2350ms) → один <style>.
-   Источник: public/redesign/a26-inline.min.css (tokens→fonts→v36→a26→swiper,
-   scripts/build-css-inline.mjs). После правки любого CSS: npm run css:inline.
-   Не редактировать руками. */
-const INLINE_CSS = readFileSync(
-  path.join(process.cwd(), "public/redesign/a26-inline.min.css"),
+/* CSS-СПЛИТ (паттерн детокса 25.08): критический слой первого экрана инлайнится
+   в <head> (~21KB: tokens/fonts/шапка/hero/мобильная шапка), полный бандл (~117KB)
+   отложен — media="print" → flip в 'all' на window load (см. INIT_HOME).
+   Причина: полный инлайн раздувал HTML до 395KB raw / 80KB gzip и жрал ~1с парсинга
+   до FCP на slow-4G (PSI 25.08). Источник: scripts/build-css-split.mjs — после правки
+   любого CSS: npm run css:split и бамп ?v= у a26-bundle.min.css ниже. */
+const CRITICAL_CSS = readFileSync(
+  path.join(process.cwd(), "public/redesign/a26-critical.min.css"),
   "utf8"
 );
 
@@ -50,7 +51,7 @@ const THEME_JS = [
 
 /* Swiper-иниты главной в Core-грамматике (#people-swiper/#reviews-swiper/#service-banner-swiper).
    Порт инитов layout детокса (21.08): retry пока не поднимется window.Swiper. */
-const INIT_HOME = `(function(){var tries=0;function init(){try{if(!window.Swiper){if(++tries<40)return setTimeout(init,150);}var pe=document.getElementById('people-swiper');if(pe&&!pe.classList.contains('swiper-initialized'))new Swiper('#people-swiper',{slidesPerView:'auto',loop:true,navigation:{nextEl:'.vrachi-button-next',prevEl:'.vrachi-button-prev'},breakpoints:{1280:{slidesPerView:4}}});var re=document.getElementById('reviews-swiper');if(re&&!re.classList.contains('swiper-initialized'))new Swiper('#reviews-swiper',{slidesPerView:'auto',loop:false,navigation:{prevEl:'.reviews-button-prev',nextEl:'.reviews-button-next'},breakpoints:{1280:{spaceBetween:-30,slidesPerView:2}}});var sb=document.getElementById('service-banner-swiper');if(sb&&!sb.classList.contains('swiper-initialized'))new Swiper('#service-banner-swiper',{slidesPerView:1,loop:false,navigation:{prevEl:'.service-banner-prev',nextEl:'.service-banner-next'}});var be=document.querySelector('.booking-experts-swiper');if(be&&!be.classList.contains('swiper-initialized'))new Swiper('.booking-experts-swiper',{slidesPerView:1,loop:true,spaceBetween:20,pagination:{el:'.booking-experts-pagination',clickable:true},navigation:{prevEl:'.booking-experts-prev',nextEl:'.booking-experts-next'},breakpoints:{768:{slidesPerView:2},1280:{slidesPerView:3}}});}catch(e){}}if(document.readyState!=='loading')init();else document.addEventListener('DOMContentLoaded',init);})();`;
+const INIT_HOME = `(function(){var dl=document.querySelectorAll('link[data-defer-css]');function flipCss(){for(var i=0;i<dl.length;i++){dl[i].media='all';dl[i].removeAttribute('data-defer-css');}}if(document.readyState==='complete')flipCss();else window.addEventListener('load',flipCss);var tries=0;function init(){try{if(!window.Swiper){if(++tries<40)return setTimeout(init,150);}var pe=document.getElementById('people-swiper');if(pe&&!pe.classList.contains('swiper-initialized'))new Swiper('#people-swiper',{slidesPerView:'auto',loop:true,navigation:{nextEl:'.vrachi-button-next',prevEl:'.vrachi-button-prev'},breakpoints:{1280:{slidesPerView:4}}});var re=document.getElementById('reviews-swiper');if(re&&!re.classList.contains('swiper-initialized'))new Swiper('#reviews-swiper',{slidesPerView:'auto',loop:false,navigation:{prevEl:'.reviews-button-prev',nextEl:'.reviews-button-next'},breakpoints:{1280:{spaceBetween:-30,slidesPerView:2}}});var sb=document.getElementById('service-banner-swiper');if(sb&&!sb.classList.contains('swiper-initialized'))new Swiper('#service-banner-swiper',{slidesPerView:1,loop:false,navigation:{prevEl:'.service-banner-prev',nextEl:'.service-banner-next'}});var be=document.querySelector('.booking-experts-swiper');if(be&&!be.classList.contains('swiper-initialized'))new Swiper('.booking-experts-swiper',{slidesPerView:1,loop:true,spaceBetween:20,pagination:{el:'.booking-experts-pagination',clickable:true},navigation:{prevEl:'.booking-experts-prev',nextEl:'.booking-experts-next'},breakpoints:{768:{slidesPerView:2},1280:{slidesPerView:3}}});}catch(e){}}if(document.readyState!=='loading')init();else document.addEventListener('DOMContentLoaded',init);})();`;
 
 /* Я.Метрика 91506218 — точный код счётчика; tag.js отложен (первый жест или idle 4с),
    события до загрузки копятся в очереди ym.a (паттерн детокса 21.08). */
@@ -88,10 +89,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preload" href="/fonts/playfair-display-500-cyrillic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/golos-text-400-cyrillic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         {/* CSS-порядок = каскад: токены Core → шрифты Core → Core (v36) → site-слой a26 → swiper.
-             ИНЛАЙН одним <style> (render-blocking устранён, PSI 24.08) — см. INLINE_CSS выше */}
-        <style dangerouslySetInnerHTML={{ __html: INLINE_CSS }} />
+             Инлайнится ТОЛЬКО критический слой первого экрана; полный бандл отложен в <body> */}
+        <style dangerouslySetInnerHTML={{ __html: CRITICAL_CSS }} />
       </head>
       <body>
+        {/* Полный CSS-бандл — ОТЛОЖЕН (паттерн детокса): первый экран рисует
+            инлайн-critical из <head>, бандл догружает below-fold после load
+            (flip в INIT_HOME). ?v= бампить при каждой пересборке (npm run css:split). */}
+        {/* eslint-disable-next-line @next/next/no-css-tags */}
+        <link rel="stylesheet" href="/redesign/a26-bundle.min.css?v=20260825a" media="print" data-defer-css="1" />
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-css-tags */}
+          <link rel="stylesheet" href="/redesign/a26-bundle.min.css?v=20260825a" />
+        </noscript>
         <noscript><div><img src="https://mc.yandex.ru/watch/91506218" style={{ position: "absolute", left: "-9999px" }} alt="" /></div></noscript>
 
         <div className="__wrapper">
