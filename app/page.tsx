@@ -254,7 +254,7 @@ const pageContent = `<main>
                             </div>
                         </form>
                         <div class="modal-success" id="inline-modal-success" style="display:none;">
-                            <h3 class="modal-success-title">Заявка отправлена!</h3>
+                            <p class="modal-success-title">Заявка отправлена!</p>
                             <p class="modal-success-text">Ваша заявка принята, ожидайте звонка в ближайшее время</p>
                         </div>
                     </div>
