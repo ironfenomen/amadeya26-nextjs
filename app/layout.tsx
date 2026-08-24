@@ -122,8 +122,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* MedFlex онлайн-запись */}
         <div id="medflexRoundWidgetData" data-src="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&isRoundWidget=false" />
 
+        {/* THEME_JS — обычные defer-скрипты (не next/script): next/script strategy="afterInteractive"
+             заставлял React 19 эмитить <link rel="preload" as="script"> на все 8 файлов (~56KB High),
+             они отбирали полосу у hero-фото на slow-4G (PSI 24.08: LCP-фаза render). defer сохраняет
+             порядок выполнения и не порождает preload. */}
         {THEME_JS.map((src) => (
-          <Script key={src} src={src} strategy="afterInteractive" />
+          // eslint-disable-next-line @next/next/no-sync-scripts
+          <script key={src} src={src} defer />
         ))}
         <Script src="https://booking.medflex.ru/components/round/round_widget_button.js" strategy="lazyOnload" />
 

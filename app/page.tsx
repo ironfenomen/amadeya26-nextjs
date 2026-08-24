@@ -20,7 +20,7 @@ const pageContent = `<main>
                             <picture>
                                 <source type="image/avif" srcset="/redesign/reception-evening-390.avif 390w, /redesign/reception-evening-640.avif 640w, /redesign/reception-evening-768.avif 768w, /redesign/reception-evening-960.avif 960w, /redesign/reception-evening-1350.avif 1350w" sizes="100vw">
                                 <source type="image/webp" srcset="/redesign/reception-evening-390.webp 390w, /redesign/reception-evening-768.webp 768w, /redesign/reception-evening-960.webp 960w, /redesign/reception-evening-1350.webp 1350w" sizes="100vw">
-                                <img decoding="async" draggable="false" src="/redesign/reception-evening.jpg" width="1350" height="1800" alt="" aria-hidden="true">
+                                <img decoding="async" draggable="false" src="/redesign/reception-evening.jpg" width="1350" height="1800" alt="" aria-hidden="true" fetchpriority="high">
                             </picture>
                         </div>
                         <div class="h36-div"></div>
