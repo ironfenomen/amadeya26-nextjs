@@ -221,6 +221,48 @@ const pageContent = `<main>
         </div>
     </section>
 
+    <!-- redesign/v36: контактная полоса + инлайн-форма (паттерн детокса .contact-block-2).
+         Отправка — через существующий inline-контракт modal-form.js (#inline-callback-form → /api/lead/ → Telegram),
+         разметка ID повторяет контракт: #inline-name/#inline-phone/#inline-privacy/.modal-submit -->
+    <section class="v36-cta" data-gx="50%" data-gy="50%" data-ms="1.2" data-mo=".05">
+        <div class="__container">
+            <div class="__side-padding">
+                <div class="contact-block-2">
+                    <div class="contact-block-2-content">
+                        <div>
+                            <p>Позвоните нам и получите консультацию специалиста!</p>
+                            <p>Звонок анонимный. Работаем ежедневно.</p>
+                        </div>
+                        <div><a class="page-form-phone" href="tel:+79888641010">+7 (988) 864-10-10</a></div>
+                    </div>
+                    <div class="contact-block-2-form">
+                        <div class="form-title">Оставьте заявку и мы сами Вам перезвоним!</div>
+                        <div class="modal-error" id="inline-modal-error"></div>
+                        <form id="inline-callback-form" novalidate>
+                            <div class="form-row text">
+                                <input type="text" id="inline-name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-row text">
+                                <input type="tel" id="inline-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="form-row checkbox">
+                                <input type="checkbox" id="inline-privacy" name="privacy_agreement" required>
+                                <label for="inline-privacy"><a href="/personal-data-consent/" target="_blank">Согласен</a> на&nbsp;обработку персональных данных в&nbsp;соответствии с&nbsp;<a href="/privacy-policy/" target="_blank">Политикой конфиденциальности</a>.</label>
+                            </div>
+                            <div class="form-row submit">
+                                <button type="submit" class="modal-submit">Отправить заявку</button>
+                            </div>
+                        </form>
+                        <div class="modal-success" id="inline-modal-success" style="display:none;">
+                            <h3 class="modal-success-title">Заявка отправлена!</h3>
+                            <p class="modal-success-text">Ваша заявка принята, ожидайте звонка в ближайшее время</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- redesign/v36: специалисты (.people-block swiper) — 9 врачей, контент сохранён -->
     <section class="reviews-section" id="experts" data-gx="50%" data-gy="30%" data-ms="1.1" data-mo=".06">
         <div class="__container">

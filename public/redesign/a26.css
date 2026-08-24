@@ -154,20 +154,26 @@ select:focus-visible, textarea:focus-visible, [tabindex]:focus-visible {
 .footer-logo a { display: inline-block; background: none !important; }
 .footer-logo img { height: 64px; width: auto; } /* эталон: лого подвала крупное (замер 23.08) */
 
-/* ---------- cookie-баннер (тёмная плашка системы) ---------- */
+/* ---------- cookie-баннер: плавающая карточка (геометрия эталона детокса,
+   айдентика тёмная: abyss + золото) ---------- */
 .cookie-consent {
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 6500;
-  background: rgba(4, 24, 49, 0.92);
+  position: fixed; left: 0; right: 0; bottom: 10px; z-index: 6500;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: min(460px, calc(100% - 24px));
+  background: rgba(4, 24, 49, 0.94);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-top: 1px solid rgba(242, 223, 160, 0.14);
-  padding: 14px 0;
-  transform: translateY(110%);
+  border: 1px solid rgba(242, 223, 160, 0.18);
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(3, 21, 42, 0.45);
+  padding: 18px 20px;
+  transform: translateY(calc(100% + 30px));
   transition: transform 0.45s var(--EO);
 }
 .cookie-consent--visible { transform: translateY(0); }
 .cookie-consent__container {
-  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
 }
 .cookie-consent__text { font-size: 13.5px; color: var(--mutedd); flex: 1; min-width: 240px; }
 .cookie-consent__link { color: var(--g2); }
@@ -1363,4 +1369,33 @@ img[src*="s.w.org/images/core/emoji"] {
   font-size: 1.3em;
   font-weight: 700;
   margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   ЧАСТЬ 16 — CTA-ПОЛОСА + ИНЛАЙН-ФОРМА (главная; паттерн детокса contact-block-2,
+   структурный layout — у детокса он из legacy темы, у нас задаём здесь)
+   ========================================================================== */
+
+.v36-cta { padding: 30px 0; }
+.contact-block-2 { display: flex; gap: 48px; align-items: center; padding: 48px 56px; }
+.contact-block-2-content { flex: 1.05; display: grid; gap: 22px; justify-items: start; }
+.contact-block-2-content > div { display: grid; gap: 6px; }
+a.page-form-phone { font-size: clamp(24px, 2.4vw, 34px); }
+.contact-block-2-form { flex: 1; padding: 30px 32px; }
+.contact-block-2 .form-title { font-size: 20px; margin-bottom: 16px; }
+.contact-block-2 form { display: grid; gap: 12px; }
+.contact-block-2 input { width: 100%; padding: 13px 16px; font-size: 15px; }
+.contact-block-2 .form-row.checkbox { display: flex; gap: 10px; align-items: flex-start; }
+.contact-block-2 .form-row.checkbox input { width: auto; margin-top: 3px; flex: none; }
+.contact-block-2 .form-row.checkbox label { font-size: 12.5px; line-height: 1.45; }
+.contact-block-2 .modal-submit { width: 100%; padding: 14px; cursor: pointer; }
+.contact-block-2 .modal-error { display: none; color: #ef4444; font-size: 13px; margin-bottom: 10px; }
+.contact-block-2 .modal-error.show { display: block; }
+.contact-block-2 .modal-success { text-align: center; padding: 18px 0; color: var(--inkl); }
+.contact-block-2 .modal-success-title { color: var(--abyss); margin-bottom: 6px; }
+
+@media (max-width: 860px) {
+  .v36-cta { padding: 20px 0; }
+  .contact-block-2 { flex-direction: column; gap: 26px; padding: 30px 22px; }
+  .contact-block-2-form { padding: 24px 20px; width: 100%; }
 }
