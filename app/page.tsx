@@ -272,7 +272,7 @@ const pageContent = `<main>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="people-item __line-block-item">
-                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva-480.webp" alt="Врач Мутаева Ольга Юрьевна"></div>
+                                <div class="people-item-photo"><img loading="eager" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/mutaeva-480.webp" alt="Врач Мутаева Ольга Юрьевна"></div>
                                 <div class="people-item-desc">
                                     <div class="people-item-name"><span>Мутаева</span><span>Ольга Юрьевна</span></div>
                                     <div class="people-item-spec">Психиатр, клинический психолог, нарколог, психотерапевт</div>
@@ -283,7 +283,7 @@ const pageContent = `<main>
                         </div>
                         <div class="swiper-slide">
                             <div class="people-item __line-block-item">
-                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kron-480.webp" alt="Врач Крон Елена Ивановна"></div>
+                                <div class="people-item-photo"><img loading="eager" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kron-480.webp" alt="Врач Крон Елена Ивановна"></div>
                                 <div class="people-item-desc">
                                     <div class="people-item-name"><span>Крон</span><span>Елена Ивановна</span></div>
                                     <div class="people-item-spec">Психиатр, гирудотерапевт, нарколог, психотерапевт</div>
@@ -294,7 +294,7 @@ const pageContent = `<main>
                         </div>
                         <div class="swiper-slide">
                             <div class="people-item __line-block-item">
-                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kamolikova-480.webp" alt="Врач Камоликова Жанна Анатольевна"></div>
+                                <div class="people-item-photo"><img loading="eager" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/kamolikova-480.webp" alt="Врач Камоликова Жанна Анатольевна"></div>
                                 <div class="people-item-desc">
                                     <div class="people-item-name"><span>Камоликова</span><span>Жанна Анатольевна</span></div>
                                     <div class="people-item-spec">Психиатр, нарколог, психотерапевт</div>
@@ -305,7 +305,7 @@ const pageContent = `<main>
                         </div>
                         <div class="swiper-slide">
                             <div class="people-item __line-block-item">
-                                <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/bobrova-480.webp" alt="Врач Боброва Александра Николаевна"></div>
+                                <div class="people-item-photo"><img loading="eager" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/bobrova-480.webp" alt="Врач Боброва Александра Николаевна"></div>
                                 <div class="people-item-desc">
                                     <div class="people-item-name"><span>Боброва</span><span>Александра Николаевна</span></div>
                                     <div class="people-item-spec">Психотерапевт, психиатр, психолог</div>

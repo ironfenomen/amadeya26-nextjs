@@ -51,7 +51,7 @@ const THEME_JS = [
 
 /* Swiper-иниты главной в Core-грамматике (#people-swiper/#reviews-swiper/#service-banner-swiper).
    Порт инитов layout детокса (21.08): retry пока не поднимется window.Swiper. */
-const INIT_HOME = `(function(){var dl=document.querySelectorAll('link[data-defer-css]');function flipCss(){for(var i=0;i<dl.length;i++){dl[i].media='all';dl[i].removeAttribute('data-defer-css');}}if(document.readyState==='complete')flipCss();else window.addEventListener('load',flipCss);var tries=0;function init(){try{if(!window.Swiper){if(++tries<40)return setTimeout(init,150);}var pe=document.getElementById('people-swiper');if(pe&&!pe.classList.contains('swiper-initialized'))new Swiper('#people-swiper',{slidesPerView:'auto',loop:true,navigation:{nextEl:'.vrachi-button-next',prevEl:'.vrachi-button-prev'},breakpoints:{1280:{slidesPerView:4}}});var re=document.getElementById('reviews-swiper');if(re&&!re.classList.contains('swiper-initialized'))new Swiper('#reviews-swiper',{slidesPerView:'auto',loop:false,navigation:{prevEl:'.reviews-button-prev',nextEl:'.reviews-button-next'},breakpoints:{1280:{spaceBetween:-30,slidesPerView:2}}});var sb=document.getElementById('service-banner-swiper');if(sb&&!sb.classList.contains('swiper-initialized'))new Swiper('#service-banner-swiper',{slidesPerView:1,loop:false,navigation:{prevEl:'.service-banner-prev',nextEl:'.service-banner-next'}});var be=document.querySelector('.booking-experts-swiper');if(be&&!be.classList.contains('swiper-initialized'))new Swiper('.booking-experts-swiper',{slidesPerView:1,loop:true,spaceBetween:20,pagination:{el:'.booking-experts-pagination',clickable:true},navigation:{prevEl:'.booking-experts-prev',nextEl:'.booking-experts-next'},breakpoints:{768:{slidesPerView:2},1280:{slidesPerView:3}}});}catch(e){}}if(document.readyState!=='loading')init();else document.addEventListener('DOMContentLoaded',init);})();`;
+const INIT_HOME = `(function(){var dl=document.querySelectorAll('link[data-defer-css]');function flipCss(){for(var i=0;i<dl.length;i++){dl[i].media='all';dl[i].removeAttribute('data-defer-css');}}if(document.readyState==='complete')flipCss();else window.addEventListener('load',flipCss);var tries=0;function init(){try{if(!window.Swiper){if(++tries<40)return setTimeout(init,150);}var pe=document.getElementById('people-swiper');if(pe&&!pe.classList.contains('swiper-initialized'))new Swiper('#people-swiper',{slidesPerView:'auto',loop:true,navigation:{nextEl:'.vrachi-button-next',prevEl:'.vrachi-button-prev'},breakpoints:{1280:{slidesPerView:4}}});var re=document.getElementById('reviews-swiper');if(re&&!re.classList.contains('swiper-initialized'))new Swiper('#reviews-swiper',{slidesPerView:'auto',loop:false,navigation:{prevEl:'.reviews-button-prev',nextEl:'.reviews-button-next'},breakpoints:{1280:{spaceBetween:-30,slidesPerView:2}}});var sb=document.getElementById('service-banner-swiper');if(sb&&!sb.classList.contains('swiper-initialized'))new Swiper('#service-banner-swiper',{slidesPerView:1,loop:false,navigation:{prevEl:'.service-banner-prev',nextEl:'.service-banner-next'}});var be=document.querySelector('.booking-experts-swiper');if(be&&!be.classList.contains('swiper-initialized'))new Swiper('.booking-experts-swiper',{slidesPerView:1,loop:true,spaceBetween:20,pagination:{el:'.booking-experts-pagination',clickable:true},navigation:{prevEl:'.booking-experts-prev',nextEl:'.booking-experts-next'},breakpoints:{768:{slidesPerView:2},1280:{slidesPerView:3}}});}catch(e){}try{function wtShow(){var s=window.pageYOffset||document.documentElement.scrollTop;var el=document.querySelector('.fixed-whatsapp');if(!el)return;if(s>400)el.classList.add('is-show');else el.classList.remove('is-show');}window.addEventListener('scroll',wtShow,{passive:true});wtShow();}catch(e){}}if(document.readyState!=='loading')init();else document.addEventListener('DOMContentLoaded',init);})();`;
 
 /* Я.Метрика 91506218 — точный код счётчика; tag.js отложен (первый жест или idle 4с),
    события до загрузки копятся в очереди ym.a (паттерн детокса 21.08). */
@@ -129,8 +129,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         <div className="v36-grain" aria-hidden="true" />
 
-        {/* MedFlex онлайн-запись */}
-        <div id="medflexRoundWidgetData" data-src="https://booking.medflex.ru?user=d08403255205cfe5edb04db2691b5e68&isRoundWidget=false" />
+        {/* MedFlex: только интеграция форм (medflex-integration.js в THEME_JS).
+            Круглая кнопка «Запись» (round_widget) убрана 25.08 по решению владельца —
+            вместо неё плавающий WhatsApp, как на детоксе */}
+
+        {/* Плавающий WhatsApp (паттерн детокса): lottie-анимация wt.json грузится на idle,
+            появление после 400px скролла — wtShow в INIT_HOME; номер амадеи26 */}
+        <a href="https://wa.me/+79888641010" target="_blank" rel="noopener" className="fixed-whatsapp" id="whatsapp-icon" aria-label="Написать в WhatsApp"></a>
 
         {/* THEME_JS — обычные defer-скрипты (не next/script): next/script strategy="afterInteractive"
              заставлял React 19 эмитить <link rel="preload" as="script"> на все 8 файлов (~56KB High),
@@ -140,7 +145,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           // eslint-disable-next-line @next/next/no-sync-scripts
           <script key={src} src={src} defer />
         ))}
-        <Script src="https://booking.medflex.ru/components/round/round_widget_button.js" strategy="lazyOnload" />
+        {/* Lottie для WhatsApp-виджета — на idle, как на детоксе (262KB не на критическом пути) */}
+        <Script id="wa-lottie" strategy="afterInteractive">
+          {`(function(){function load(){if(window.__lottieLoaded)return;window.__lottieLoaded=1;var s=document.createElement('script');s.src='/template/amadeya/js/lottie.js';s.onload=function(){try{var el=document.getElementById('whatsapp-icon');if(window.bodymovin&&el)bodymovin.loadAnimation({container:el,path:'/images/wt.json',renderer:'svg',loop:true,autoplay:true});}catch(e){}};document.body.appendChild(s);}if('requestIdleCallback'in window){requestIdleCallback(load,{timeout:4000});}else{setTimeout(load,3000);}})();`}
+        </Script>
 
         <Script id="v36-site-config" strategy="afterInteractive">
           {`window.__V36_SITE__=${JSON.stringify(V36_SITE)};`}
