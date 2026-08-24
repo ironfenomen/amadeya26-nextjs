@@ -43,6 +43,23 @@ const nextConfig: NextConfig = {
       statusCode: 301,
     }));
   },
+  /* Security-заголовки (PSI 24.08: no HSTS/XFO/CSP noted).
+     CSP не включаем вслепую — Я.Метрика, Медфлекс и Я.Карты требуют аккуратного allowlist;
+     HSTS ступенчатый (сутки), после стабилизации поднимем max-age. */
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "Strict-Transport-Security", value: "max-age=86400" },
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;

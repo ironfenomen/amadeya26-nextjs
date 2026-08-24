@@ -1388,6 +1388,8 @@ a.page-form-phone { font-size: clamp(24px, 2.4vw, 34px); }
 .contact-block-2 .form-row.checkbox { display: flex; gap: 10px; align-items: flex-start; }
 .contact-block-2 .form-row.checkbox input { width: auto; margin-top: 3px; flex: none; }
 .contact-block-2 .form-row.checkbox label { font-size: 12.5px; line-height: 1.45; }
+/* a11y (PSI 24.08): ссылки в тексте чекбокса — не только цветом */
+.contact-block-2 .form-row.checkbox a { text-decoration: underline; text-underline-offset: 2px; }
 .contact-block-2 .modal-submit { width: 100%; padding: 14px; cursor: pointer; }
 .contact-block-2 .modal-error { display: none; color: #ef4444; font-size: 13px; margin-bottom: 10px; }
 .contact-block-2 .modal-error.show { display: block; }

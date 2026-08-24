@@ -134,7 +134,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Консультация психиатра</h3>
                                 <p>Профессиональный психиатр поможет справиться с любыми эмоциональными расстройствами.</p>
-                                <a href="/psihiatricheskaya-pomoshh-v-stavropole/">Подробнее</a>
+                                <a href="/psihiatricheskaya-pomoshh-v-stavropole/" aria-label="Подробнее: Консультация психиатра">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/psihiatricheskaya-pomoshh-v-stavropole/" aria-label="Подробнее: Консультация психиатра"></a>
@@ -145,7 +145,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Консультация психотерапевта</h3>
                                 <p>Решите любые психологические проблемы с профессиональным психотерапевтом.</p>
-                                <a href="/psihoterapiya/">Подробнее</a>
+                                <a href="/psihoterapiya/" aria-label="Подробнее: Консультация психотерапевта">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/psihoterapiya/" aria-label="Подробнее: Консультация психотерапевта"></a>
@@ -156,7 +156,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Лечение зависимостей в Ставрополе</h3>
                                 <p>Комплексное лечение различных зависимостей в нашем центре</p>
-                                <a href="/lechenie-zavisimostei-v-stavropole/">Подробнее</a>
+                                <a href="/lechenie-zavisimostei-v-stavropole/" aria-label="Подробнее: Лечение зависимостей в Ставрополе">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/lechenie-zavisimostei-v-stavropole/" aria-label="Подробнее: Лечение зависимостей в Ставрополе"></a>
@@ -167,7 +167,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Дерматология</h3>
                                 <p>Диагностика и лечение кожных заболеваний</p>
-                                <a href="/priem-dermatologa-v-stavropole-klini/">Подробнее</a>
+                                <a href="/priem-dermatologa-v-stavropole-klini/" aria-label="Подробнее: Дерматология">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/priem-dermatologa-v-stavropole-klini/" aria-label="Подробнее: Дерматология"></a>
@@ -178,7 +178,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Дезинтоксикация</h3>
                                 <p>Очищение организма от токсинов, восстановление после интоксикации</p>
-                                <a href="/detoksikacziya/">Подробнее</a>
+                                <a href="/detoksikacziya/" aria-label="Подробнее: Дезинтоксикация">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/detoksikacziya/" aria-label="Подробнее: Дезинтоксикация"></a>
@@ -189,7 +189,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Гирудотерапия</h3>
                                 <p>Лечение пиявками, восстановление кровообращения</p>
-                                <a href="/girudoterapiya/">Подробнее</a>
+                                <a href="/girudoterapiya/" aria-label="Подробнее: Гирудотерапия">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/girudoterapiya/" aria-label="Подробнее: Гирудотерапия"></a>
@@ -200,7 +200,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Гинекология</h3>
                                 <p>Женское здоровье, диагностика и лечение гинекологических заболеваний</p>
-                                <a href="/priem-ginekologa-v-stavropole/">Подробнее</a>
+                                <a href="/priem-ginekologa-v-stavropole/" aria-label="Подробнее: Гинекология">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/priem-ginekologa-v-stavropole/" aria-label="Подробнее: Гинекология"></a>
@@ -211,7 +211,7 @@ const pageContent = `<main>
                             <div class="post-item-title">
                                 <h3>Консультация нарколога</h3>
                                 <p>Первичная консультация нарколога, диагностика, составление плана лечения</p>
-                                <a href="/konsultacziya-vracha-narkologa-v-stavr/">Подробнее</a>
+                                <a href="/konsultacziya-vracha-narkologa-v-stavr/" aria-label="Подробнее: Консультация нарколога">Подробнее</a>
                             </div>
                         </div>
                         <a class="overlink" href="/konsultacziya-vracha-narkologa-v-stavr/" aria-label="Подробнее: Консультация нарколога"></a>
