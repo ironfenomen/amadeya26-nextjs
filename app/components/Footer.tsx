@@ -19,7 +19,7 @@ export default function Footer() {
 
             <div class="footer-items __line-blocks _column _row-w1024">
               <div class="footer-item footer-logo">
-                <a href="/" title="Медицинский центр Амадея"><img src="/redesign/logo-a26-v-200.webp" srcset="/redesign/logo-a26-v-200.webp 200w, /redesign/logo-a26-v-400.webp 400w" sizes="100px" alt="Медицинский центр Амадея" width="100" height="121"></a>
+                <a href="/" title="Медицинский центр Амадея"><img src="/redesign/logo-a26-v-200.webp?v=20260825" srcset="/redesign/logo-a26-v-200.webp?v=20260825 200w, /redesign/logo-a26-v-400.webp?v=20260825 400w" sizes="100px" alt="Медицинский центр Амадея" width="100" height="121"></a>
               </div>
 
               <div class="footer-item footer-company">

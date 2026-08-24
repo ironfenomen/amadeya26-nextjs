@@ -124,7 +124,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="v36-world-glow" id="v36Glow" />
           <div className="v36-world-mark" id="v36Mark">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/redesign/mark.webp" width="488" height="485" alt="" />
+            <img src="/redesign/mark.webp?v=20260825" width="488" height="485" alt="" />
           </div>
         </div>
         <div className="v36-grain" aria-hidden="true" />
