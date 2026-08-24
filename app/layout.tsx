@@ -34,7 +34,7 @@ const THEME_JS = [
   "/wp-content/themes/amadeya-redesign/assets/js/carousel-booking.js?ver=1.0.0",
   "/wp-content/themes/amadeya-redesign/assets/js/cookie-consent.js?ver=1.0.1",
   "/wp-content/themes/amadeya-redesign/assets/js/modal-form.js?ver=1.0.1",
-  "/wp-content/themes/amadeya-redesign/assets/js/medflex-integration.js?ver=1.0.0",
+  "/wp-content/themes/amadeya-redesign/assets/js/medflex-integration.js?ver=1.0.1",
   "/wp-content/themes/amadeya-redesign/assets/js/specialist-list.js?ver=1.0.0",
 ];
 
