@@ -44,9 +44,15 @@
             }
             window.addEventListener('scroll',onScroll,{passive:true});
             onScroll();
-            /* высота шапки → --hdr-h для фиксированной полосы меню на тёмной главной */
+            /* высота шапки → --hdr-h для фиксированной полосы меню на тёмной главной.
+               init-замер ненадёжен: до применения CSS/шрифтов/картинок шапка выше боевой
+               (a26 ловил 110px вместо 92 → светлая полоса под шапкой; детокс 267px → меню уплывало).
+               Пересчитываем на load, после шрифтов и через ResizeObserver на самой шапке. */
             function setHdrH(){var hd=document.querySelector('.header');if(hd)document.documentElement.style.setProperty('--hdr-h',hd.offsetHeight+'px');}
             setHdrH();window.addEventListener('resize',setHdrH);
+            window.addEventListener('load',setHdrH);
+            if(document.fonts&&document.fonts.ready)document.fonts.ready.then(setHdrH);
+            if(window.ResizeObserver){var hdEl=document.querySelector('.header');if(hdEl)new ResizeObserver(setHdrH).observe(hdEl);}
             (function loop(){
               cur.gx+=(tgt.gx-cur.gx)*.045; cur.gy+=(tgt.gy-cur.gy)*.045;
               cur.ms+=(tgt.ms-cur.ms)*.045; cur.mo+=(tgt.mo-cur.mo)*.045;
