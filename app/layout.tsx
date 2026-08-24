@@ -14,6 +14,16 @@ const WORLD_JS = readFileSync(
   "utf8"
 );
 
+/* CSS-ИНЛАЙН (паттерн детокса 21.08): PSI mobile 24.08 — 5 блокирующих
+   стилей (41.6KiB, 3340ms на медленном 4G, экономия 2350ms) → один <style>.
+   Источник: public/redesign/a26-inline.min.css (tokens→fonts→v36→a26→swiper,
+   scripts/build-css-inline.mjs). После правки любого CSS: npm run css:inline.
+   Не редактировать руками. */
+const INLINE_CSS = readFileSync(
+  path.join(process.cwd(), "public/redesign/a26-inline.min.css"),
+  "utf8"
+);
+
 export const metadata: Metadata = {
   title: "Медицинский центр Амадея в Ставрополе",
   metadataBase: new URL("https://amadeya26.ru"),
@@ -77,12 +87,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* self-host шрифтов Web Core: Playfair Display + Golos Text (/fonts, sync из amadeya-web-core) */}
         <link rel="preload" href="/fonts/playfair-display-500-cyrillic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/golos-text-400-cyrillic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        {/* CSS-порядок = каскад: токены Core → шрифты Core → Core (v36) → site-слой a26 → swiper */}
-        <link rel="stylesheet" href="/redesign/tokens.css?v=20260823a" />
-        <link rel="stylesheet" href="/fonts/fonts.css?v=20260823a" />
-        <link rel="stylesheet" href="/redesign/v36.css?v=20260823a" />
-        <link rel="stylesheet" href="/redesign/a26.css?v=20260823a" />
-        <link rel="stylesheet" href="/vendor/swiper/swiper-bundle.min.css?ver=11.2.10" />
+        {/* CSS-порядок = каскад: токены Core → шрифты Core → Core (v36) → site-слой a26 → swiper.
+             ИНЛАЙН одним <style> (render-blocking устранён, PSI 24.08) — см. INLINE_CSS выше */}
+        <style dangerouslySetInnerHTML={{ __html: INLINE_CSS }} />
       </head>
       <body>
         <noscript><div><img src="https://mc.yandex.ru/watch/91506218" style={{ position: "absolute", left: "-9999px" }} alt="" /></div></noscript>
