@@ -129,7 +129,7 @@ const pageContent = `<main>
                 <div class="section-title"><h2><span>Услуги</span> клиники</h2></div>
                 <div class="posts-block">
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock1-700.webp" alt="Консультация психиатра"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock1-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock1-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock1-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Консультация психиатра"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Консультация психиатра</h3>
@@ -140,7 +140,7 @@ const pageContent = `<main>
                         <a class="overlink" href="/psihiatricheskaya-pomoshh-v-stavropole/" aria-label="Подробнее: Консультация психиатра"></a>
                     </div>
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock2-700.webp" alt="Консультация психотерапевта"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock2-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock2-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock2-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Консультация психотерапевта"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Консультация психотерапевта</h3>
@@ -151,7 +151,7 @@ const pageContent = `<main>
                         <a class="overlink" href="/psihoterapiya/" aria-label="Подробнее: Консультация психотерапевта"></a>
                     </div>
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock14-700.webp" alt="Лечение зависимостей в Ставрополе"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock14-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock14-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock14-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Лечение зависимостей в Ставрополе"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Лечение зависимостей в Ставрополе</h3>
@@ -162,7 +162,7 @@ const pageContent = `<main>
                         <a class="overlink" href="/lechenie-zavisimostei-v-stavropole/" aria-label="Подробнее: Лечение зависимостей в Ставрополе"></a>
                     </div>
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock7-700.webp" alt="Дерматология"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock7-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock7-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock7-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Дерматология"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Дерматология</h3>
@@ -173,7 +173,7 @@ const pageContent = `<main>
                         <a class="overlink" href="/priem-dermatologa-v-stavropole-klini/" aria-label="Подробнее: Дерматология"></a>
                     </div>
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock13-700.webp" alt="Дезинтоксикация"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock13-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock13-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock13-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Дезинтоксикация"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Дезинтоксикация</h3>
@@ -184,7 +184,7 @@ const pageContent = `<main>
                         <a class="overlink" href="/detoksikacziya/" aria-label="Подробнее: Дезинтоксикация"></a>
                     </div>
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock6-700.webp" alt="Гирудотерапия"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock6-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock6-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock6-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Гирудотерапия"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Гирудотерапия</h3>
@@ -195,7 +195,7 @@ const pageContent = `<main>
                         <a class="overlink" href="/girudoterapiya/" aria-label="Подробнее: Гирудотерапия"></a>
                     </div>
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock8-700.webp" alt="Гинекология"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock8-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock8-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock8-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Гинекология"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Гинекология</h3>
@@ -206,7 +206,7 @@ const pageContent = `<main>
                         <a class="overlink" href="/priem-ginekologa-v-stavropole/" aria-label="Подробнее: Гинекология"></a>
                     </div>
                     <div class="post-item __line-block-item">
-                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock10-700.webp" alt="Консультация нарколога"/></div>
+                        <div class="post-item-image"><img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/stock10-400.webp" srcset="/wp-content/themes/amadeya-redesign/assets/img/stock10-400.webp 400w, /wp-content/themes/amadeya-redesign/assets/img/stock10-700.webp 700w" sizes="(max-width: 480px) 100vw, 150px" alt="Консультация нарколога"/></div>
                         <div class="post-item-desc">
                             <div class="post-item-title">
                                 <h3>Консультация нарколога</h3>
