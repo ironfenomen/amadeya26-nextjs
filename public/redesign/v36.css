@@ -771,6 +771,14 @@ body:has(.v36-dark) .header-item-button .button:hover {
 .h36-stage.h36-grabbing { cursor: grabbing; }
 .h36-stage img { -webkit-user-drag: none; }
 .h36-stage:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+/* v1.0.4 (26.08): единый клавиатурный фокус-индикатор (WCAG 2.4.7).
+   Легаси base.css детокса обнуляет outline (::focus{outline:none}, input{outline:none}) —
+   канон обязан возвращать индикатор. Мышь не затрагивается: только :focus-visible. */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible,
+select:focus-visible, label:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
 .h36-layer { position: absolute; inset: 0; }
 .h36-layer img {
   display: block; /* inline давал baseline-зазор под фото (на a26 проявлялось; на детоксе лечилось legacy-темой) */
@@ -1093,6 +1101,10 @@ body:has(.v36-dark) .__wrapper { padding-top: 0 !important; }
   /* hero-вход на чистом CSS — тоже гасим (AM-042) */
   .v36-hero .v36-eb i, .v36-hero .v36-eb span, .v36-hero h1 .ln > span,
   .v36-hero .v36-lead, .v36-hero .v36-acts { animation: none !important; }
+  /* v1.0.4 (26.08): добивка AM-042 — бесконечные декоративные анимации гасим полностью:
+     дыхание водяных знаков (hero/world/контакты/подвал), скролл-индикатор, бегущая строка */
+  .v36-world-mark img, .v36-hero-mark img, .v36-cue::before,
+  .contact-block-2::before, footer::before, .v36-mq div { animation: none !important; }
 }
 
 /* подвал — минимальный центрованный легал по макету (.legal), данные и ссылки сохранены.
