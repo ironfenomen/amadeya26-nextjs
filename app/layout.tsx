@@ -97,10 +97,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             инлайн-critical из <head>, бандл догружает below-fold после load
             (flip в INIT_HOME). ?v= бампить при каждой пересборке (npm run css:split). */}
         {/* eslint-disable-next-line @next/next/no-css-tags */}
-        <link rel="stylesheet" href="/redesign/a26-bundle.min.css?v=20260825a" media="print" data-defer-css="1" />
+        <link rel="stylesheet" href="/redesign/a26-bundle.min.css?v=20260825b" media="print" data-defer-css="1" />
         <noscript>
           {/* eslint-disable-next-line @next/next/no-css-tags */}
-          <link rel="stylesheet" href="/redesign/a26-bundle.min.css?v=20260825a" />
+          <link rel="stylesheet" href="/redesign/a26-bundle.min.css?v=20260825b" />
         </noscript>
         <noscript><div><img src="https://mc.yandex.ru/watch/91506218" style={{ position: "absolute", left: "-9999px" }} alt="" /></div></noscript>
 
@@ -108,11 +108,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="__stretch">
             <main>
               <Header />
-              {/* все страницы — тёмный регистр AM-WEB-DARK-01; .page — для мир-паттерна world.js */}
+              {/* все страницы — тёмный регистр AM-WEB-DARK-01. .page — ТОЛЬКО у внутренних
+                  страниц (route group (inner)/layout.tsx); главная без .page, как детокс */}
               <div className="v36-dark">
-                <div className="page" style={{ display: "contents" }}>
-                  {children}
-                </div>
+                {children}
               </div>
             </main>
           </div>

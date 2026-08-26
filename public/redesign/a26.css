@@ -7,17 +7,12 @@
    ========================================================================== */
 
 /* ---------- база ---------- */
-body {
-  background: transparent; /* сквозь body живёт .v36-world */
-  font-family: var(--sans);
-  font-size: 15px; /* паритет с эталоном детокса (style.css: BODY 15px), сверка 23.08 */
-  color: #C4D0DC;
-  -webkit-font-smoothing: antialiased;
-}
+/* font-size/line-height/color body НЕ задаём: canonical база тёмного регистра — Core
+   (body:has(.v36-dark): 15px/1.4/parch), convergence 25.08. Раньше тут было 15px + #C4D0DC — drift. */
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1320px; /* canonical сетка детокса (было 1300 — drift) */
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box; /* иначе width:100% + padding 2×15 вылезал за .__wrapper (overflow 30px на узких экранах) */
@@ -756,9 +751,15 @@ img { border-style: none; max-width: 100%; }
 a { text-decoration: none; color: inherit; }
 
 .__wrapper { display: flex; flex: 1; flex-direction: column; width: 100%; min-width: 320px; margin: 0 auto !important; }
-.__container { width: 100%; max-width: 1300px; margin: auto; }
+/* .__container max-width НЕ задаём здесь: сетка 1320px — canonical правило Core
+   (body:has(.v36-dark) .__container), convergence 25.08. Раньше тут было 1300 — drift. */
+.__container { width: 100%; margin: auto; }
 .__stretch { display: flex; flex: 1; flex-direction: column; }
+/* canonical base.css детокса: 15 → 25 (≥768) → 30 (≥1280); раньше было flat 15 — drift,
+   из-за него секции главной были 1290 вместо 1260 (convergence 25.08) */
 .__side-padding { padding: 0 15px; }
+@media only screen and (min-width: 768px) { .__side-padding { padding: 0 25px; } }
+@media only screen and (min-width: 1280px) { .__side-padding { padding: 0 30px; } }
 
 /* line-утилиты темы */
 .__line-blocks { display: flex; }
@@ -787,7 +788,7 @@ header { width: 100%; max-width: 2000px; margin: auto; }
 .header-item-phones span { display: none; font-weight: 300; font-size: 12px; }
 .header-item-social { display: none; }
 .header-item-social a {
-  display: flex; align-items: center; justify-content: center;
+  display: block; /* canonical тема детокса: block + bg-иконка по центру */
   width: 36px; height: 36px; border-radius: 50%;
   border: 1px solid rgba(214, 179, 102, 0.6); margin: 0 7px;
   background-size: 20px; background-position: center; background-repeat: no-repeat;
@@ -842,6 +843,7 @@ body.ScrollOff .medflex-round-widget__button { display: none !important; }
   .__wrapper { padding-top: 0; }
   .header-items { padding: 12px 0; }
   .header-item-logo { flex-grow: 0; }
+  .header-item-logo .header-logo img { height: 60px; }
   .header-item-slogan { display: block; }
   .header-item-phones { margin-right: 30px; }
   .header-item-menu { display: block; font-size: 15px; }
@@ -868,7 +870,7 @@ body.ScrollOff .medflex-round-widget__button { display: none !important; }
 }
 @media only screen and (min-width: 1280px) {
   .header-items { padding: 17px 0; }
-  .header-item-logo .header-logo img { height: 58px; }
+  .header-item-logo .header-logo img { height: 70px; }
   .header-item-slogan { font-size: 15px; }
   .header-item-phones a { font-size: 22px; line-height: 1.3; }
   .header-item-phones span { text-align: right; display: block; }
@@ -909,7 +911,7 @@ footer { padding: 15px 0; margin-top: 30px; }
    ========================================================================== */
 /* офферы */
 .offers-wrapper { margin: 30px 0; }
-.offer-item { padding: 25px; margin-bottom: 20px; }
+.offer-item { padding: 25px 15px; margin-bottom: 20px; } /* canonical тема детокса: 25/15 (было 25 — drift @mobile) */
 .offer-item:last-child { margin-bottom: 0; }
 .offer-item-title { display: flex; align-items: center; margin-bottom: 20px; }
 .offer-item h2 { margin: 0; }
@@ -919,24 +921,27 @@ footer { padding: 15px 0; margin-top: 30px; }
   background-image: url(/template/amadeya/images/sprite.svg#icon1); margin-right: 15px;
 }
 .offer-2 .offer-item-icon { background-image: url(/template/amadeya/images/sprite.svg#icon2); }
-.offer-item-action { margin-top: 20px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-/* generic .button (механика темы; Core красит .v36-dark .button) */
+.offer-item-action { margin-top: 20px; } /* canonical база темы; колонка — только ≥768 (ЧАСТЬ 12) */
+/* generic .button — canonical механика темы детокса (style.css .button, порт 25.08).
+   Типографика/цвета/transition — Core (.v36-dark .button: 11.5px caps, ls .14em, EO);
+   тут НЕ дублировать — иначе site-слой перебивает Core (так уехали ls 0.5px и transition). */
 .button {
-  display: inline-flex; align-items: center; justify-content: center;
-  min-height: 38px; padding: 10px 22px; box-sizing: border-box;
-  font-size: 14px; font-weight: 500; letter-spacing: 0.5px; line-height: 1.2;
-  text-decoration: none; border: none; cursor: pointer; border-radius: 6px;
-  transition: all 0.3s ease;
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; max-width: 210px; min-height: 38px; padding: 10px; box-sizing: border-box;
+  line-height: 1.2; text-align: center; text-decoration: none;
+  border: none; cursor: pointer;
+  box-shadow: 0 16px 7px -11px rgba(43, 65, 92, 0.18);
 }
+@media only screen and (min-width: 1024px) { .button { min-height: 42px; } }
 
 /* услуги (posts-block) */
 .posts-block .post-item { position: relative; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
 .posts-block .post-item:last-child { margin-bottom: 0; }
-.posts-block .post-item-image { height: 200px; border-radius: 10px; overflow: hidden; }
+.posts-block .post-item-image { height: 200px; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.25); } /* canonical тема: base-тень (≥480 — боковая, ЧАСТЬ 15) */
 .posts-block .post-item-image img { height: 100%; width: 100%; display: block; margin: 0; padding: 0; object-fit: cover; }
 .posts-block .post-item-desc { padding: 15px; }
 .posts-block .post-item-title h3 { margin: 10px 0; }
-.posts-block .post-item .overlink { position: absolute; inset: 0; display: block; z-index: 2; }
+.posts-block .post-item .overlink { position: absolute; inset: 0; display: block; } /* canonical тема: без z-index (последний в DOM) */
 
 /* специалисты (people-block) */
 .people-block { margin: 30px 0; padding-bottom: 20px; position: relative; }
@@ -958,7 +963,7 @@ footer { padding: 15px 0; margin-top: 30px; }
 .reviews-block .swiper-wrapper { align-items: stretch; }
 .reviews-block .swiper-slide { padding-left: 15px; box-sizing: border-box; width: 280px; height: unset; }
 .reviews-block .swiper-nav-buttons { display: none; }
-.reviews-item { height: 100%; padding: 20px; box-sizing: border-box; border-radius: 8px; position: relative; }
+.reviews-item { height: 100%; padding: 15px; box-sizing: border-box; border-radius: 8px; position: relative; } /* canonical тема: 15px (было 20 — drift @mobile) */
 .reviews-item::before {
   content: ""; display: block; position: absolute; top: 15px; right: 15px;
   width: 50%; max-width: 180px; height: 100%;
@@ -1001,19 +1006,42 @@ footer { padding: 15px 0; margin-top: 30px; }
   .offer-item { flex-basis: calc(50% - 10px); box-sizing: border-box; margin-bottom: 0; }
   .offer-item .offer-inner { display: flex; flex-direction: column; justify-content: space-between; height: 100%; }
   .offer-item .offer-item-text { flex-grow: 1; }
+  .offer-item-action { display: flex; flex-direction: column; justify-content: center; } /* canonical тема детокса */
   .posts-block { display: flex; justify-content: space-between; flex-wrap: wrap; }
   .posts-block .post-item { width: calc(50% - 10px); }
   .people-block .swiper-slide { width: 304px; }
   .people-item-photo { height: 350px; }
   .reviews-block .swiper-slide { padding-left: 25px; width: calc(50% - 80px); }
 }
+/* canonical геометрия темы детокса — tier 1024 (convergence 25.08) */
+@media only screen and (min-width: 1024px) {
+  .offer-item { flex-basis: calc(50% - 20px); padding: 25px; }
+  .offer-item-icon { flex-basis: 80px; height: 80px; margin-right: 25px; }
+}
 @media only screen and (min-width: 1280px) {
+  /* canonical тема детокса: секции врачей/отзывов в сетке 1260 с боковыми полями */
+  .reviews-section { max-width: 1260px; margin: auto; padding: 0 30px; }
+  .reviews-block { border-radius: 10px; }
+  .reviews-block .swiper-slide { padding-left: 30px; padding-right: 30px; }
+  .reviews-block .swiper-slide .reviews-item { opacity: 1; transition: opacity 0.3s ease; }
+  .reviews-block .swiper-slide.swiper-slide-prev .reviews-item { opacity: 0; }
+  .people-block { padding: 0 15px; position: relative; }
+  .people-block .swiper-slide { padding-left: 15px; padding-right: 15px; }
+  /* offers ≥1280 (тема детокса) */
+  .offer-item-title { margin-bottom: 10px; }
+  .offer-item h2 { font-size: 30px; }
+  .offer-item .offer-item-text, .offer-item .offer-item-action { margin-left: 105px; }
+  /* услуги ≥1280 (тема детокса): 3 колонки, горизонтальные карточки */
+  .posts-block { margin: 0 -15px; }
+  .posts-block .post-item { flex-basis: calc(33.33% - 30px); margin: 0 15px 30px 15px; flex-grow: 1; }
+  .posts-block .post-item-image { max-width: 150px; height: 100%; }
+  .posts-block .post-item:last-child { margin-bottom: 30px; }
+  /* стрелки каруселей (canonical тема): 40×44 (высота — swiper default), без колец, z 100 */
   .reviews-block .swiper-nav-buttons,
-  .people-block .swiper-nav-buttons { display: block; position: absolute; top: 50%; transform: translateY(-50%); left: -30px; right: -30px; pointer-events: none; }
+  .people-block .swiper-nav-buttons { display: block; position: absolute; top: 50%; transform: translateY(-50%); left: -30px; right: -30px; margin: auto; z-index: 100; pointer-events: none; }
   .swiper-nav-buttons .swiper-nav-button {
     pointer-events: auto; color: var(--parch); background: rgba(19, 45, 78, 0.75);
-    width: 40px; height: 40px; border-radius: 50%;
-    box-shadow: inset 0 0 0 1px rgba(242, 223, 160, 0.25);
+    width: 40px; height: 44px; border-radius: 50%;
   }
   .swiper-nav-buttons .swiper-nav-button::after { font-size: 13px; }
   .swiper-nav-buttons .swiper-button-prev { border-radius: 50% 4px 4px 50%; }
@@ -1341,6 +1369,10 @@ img[src*="s.w.org/images/core/emoji"] {
 
 /* маркер-ромб у заголовков секций (style.css:134-136 + margin @1280) */
 .section-title { padding: 25px; padding-left: 30px; margin-left: 20px; }
+/* canonical тема детокса (style.css ≥1024): заголовок секции по центру, кегль 26 */
+@media only screen and (min-width: 1024px) {
+  .section-title { font-size: 26px; margin: auto; text-align: center; font-weight: 600; opacity: .8; }
+}
 .section-title::before {
   content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 0;
   width: 40px; height: 100%;
@@ -1352,7 +1384,7 @@ img[src*="s.w.org/images/core/emoji"] {
    768-1023 колонка с фото сверху, 1024+ снова строка (style.css:317/392/468) */
 @media only screen and (min-width: 480px) {
   .posts-block .post-item { display: flex; }
-  .posts-block .post-item-image { min-width: 150px; max-width: 150px; }
+  .posts-block .post-item-image { min-width: 150px; max-width: 150px; box-shadow: 4px 0 15px -5px rgba(0, 0, 0, 0.25); }
   .posts-block .post-item-desc { padding-left: 25px; }
   .reviews-block .__line-block-item { padding: 25px; }
 }
@@ -1385,47 +1417,47 @@ img[src*="s.w.org/images/core/emoji"] {
    на ≥768 поля формы в 3 колонки. Визуал (цвета/скругления) — v36.css Core)
    ========================================================================== */
 
-.v36-cta { padding: 30px 0; }
-.contact-block-2 { padding: 20px; }
+.contact-block-2 { color: #fff; padding: 20px; }
 .contact-block-2-content { padding: 10px; padding-bottom: 20px; }
-.contact-block-2-content > div:first-child { display: grid; gap: 6px; }
+.contact-block-2-content > div:first-child { font-weight: 300; font-size: 20px; line-height: 1.2; margin-bottom: 15px; }
+.contact-block-2-content div p:nth-child(2) { font-weight: 600; font-size: 24px; } /* canonical tpl_inline_2 */
+.contact-block-2-content > div:last-child { font-weight: 900; font-size: 26px; }
 a.page-form-phone {
   display: inline-block; padding-left: 30px;
   background: url(/redesign/phone-ico.svg) left center / 22px no-repeat;
   font-size: 26px;
 }
 .contact-block-2-form { padding: 30px; }
-.contact-block-2 .form-title { font-size: 20px; line-height: 1.2; margin-bottom: 20px; text-align: center; }
-.contact-block-2 form { display: grid; gap: 14px; }
-.contact-block-2 input { width: 100%; padding: 15px; font-size: 15px; box-sizing: border-box; }
-.contact-block-2 .form-row.checkbox { display: flex; gap: 12px; align-items: flex-start; }
-.contact-block-2 .form-row.checkbox input { width: 18px; height: 18px; margin-top: 1px; flex: none; }
-.contact-block-2 .form-row.checkbox label { font-size: 12.5px; line-height: 1.45; }
-/* a11y (PSI 24.08): ссылки в тексте чекбокса — не только цветом */
-.contact-block-2 .form-row.checkbox a { text-decoration: underline; text-underline-offset: 2px; }
-.contact-block-2 .modal-submit { width: 100%; padding: 15px 14px; cursor: pointer; }
+.contact-block-2-form .form-title { font-size: 20px; line-height: 1.2; text-align: center; max-width: 380px; margin: 0 auto 30px; }
+.contact-block-2-form .form-row { margin-bottom: 25px; }
+.contact-block-2-form .form-row:last-child { margin-bottom: 0; }
+.contact-block-2-form .form-row.text input { display: block; width: 100%; box-sizing: border-box; padding: 15px; font-weight: 500; }
+.contact-block-2-form .form-row.checkbox { display: flex; padding-bottom: 22px; margin-bottom: 15px; }
+.contact-block-2-form .form-row.checkbox input { display: block; width: 22px; height: 22px; box-sizing: border-box; flex-shrink: 0; flex-grow: 0; margin-right: 15px; }
+.contact-block-2-form .form-row.checkbox label { font-size: 12px; }
+/* underline — и в каноне (tpl_inline_2), и a11y (PSI 24.08) */
+.contact-block-2-form .form-row.checkbox label a { text-decoration: underline; text-underline-offset: 2px; }
+.contact-block-2-form .modal-submit { margin: auto; cursor: pointer; }
 .contact-block-2 .modal-error { display: none; color: #ef4444; font-size: 13px; margin-bottom: 10px; }
 .contact-block-2 .modal-error.show { display: block; }
-.contact-block-2 .modal-success { text-align: center; padding: 18px 0; color: var(--inkl); }
-.contact-block-2 .modal-success-title { color: var(--abyss); margin-bottom: 6px; }
+.contact-block-2 .modal-success { text-align: center; padding: 18px 0; }
+.contact-block-2 .modal-success-title { margin-bottom: 6px; }
 
 @media (min-width: 768px) {
   .contact-block-2-content { display: flex; justify-content: space-between; align-items: center; }
   .contact-block-2-content > div:first-child { margin-bottom: 0; }
   .contact-block-2-content > div:last-child { min-width: 300px; text-align: right; }
-  .contact-block-2 form { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0; }
-  .contact-block-2 .form-row { flex-basis: calc(33% - 10px); margin-bottom: 15px; }
-  .contact-block-2 .form-row.checkbox { order: 10; flex-basis: 60%; margin-bottom: 0; align-items: center; }
-  .contact-block-2 .form-row.submit { margin-bottom: 0; }
+  .contact-block-2-form .form-title { max-width: none; }
+  .contact-block-2-form form { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .contact-block-2-form .form-row { flex-basis: calc(33% - 10px); margin-bottom: 15px; }
+  .contact-block-2-form .form-row.checkbox { order: 10; flex-basis: 60%; margin-bottom: 0; padding-bottom: 0; align-items: center; }
+  .contact-block-2-form .form-row.submit { margin-bottom: 0; }
 }
 
 @media (min-width: 1024px) {
   .contact-block-2 { padding: 30px 60px; }
   .contact-block-2-content { margin-bottom: 20px; }
+  .contact-block-2-content > div:first-child { font-size: 22px; }
   .contact-block-2-form { padding: 30px 60px; }
-  .contact-block-2 .form-row.checkbox { flex-basis: 100%; }
-}
-
-@media (max-width: 767px) {
-  .v36-cta { padding: 20px 0; }
+  .contact-block-2-form .form-row.checkbox { flex-basis: 100%; }
 }
