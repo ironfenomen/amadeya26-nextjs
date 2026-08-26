@@ -833,7 +833,7 @@ body.ScrollOff .medflex-round-widget__button { display: none !important; }
   BODY { font-size: 15px; }
   .header-item-phones { line-height: 1.2; }
   .header-item-phones a { font-size: 18px; }
-  .header-item-phones span { font-size: 13px; display: block; }
+  .header-item-phones span { font-size: 13px; } /* display НЕ задаём: canonical-каскад детокса @768–1279 = Core none (тема проигрывает порядку), convergence 26.08 */
   .header-item-phone { text-align: right; }
   .header-menu-button { margin-left: 20px; }
   .header-item-button { display: block; }
