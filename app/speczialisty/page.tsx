@@ -49,13 +49,7 @@ const pageContent = `
 <p>					<a href="/speczialisty/rahmatulina-elena-nikolaevna/"><br />
 	    Подробнее<br />
 	</a><br />
-															<img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp" alt="" srcset="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp 300w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-150x150.jpg.webp 150w, /wp-content/uploads/2024/07/1995607-537493-lukashevich_square-225x225.jpg.webp 225w" sizes="auto, (max-width: 300px) 100vw, 300px" />															</p>
-<h2>Лукашевич Лада Сергеевна</h2>
-<p>Эндокринолог • детский эндокринолог</p>
-<p>					<a><br />
-	    Подробнее<br />
-	</a><br />
-															<img decoding="async" src="/wp-content/uploads/2024/08/photo_2024-06-27_12-59-20.jpg.webp" title="" alt="" loading="lazy" />															</p>
+																														<img decoding="async" src="/wp-content/uploads/2024/08/photo_2024-06-27_12-59-20.jpg.webp" title="" alt="" loading="lazy" />															</p>
 <h2><a href="/speczialisty/denisenko-igor-aleksandrovich/">Денисенко Игорь Александрович</a></h2>
 <p>Нарколог • психиатр • психотерапевт</p>
 <p>					<a><br />

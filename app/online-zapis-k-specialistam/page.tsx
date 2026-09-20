@@ -195,13 +195,6 @@ const pageContent = `
 <p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=151417&#038;source=4" target="_blank" rel="nofollow"><br />
 									Записаться<br />
 					</a></p>
-<figure><a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=537493&#038;source=4" tabindex="-1"><img loading="lazy" decoding="async" width="150" height="150" src="/wp-content/uploads/2024/02/b558f2211d18f3ab99c703a08b44029dd5877bff0dfdc8c9ed975329dc2c184c816a667d0930f9aa5f9f4526d1ba002225ea8fe10419daed4fe31473fe38eab8_150x150.jpg.webp" alt="" /></a></figure>
-<h3><a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=537493&#038;source=4">Лукашевич Лада Сергеевна</a></h3>
-<p>Эндокринолог • детский эндокринолог<br />
-<P> Стаж 9 лет. Вторая категория</p>
-<p>					<a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=537493&#038;source=4" target="_blank" rel="nofollow"><br />
-									Записаться<br />
-					</a></p>
 <figure><a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=939888&#038;source=4" tabindex="-1"><img loading="lazy" decoding="async" width="300" height="300" src="/wp-content/uploads/2022/12/1519383-939888-mozharuk_square.jpg.webp" alt="" /></a></figure>
 <h3><a href="https://booking.medflex.ru/?user=d08403255205cfe5edb04db2691b5e68&#038;employeeId=939888&#038;source=4">Можарук Дарья Сергеевна</a></h3>
 <p>Терапевт • кардиолог<br />
