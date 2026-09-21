@@ -64,18 +64,7 @@ const pageContent = `<main class="page-content service-page">
             <!-- Боковая панель -->
             <aside class="service-sidebar">
                 <div class="specialist-list">
-                    <!-- Специалист (существующий) -->
-                    <div class="specialist-card">
-                        <div class="specialist-image">
-                        <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/lukashevich.jpg" alt="Лукашевич Лада Сергеевна" class="specialist-photo">
-                    </div>
-                    <div class="specialist-info">
-                        <h3 class="specialist-name">Лукашевич Лада Сергеевна</h3>
-                        <p class="specialist-title">Эндокринолог, диетолог, нутрициолог</p>
-                        <p class="specialist-experience">Стаж 10 лет</p>
-                    </div>
-                </div>
-                    <!-- Плейсхолдер для добавления врача -->
+<!-- Плейсхолдер для добавления врача -->
                     <div class="specialist-card">
                         <div class="specialist-image">
                             <img loading="lazy" decoding="async" src="/wp-content/themes/amadeya-redesign/assets/img/zaltan.jpg" alt="Залтан Марина Алексеевна" class="specialist-photo">
