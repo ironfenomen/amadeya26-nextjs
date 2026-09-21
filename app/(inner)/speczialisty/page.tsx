@@ -66,16 +66,7 @@ const pageContent = `
                             </div>
                             <a class="overlink" href="/speczialisty/rahmatulina-elena-nikolaevna/" aria-label="Подробнее: Рахматулина Елена Николаевна"></a>
                         </div>
-                        <div class="people-item __line-block-item">
-                            <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/07/1995607-537493-lukashevich_square.jpg.webp" alt="Врач Лукашевич Лада Сергеевна"></div>
-                            <div class="people-item-desc">
-                                <div class="people-item-name"><span>Лукашевич</span><span>Лада Сергеевна</span></div>
-                                <div class="people-item-spec">Эндокринолог • детский эндокринолог</div>
-                                
-                            </div>
-                            
-                        </div>
-                        <div class="people-item __line-block-item">
+<div class="people-item __line-block-item">
                             <div class="people-item-photo"><img loading="lazy" decoding="async" src="/wp-content/uploads/2024/08/photo_2024-06-27_12-59-20.jpg.webp" alt="Врач Денисенко Игорь Александрович"></div>
                             <div class="people-item-desc">
                                 <div class="people-item-name"><span>Денисенко</span><span>Игорь Александрович</span></div>
