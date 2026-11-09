@@ -61,6 +61,10 @@ const critical = [
     sliceBetween(v36, "body:has(.v36-dark) .v36-world {", "/* секции главной прозрачны", "v36 dark first"),
   banner("v36: мобильная шапка + hero mobile") +
     sliceBetween(v36, "/* ---------- мобильная шапка", "/* ============ итерация 6", "v36 mobile header"),
+  banner("a26: каркас + шапка (каскад как в полном бандле, меню закрыто)") +
+    sliceBetween(a26, "* { -webkit-appearance", "/* футер-раскладка", "a26 shell"),
+  banner("a26: мобильный логотип") +
+    "@media (max-width:1023px){.header-item-logo .header-logo img{height:40px}}",
 ].join("\n");
 
 /* ---------------- запись + минификация ---------------- */
