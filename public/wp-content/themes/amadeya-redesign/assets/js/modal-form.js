@@ -5,6 +5,7 @@
 
 (function() {
     'use strict';
+    const acknowledgedResponses = new WeakSet();
 
     // Конфигурация
     const config = {
@@ -82,24 +83,24 @@
         modalOverlay.innerHTML = `
             <div class="modal-content">
                 <button class="modal-close" type="button" aria-label="Закрыть модальное окно">&times;</button>
-                
+
                 <!-- Форма -->
                 <div class="modal-form-container">
                     <h2 class="modal-title">Вызвать врача</h2>
                     <div class="modal-error" id="modal-error"></div>
-                    <form class="modal-form" id="doctor-call-form">
+                    <form class="ym-hide-content modal-form" id="doctor-call-form">
                         <div class="form-group">
                             <label for="patient-name">Имя *</label>
-                            <input type="text" id="patient-name" name="name" required>
+                            <input class="ym-disable-keys ym-hide-content" type="text" id="patient-name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="patient-phone">Номер телефона *</label>
-                            <input type="tel" id="patient-phone" name="phone" required>
+                            <input class="ym-disable-keys ym-hide-content" type="tel" id="patient-phone" name="phone" required>
                         </div>
                         <div class="modal-checkbox">
-                            <input type="checkbox" id="privacy-agreement" name="privacy_agreement" required>
+                            <input class="ym-disable-keys ym-hide-content" type="checkbox" id="privacy-agreement" name="privacy_agreement" required>
                             <label for="privacy-agreement">
-                                Нажимая "отправить" вы принимаете 
+                                Нажимая "отправить" вы принимаете
                                 <a href="${config.privacyPolicyUrl}" target="_blank">политику конфиденциальности</a>
                             </label>
                         </div>
@@ -216,7 +217,7 @@
     function openModal() {
         modalOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
-        
+
         // Фокус на первом поле
         setTimeout(() => {
             const firstInput = modalForm.querySelector('input[required]');
@@ -230,7 +231,7 @@
     function closeModal() {
         modalOverlay.classList.remove('active');
         document.body.style.overflow = '';
-        
+
         // Сброс формы через небольшую задержку
         setTimeout(() => {
             resetForm();
@@ -249,7 +250,7 @@
     // Обработка отправки формы
     function handleFormSubmit(e) {
         e.preventDefault();
-        
+
         if (!validateForm()) {
             return;
         }
@@ -328,8 +329,16 @@
         }
 
         inlineRequest
-        .then(response => {
+        .then(async response => {
             if (response.ok) {
+                // Only our backend's explicit delivered acknowledgement, not HTTP status/Bitrix camouflage.
+                try {
+                    const receipt = await response.clone().json();
+                    if (receipt.analyticsAccepted === true && !acknowledgedResponses.has(response) && typeof window.ym === 'function') {
+                        acknowledgedResponses.add(response);
+                        window.ym(91506218, 'reachGoal', 'form_success');
+                    }
+                } catch (_) { /* Preserve existing form behavior. */ }
                 sendUtmBeaconIfConfigured({ form: 'inline' });
                 inlineForm.style.display = 'none';
                 if (inlineSuccess) inlineSuccess.style.display = 'block';
@@ -353,7 +362,7 @@
     // Валидация формы
     function validateForm() {
         let isValid = true;
-        
+
         // Валидация имени
         const nameInput = modalForm.querySelector('#patient-name');
         const nameRegex = /^[а-яёА-ЯЁa-zA-Z\s\-']+$/;
@@ -505,13 +514,13 @@
     // Показать ошибку поля
     function showFieldError(field, message) {
         field.classList.add('error');
-        
+
         // Удаляем предыдущую ошибку
         const existingError = field.parentNode.querySelector('.field-error');
         if (existingError) {
             existingError.remove();
         }
-        
+
         // Добавляем новую ошибку
         const errorDiv = document.createElement('div');
         errorDiv.className = 'field-error';
@@ -528,7 +537,7 @@
         errorFields.forEach(field => {
             field.classList.remove('error');
         });
-        
+
         const errorMessages = modalForm.querySelectorAll('.field-error');
         errorMessages.forEach(msg => msg.remove());
     }
@@ -548,7 +557,7 @@
     function sendToWebhook(data) {
         const submitButton = modalForm.querySelector('.modal-submit');
         const originalText = submitButton.textContent;
-        
+
         // Показываем состояние загрузки
         submitButton.disabled = true;
         submitButton.textContent = 'Отправка...';
@@ -600,8 +609,16 @@
         }
 
         requestPromise
-        .then(response => {
+        .then(async response => {
             if (response.ok) {
+                // Only our backend's explicit delivered acknowledgement, not HTTP status/Bitrix camouflage.
+                try {
+                    const receipt = await response.clone().json();
+                    if (receipt.analyticsAccepted === true && !acknowledgedResponses.has(response) && typeof window.ym === 'function') {
+                        acknowledgedResponses.add(response);
+                        window.ym(91506218, 'reachGoal', 'form_success');
+                    }
+                } catch (_) { /* Preserve existing form behavior. */ }
                 // Отправим UTM-бейкон при успехе
                 sendUtmBeaconIfConfigured({ form: 'modal' });
                 showSuccess();
@@ -623,7 +640,7 @@
     function showSuccess() {
         modalForm.style.display = 'none';
         modalSuccess.style.display = 'block';
-        
+
         // Автоматическое закрытие через 3 секунды
         setTimeout(() => {
             closeModal();

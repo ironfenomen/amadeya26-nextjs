@@ -15,28 +15,39 @@ type LeadBody = {
   [key: string]: unknown;
 };
 
-async function sendTelegram(text: string): Promise<{ ok: boolean; error?: string }> {
+import { telegramCurl } from "../../../lib/telegram-curl";
+
+async function sendTelegram(text: string): Promise<{ ok: boolean; error?: string; analyticsDelivered?: boolean }> {
   const token = process.env.TELEGRAM_BOT_TOKEN;
   const chatId = process.env.TELEGRAM_CHAT_ID;
   if (!token || !chatId) return { ok: false, error: "MISSING_ENV" };
+  const payload = { chat_id: chatId, text, disable_web_page_preview: true };
+
+  if (process.env.TELEGRAM_TRANSPORT === "socks") {
+    try {
+      const result = await telegramCurl({ token, method: "sendMessage", payload });
+      if (result.ok) return { ok: true, analyticsDelivered: true };
+      return { ok: false, error: `TELEGRAM_HTTP_${result.error_code || 500}` };
+    } catch {
+      return { ok: false, error: "NETWORK_ERROR" };
+    }
+  }
+
   try {
     const res = await fetch(`${TELEGRAM_API}/bot${token}/sendMessage`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text,
-        disable_web_page_preview: true,
-      }),
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(8000),
     });
+    const data = (await res.json().catch(() => null)) as { ok?: boolean } | null;
     if (!res.ok) {
-      const detail = await res.text();
-      console.error("[lead] telegram http", res.status, detail.slice(0, 300));
+      console.error("[lead] telegram http", res.status);
       return { ok: false, error: `TELEGRAM_HTTP_${res.status}` };
     }
-    return { ok: true };
-  } catch (error) {
-    console.error("[lead] telegram exception", error);
+    if (data?.ok !== true) return { ok: false, error: "TELEGRAM_API_ERROR" };
+    return { ok: true, analyticsDelivered: true };
+  } catch {
     return { ok: false, error: "NETWORK_ERROR" };
   }
 }
@@ -100,7 +111,7 @@ export async function POST(req: NextRequest) {
         { status: 500 },
       );
     }
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, analyticsAccepted: result.analyticsDelivered === true });
   } catch (error) {
     console.error("[lead] error", error);
     return NextResponse.json(
